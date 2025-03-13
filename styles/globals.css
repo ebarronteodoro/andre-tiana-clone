@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-helvetica: Helvetica, Arial, sans-serif;
+  --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
+  --font-times-new-roman: var(--times-new-roman-font), sans-serif;
+
+}
