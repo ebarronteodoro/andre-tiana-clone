@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import { getCategories } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
+import TypewriterHeader from "./functions/TypewriterHeader.js";
 
 export const metadata = {
   title: "Work — Browse by type of client",
@@ -13,18 +14,19 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen !relative">
-      <Header />
-      <section className="!relative w-full h-screen bg-[#1a47c4]">
+      <section className="!relative w-full h-[90dvh] bg-[#1a47c4]">
         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white text-center">
-          A multidisciplinary, independent design studio driven by creativity
-          and strategy
+          <TypewriterHeader
+            text="A multidisciplinary, independent design studio driven by creativity
+          and strategy"
+          />
         </h1>
 
         <span className="text-white !absolute bottom-8 left-0 right-0 text-center">
           based in Lima - Peru
         </span>
       </section>
-      <section className="!relative w-full h-screen bg-[#B3AE4C]">
+      <section className="!relative w-full h-[90dvh] bg-[#B3AE4C]">
         <div className="absolute bottom-32 left-24">
           <Image
             className="h-auto object-contain !w-200 md:w-56"
@@ -38,7 +40,7 @@ export default async function Home() {
           <div className="w-auto relative">
             <Image
               className="h-auto object-contain !w-12 md:w-8 absolute -left-16 -top-6"
-              src="/comilla 1@3x-8.png"
+              src="/comilla.png"
               alt="Logo AyT"
               width={500}
               height={100}
@@ -51,7 +53,7 @@ export default async function Home() {
                 sofisticado y artístico
                 <Image
                   className="h-auto object-contain !w-12 md:w-8 absolute right-16 -bottom-6 rotate-180"
-                  src="/comilla 1@3x-8.png"
+                  src="/comilla.png"
                   alt="Logo AyT"
                   width={500}
                   height={100}

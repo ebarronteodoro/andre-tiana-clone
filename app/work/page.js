@@ -12,8 +12,6 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen">
-      <Header />
-
       <section className="container mx-auto px-4 mt-16">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between relative">
           <h1 className="text-[55px] font-medium -mt-12 md:mt-0 mb-16 md:mb-0">

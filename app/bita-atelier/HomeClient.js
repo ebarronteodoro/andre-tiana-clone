@@ -23,7 +23,6 @@ export default function HomeClient() {
 
   return (
     <main className="min-h-screen">
-      <Header />
       {/* Resto del componente */}
       <section className="container mx-auto px-4 mt-16">
         <div className=" flex flex-col md:flex-row md:items-center md:justify-between relative">
