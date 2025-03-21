@@ -1,13 +1,34 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
+/* Declaración de las variantes de la fuente Cardo */
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/cardo/Cardo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/cardo/Cardo-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cardo";
+  src: url("/fonts/cardo/Cardo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Suavizado de fuentes */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@theme {
-  --font-helvetica: Helvetica, Arial, sans-serif;
-  --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
-  --font-times-new-roman: var(--times-new-roman-font), sans-serif;
-
+/* Establecer la fuente globalmente */
+body {
+  font-family: "Cardo", serif;
 }

@@ -10,7 +10,8 @@ export default function HomeClient() {
   const [toggler, setToggler] = useState(false);
   const [activeSlide, setActiveSlide] = useState(1);
 
-  const galleryImages = ["/bolsa.jpg", "/edificio.png"];
+  const galleryImages = ["/edificio.png", "/edificio.png"];
+  const galleryImages2 = ["/bolsa-atelier.jpg"];
 
   useEffect(() => {
     async function fetchCategories() {
@@ -26,13 +27,13 @@ export default function HomeClient() {
       {/* Resto del componente */}
       <section className="container mx-auto px-4 mt-16">
         <div className=" flex flex-col md:flex-row md:items-center md:justify-between relative">
-          <div className="w-1/2">
+          <div className="w-full">
             <h1 className="text-[55px] font-medium -mt-12 md:mt-0 mb-16 md:mb-0">
               Bita - Atelier
             </h1>
             <span>Diseña consciente</span>
           </div>
-          <div className="w-1/2 max-w-[740px] mr-8">
+          <div className="w-full max-w-[740px] mr-8">
             <p className="text-2xl font-medium">
               Bita Atelier es una marca peruana que diseña con conciencia
               ambiental, artística y social, a través de bitácoras que es su
@@ -49,6 +50,7 @@ export default function HomeClient() {
             width={100}
             height={200}
             alt="Animación"
+            unoptimized
           />
         </div>
       </section>
@@ -83,7 +85,27 @@ export default function HomeClient() {
                 alt={`Imagen ${index + 1}`}
                 width={300}
                 height={200}
-                className="object-cover"
+                className="object-cover w-full h-auto"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 gap-4">
+          {galleryImages2.map((src, index) => (
+            <div
+              key={index}
+              className="cursor-pointer"
+              onClick={() => {
+                setActiveSlide(index + 1); // FS Lightbox usa slides comenzando en 1
+                setToggler(!toggler); // Cambia el toggler para abrir el lightbox
+              }}
+            >
+              <Image
+                src={src}
+                alt={`Imagen ${index + 1}`}
+                width={300}
+                height={200}
+                className="object-cover w-full h-auto"
               />
             </div>
           ))}
@@ -93,7 +115,7 @@ export default function HomeClient() {
         <FsLightbox
           toggler={toggler}
           slide={activeSlide}
-          sources={galleryImages}
+          sources={[...galleryImages, ...galleryImages2]}
         />
       </section>
     </main>

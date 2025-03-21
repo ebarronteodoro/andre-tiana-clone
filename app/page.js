@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import { getCategories } from "@/lib/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "Work — Browse by type of client",
@@ -11,65 +12,54 @@ export default async function Home() {
   const categories = await getCategories();
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen !relative">
       <Header />
+      <section className="!relative w-full h-screen bg-[#1a47c4]">
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white text-center">
+          A multidisciplinary, independent design studio driven by creativity
+          and strategy
+        </h1>
 
-      <section className="container mx-auto px-4 mt-16">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between relative">
-          <h1 className="text-[55px] font-medium -mt-12 md:mt-0 mb-16 md:mb-0">
-            Work
-          </h1>
-          <div className="border-b border-gray-200 w-full mx-auto md:w-auto absolute bottom-0 left-1/2 transform -translate-x-1/2">
-            <nav className="flex space-x-8">
-              <Link
-                href="#"
-                className="pb-4 font-helvetica-neue tracking-[.8px] text-md text-[#1a1a1a] border-b-1 border-[#1a1a1a] relative -mb-[1px]"
-              >
-                TYPE OF CLIENT
-              </Link>
-              <Link
-                href="#"
-                className="pb-4 font-helvetica-neue tracking-[.8px] text-md text-[#999]"
-              >
-                TYPE OF WORK
-              </Link>
-              <Link
-                href="#"
-                className="pb-4 font-helvetica-neue tracking-[.8px] text-md text-[#999]"
-              >
-                ALL PROJECTS
-              </Link>
-            </nav>
-          </div>
-        </div>
+        <span className="text-white !absolute bottom-8 left-0 right-0 text-center">
+          based in Lima - Peru
+        </span>
       </section>
+      <section className="!relative w-full h-screen bg-[#B3AE4C]">
+        <div className="absolute bottom-32 left-24">
+          <Image
+            className="h-auto object-contain !w-200 md:w-56"
+            src="/AyT.png"
+            alt="Logo AyT"
+            width={500}
+            height={100}
+          />
+        </div>
+        <blockquote className="absolute right-32 bottom-32 w-70">
+          <div className="w-auto relative">
+            <Image
+              className="h-auto object-contain !w-12 md:w-8 absolute -left-16 -top-6"
+              src="/comilla 1@3x-8.png"
+              alt="Logo AyT"
+              width={500}
+              height={100}
+            />
 
-      <section className="container mx-auto px-4 mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categories.map((category) => (
-          <div key={category.id} className="space-y-4">
-            <div className="flex items-baseline justify-between">
-              <h2 className="text-2xl font-bold">{category.name}</h2>
-              <span className="text-gray-500">{category.count}</span>
-            </div>
-            <div
-              className="aspect-square relative overflow-hidden"
-              style={{ backgroundColor: category.bgColor }}
-            >
-              {/* <Image
-                src='/placeholder.svg?height=400&width=400'
-                alt={category.title}
-                width={400}
-                height={400}
-                className='object-cover w-full h-full'
-              /> */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <h3 className={`text-4xl font-bold ${category.textColor}`}>
-                  {category.title}
-                </h3>
-              </div>
-            </div>
+            <p className="!text-[#796D2A] text-4xl ">
+              Diseño enfocado en cretividad, branding y diseño visual, con un
+              estilo{" "}
+              <span className="!text-[#796D2A] font-bold">
+                sofisticado y artístico
+                <Image
+                  className="h-auto object-contain !w-12 md:w-8 absolute right-16 -bottom-6 rotate-180"
+                  src="/comilla 1@3x-8.png"
+                  alt="Logo AyT"
+                  width={500}
+                  height={100}
+                />
+              </span>
+            </p>
           </div>
-        ))}
+        </blockquote>
       </section>
     </main>
   );
