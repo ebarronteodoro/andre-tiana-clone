@@ -26,43 +26,45 @@ export default async function Home() {
           based in Lima - Peru
         </span>
       </section>
-      <section className="!relative w-full h-[90dvh] bg-[#B3AE4C]">
-        <div className="absolute bottom-32 left-24">
+      <section className="relative w-full h-[90dvh] bg-[#B3AE4C] flex flex-col md:flex-row items-center justify-center">
+        {/* Contenedor de la imagen */}
+        <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-8">
           <Image
-            className="h-auto object-contain !w-200 md:w-56"
+            className="h-auto object-contain w-40 md:w-56 lg:w-[600px] xl:w-[800px]"
             src="/AyT.png"
             alt="Logo AyT"
-            width={500}
-            height={100}
+            width={800}
+            height={200}
           />
         </div>
-        <blockquote className="absolute right-32 bottom-32 w-70">
-          <div className="w-auto relative">
+        {/* Contenedor del blockquote */}
+        <blockquote className="w-full max-w-lg px-4 text-center md:text-left">
+          <div className="relative">
+            {/* Comilla superior */}
             <Image
-              className="h-auto object-contain !w-12 md:w-8 absolute -left-16 -top-6"
+              className="hidden md:block h-auto object-contain w-8 lg:w-10 absolute -left-10 -top-6"
               src="/comilla.png"
-              alt="Logo AyT"
-              width={500}
+              alt="Comilla"
+              width={100}
               height={100}
             />
-
-            <p className="!text-[#796D2A] text-4xl ">
-              Diseño enfocado en cretividad, branding y diseño visual, con un
-              estilo{" "}
-              <span className="!text-[#796D2A] font-bold">
-                sofisticado y artístico
-                <Image
-                  className="h-auto object-contain !w-12 md:w-8 absolute right-16 -bottom-6 rotate-180"
-                  src="/comilla.png"
-                  alt="Logo AyT"
-                  width={500}
-                  height={100}
-                />
-              </span>
+            <p className="text-[#796D2A] text-2xl md:text-3xl lg:text-4xl">
+              Diseño enfocado en creatividad, branding y diseño visual, con un estilo{" "}
+              <span className="font-bold">sofisticado y artístico</span>
             </p>
+            {/* Comilla inferior, girada 180 grados */}
+            <Image
+              className="hidden md:block h-auto object-contain w-8 lg:w-10 absolute right-10 -bottom-6 rotate-180"
+              src="/comilla.png"
+              alt="Comilla"
+              width={100}
+              height={100}
+            />
           </div>
         </blockquote>
       </section>
+
+
     </main>
   );
 }

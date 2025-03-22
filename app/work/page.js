@@ -11,7 +11,7 @@ export default async function Home() {
   const categories = await getCategories();
 
   return (
-    <main className="min-h-screen">
+    <main className="">
       <section className="container mx-auto px-4 mt-16">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between relative">
           <h1 className="text-[55px] font-medium -mt-12 md:mt-0 mb-16 md:mb-0">
@@ -41,7 +41,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
       <section className="container mx-auto px-4 mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {categories.map((category) => (
           <div key={category.id} className="space-y-4">

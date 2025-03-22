@@ -32,3 +32,8 @@ html {
 body {
   font-family: "Cardo", serif;
 }
+
+html, body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
