@@ -28,8 +28,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Establecer la fuente globalmente */
+/* Fuente global: Helvetica */
 body {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Clase para aplicar la fuente Cardo a elementos específicos */
+.font-cardo {
   font-family: "Cardo", serif;
 }
 

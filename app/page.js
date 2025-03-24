@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import { getCategories } from "@/lib/data";
+// import getProjectsByCategory from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import TypewriterHeader from "./functions/TypewriterHeader.js";
@@ -10,19 +10,18 @@ export const metadata = {
 };
 
 export default async function Home() {
-  const categories = await getCategories();
 
   return (
     <main className="min-h-screen !relative">
       <section className="!relative w-full h-[90dvh] bg-[#1a47c4]">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white text-center">
+        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white text-center font-cardo" >
           <TypewriterHeader
             text="A multidisciplinary, independent design studio driven by creativity
           and strategy"
           />
         </h1>
 
-        <span className="text-white !absolute bottom-8 left-0 right-0 text-center">
+        <span className="text-white !absolute bottom-8 left-0 right-0 text-center font-cardo">
           based in Lima - Peru
         </span>
       </section>
@@ -48,7 +47,7 @@ export default async function Home() {
               width={100}
               height={100}
             />
-            <p className="text-[#796D2A] text-2xl md:text-3xl lg:text-4xl">
+            <p className="text-[#796D2A] text-2xl md:text-3xl lg:text-4xl font-cardo">
               Diseño enfocado en creatividad, branding y diseño visual, con un estilo{" "}
               <span className="font-bold">sofisticado y artístico</span>
             </p>
