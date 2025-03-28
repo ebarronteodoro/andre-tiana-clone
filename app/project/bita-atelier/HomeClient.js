@@ -8,11 +8,11 @@ export default function HomeClient() {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    async function fetchCategories() {
-      const data = await getCategories();
-      setCategories(data);
-    }
-    fetchCategories();
+    // async function fetchCategories() {
+    //   const data = await getCategories();
+    //   setCategories(data);
+    // }
+    // fetchCategories();
   }, []);
 
   // Definición de las imágenes para la galería:

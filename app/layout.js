@@ -160,9 +160,9 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
       </head>
       <body className="!relative">
-        <Header></Header>
+        <Header />
         {children}
-        <Footer></Footer>
+        <Footer />
       </body>
     </html>
   );
