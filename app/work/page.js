@@ -1,10 +1,10 @@
-import WorkClient from "./WorkClient";
+import CategoriesClient from '@/components/CategoriesClient'
 
 export const metadata = {
-  title: "Work — Browse by type of client",
-  description: "Portfolio of Pentagram design agency",
-};
+  title: 'Work — Browse by type of client',
+  description: 'Work page of Andre & Tania design studio',
+}
 
-export default function WorkPage() {
-  return <WorkClient />;
+export default function CategoriesPage() {
+  return <CategoriesClient />
 }

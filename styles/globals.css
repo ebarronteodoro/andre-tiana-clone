@@ -41,6 +41,22 @@ body {
   font-family: 'Cardo', serif;
 }
 
+/* Animación para el slide de los children */
+.slider-container {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @theme {
   --font-helvetica: Helvetica, Arial, sans-serif;
   --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
