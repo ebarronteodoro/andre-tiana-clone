@@ -148,17 +148,17 @@ const timesNewRoman = localFont({
 const cardo = localFont({
   src: [
     {
-      path: '../public/fonts/cardo/Cardo-Regular.ttf',
+      path: '../public/fonts/Cardo/Cardo-Regular.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../public/fonts/cardo/Cardo-Italic.ttf',
+      path: '../public/fonts/Cardo/Cardo-Italic.ttf',
       weight: '400',
       style: 'italic'
     },
     {
-      path: '../public/fonts/cardo/Cardo-Bold.ttf',
+      path: '../public/fonts/Cardo/Cardo-Bold.ttf',
       weight: '700',
       style: 'normal'
     }
