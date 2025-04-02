@@ -9,7 +9,7 @@ export const metadata = {
 export default async function Home () {
   return (
     <main className=''>
-      <section className='flex bg-[#B4AE36] px-20 xl:px-64 py-10'>
+      <section className='flex bg-[#B4AE36] px-20 2xl:px-64 py-10'>
         <div className='w-1/2 flex flex-col justify-center items-start gap-y-10'>
           <h1 className='sr-only'>Contact — Get in touch</h1>
           <Image
@@ -41,8 +41,8 @@ export default async function Home () {
           />
         </div>
       </section>
-      <section className='bg-[#1a47c4] px-20 xl:px-64 pt-10'>
-        <h2 className='text-white w-[30rem] text-left text-pretty py-10 text-4xl font-cardo -mb-20'>
+      <section className='bg-[#1a47c4] px-20 2xl:px-64 pt-10'>
+        <h2 className='text-white w-[30rem] text-left text-pretty py-10 text-4xl font-cardo -mb-10 2xl:-mb-20'>
           Recuerda que podemos apoyarte con proyectos de:
         </h2>
         <Image
