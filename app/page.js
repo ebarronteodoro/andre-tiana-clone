@@ -13,55 +13,101 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen !relative">
-      <section className="!relative w-full h-[90dvh] bg-[#1a47c4]">
-        <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-white text-center font-cardo" >
+      <section className="!relative w-full h-[80dvh] bg-[#1a47c4]">
+        <div className="flex inset-0 w-full h-[50dvh] max-w-[1440px] mx-auto justify-center gap-[16px] sm:gap-[16px] md:gap-[32px] lg:gap-[64px]">
+          <picture className="w-full max-w-[300px] relative flex items-center">
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center">
+              <TypewriterHeader
+                text="Hi, I'm Andrea Loarte"
+              /></span>
+            <Image
+              className="w-full  h-auto object-cover"
+              src="/andrea-foto.png"
+              alt="Foto Silueta Andrea"
+              width={1920}
+              height={1080}
+            />
+          </picture>
+          <picture className="w-full max-w-[300px] relative flex items-center">
+            <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center">
+              <TypewriterHeader
+                text="and I'm Tatiana Lopez"
+              /></span>
+            <Image
+              className="w-full h-auto object-cover"
+              src="/susana-foto.png"
+              alt="Foto Silueta Tiana"
+              width={1920}
+              height={1080}
+            />
+          </picture>
+        </div>
+        <h1 className="m-x-auto text-4xl text-white text-center font-cardo" >
           <TypewriterHeader
-            text="A multidisciplinary, independent design studio driven by creativity
-          and strategy"
+            text="Welcome to our Gallery"
           />
         </h1>
 
-        <span className="text-white !absolute bottom-8 left-0 right-0 text-center font-cardo">
-          based in Lima - Peru
+        <span className="block text-white mt-[32px] text-center font-cardo m-x-auto ">
+          Where Desing Meets Art
         </span>
+
+        <Link href="/dashboard" className="
+        mx-auto text-center block w-fit bg-[#B3AE4C] text-[#7e760a] text-[16px] py-1 px-2  rounded-xl mt-8">Ver Proyectos</Link>
       </section>
-      <section className="relative w-full h-[90dvh] bg-[#B3AE4C] flex flex-col md:flex-row items-center justify-center">
-        {/* Contenedor de la imagen */}
-        <div className="flex-shrink-0 mb-8 md:mb-0 md:mr-8">
-          <Image
-            className="h-auto object-contain w-40 md:w-56 lg:w-[600px] xl:w-[800px]"
-            src="/AyT.png"
-            alt="Logo AyT"
-            width={800}
-            height={200}
-          />
+
+      <section className="!relative w-full h-[80dvh] bg-white">
+
+        <div className="flex justify-evenly items-center w-full h-[50dvh] max-w-[1440px] mx-auto">
+          <div><h2 className="font-cardo">Desing Studio?</h2>
+          <h2 className="font-cardo">Gallery?</h2></div>
+          <div><p>Estudio multidisciplinario que fusiona creatividad y estrategia para crear identidades poderosas.</p></div>
+
+          
         </div>
-        {/* Contenedor del blockquote */}
-        <blockquote className="w-full max-w-lg px-4 text-center md:text-left">
-          <div className="relative">
-            {/* Comilla superior */}
-            <Image
-              className="hidden md:block h-auto object-contain w-8 lg:w-10 absolute -left-10 -top-6"
-              src="/comilla.png"
-              alt="Comilla"
+        <div className="flex justify-evenly items-center w-full h-[50dvh] max-w-[1440px] mx-auto">
+          <span className="block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto ">
+          <Image
+              className="w-full h-auto object-cover"
+              src="/andrea-foto.png"
               width={100}
               height={100}
-            />
-            <p className="text-[#796D2A] text-2xl md:text-3xl lg:text-4xl font-cardo">
-              Diseño enfocado en creatividad, branding y diseño visual, con un estilo{" "}
-              <span className="font-bold">sofisticado y artístico</span>
-            </p>
-            {/* Comilla inferior, girada 180 grados */}
+              >
+            </Image>
+            <p>CADA PROYECTO ES</p>
+            
+          </span>
+          <picture>
             <Image
-              className="hidden md:block h-auto object-contain w-8 lg:w-10 absolute right-10 -bottom-6 rotate-180"
-              src="/comilla.png"
-              alt="Comilla"
+              className="w-full h-auto object-cover"
+              src="/andrea-foto.png"
               width={100}
               height={100}
-            />
-          </div>
-        </blockquote>
+              >
+            </Image>
+          </picture>
+          <span className="block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto ">
+          
+            <p>UNA OBRA ÚNICA</p>
+            <Image
+              className="w-full h-auto object-cover"
+              src="/andrea-foto.png"
+              width={100}
+              height={100}
+              >
+            </Image>
+          </span>
+           
+
+          
+        </div>
+
+        
       </section>
+      
+
+      
+    
 
 
     </main>
