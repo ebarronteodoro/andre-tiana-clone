@@ -6,17 +6,54 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 
 export default function Header () {
+  const pathname = usePathname()
+
+  // Configuración dinámica según la ruta
+  const styleConfig = {
+    headerBg:
+      pathname === '/'
+        ? 'bg-[#1a47c4]'
+        : pathname === '/contact'
+        ? 'bg-[#B4AE36]'
+        : 'bg-white',
+    // Si estás en '/' los enlaces son blancos, en '/contact' se muestran en negro (activo) y gris (inactivo)
+    navActive:
+      pathname === '/'
+        ? 'md:text-white'
+        : pathname === '/contact'
+        ? 'md:text-white'
+        : 'md:text-[#1a1a1a]',
+    navInactive:
+      pathname === '/'
+        ? 'md:text-white'
+        : pathname === '/contact'
+        ? 'md:text-white md:hover:text-white'
+        : 'md:text-[#999] md:hover:text-[#1a1a1a]',
+    // Para el logo se cambia de imagen según la ruta
+    logoSrc: pathname === '/' || pathname === '/contact' ? '/logo/logo-blanco.png' : '/logo/logo.png',
+    // Color de las barras del botón móvil según el fondo
+    mobileBar: pathname === '/' ? 'bg-white' : 'bg-black'
+  }
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [menuVisible, setMenuVisible] = useState(false)
   const [fadeIn, setFadeIn] = useState(false)
-  const pathname = usePathname()
 
-  const logoSrc = pathname === '/' ? '/logo/logo-blanco.png' : '/logo/logo.png'
-  const bgColor = pathname === '/' ? 'bg-white' : 'bg-black'
-  const bgColorHeader = pathname === '/' ? 'bg-[#1a47c4]' : ''
+  // Controla el overflow del body cuando el menú móvil está abierto
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : 'auto'
+    if (mobileMenuOpen) {
+      setMenuVisible(true)
+      setTimeout(() => setFadeIn(true), 10)
+    } else {
+      setFadeIn(false)
+      const timeout = setTimeout(() => setMenuVisible(false), 300)
+      return () => clearTimeout(timeout)
+    }
+  }, [mobileMenuOpen])
 
+  // Componente para los enlaces del navbar
   const NavLink = ({ href, children }) => {
-    const isIndex = pathname === '/'
     const isActive = href === pathname
 
     return (
@@ -24,15 +61,8 @@ export default function Header () {
         href={href}
         onClick={() => setMobileMenuOpen(false)}
         className={`
-          text-white
+          ${isActive ? styleConfig.navActive : styleConfig.navInactive}
           md:text-[17px] md:tracking-[1px] md:font-helvetica-neue
-          ${
-            isIndex
-              ? 'md:text-white'
-              : isActive
-              ? 'md:text-[#1a1a1a]'
-              : 'md:text-[#999] md:hover:text-[#1a1a1a]'
-          }
         `}
       >
         {children}
@@ -40,44 +70,22 @@ export default function Header () {
     )
   }
 
-  useEffect(() => {
-    // Controla el overflow del body para evitar scroll cuando el nav está abierto
-    document.body.style.overflow = mobileMenuOpen ? 'hidden' : 'auto'
-
-    if (mobileMenuOpen) {
-      setMenuVisible(true)
-      // Activamos el fade para la animación de opacidad
-      setTimeout(() => {
-        setFadeIn(true)
-      }, 10)
-    } else {
-      setFadeIn(false)
-      const timeout = setTimeout(() => {
-        setMenuVisible(false)
-      }, 300)
-      return () => clearTimeout(timeout)
-    }
-  }, [mobileMenuOpen])
-
   const navigationLinks = (
     <>
       <NavLink href='/work'>WORK</NavLink>
       <NavLink href='/about'>ABOUT</NavLink>
-      <NavLink href='/news'>NEWS</NavLink>
+      {/* <NavLink href='/news'>NEWS</NavLink> */}
       <NavLink href='/contact'>CONTACT</NavLink>
     </>
   )
 
   return (
-    <header className={bgColorHeader}>
+    <header className={styleConfig.headerBg}>
       <div className='container mx-auto px-4 py-6 flex justify-between items-center relative z-10'>
-        <Link
-          href='/'
-          className='text-red-600 text-5xl font-medium font-times-new-roman relative z-50'
-        >
+        <Link href='/' className='relative z-50'>
           <Image
             className='h-auto object-contain w-44 md:w-56'
-            src={logoSrc}
+            src={styleConfig.logoSrc}
             alt='Logo Andrea'
             width={500}
             height={100}
@@ -92,12 +100,16 @@ export default function Header () {
           aria-label='Toggle Menu'
         >
           <span
-            className={`block w-5 h-0.5 ${bgColor} transition transform duration-300 ${
+            className={`block w-5 h-0.5 ${
+              styleConfig.mobileBar
+            } transition transform duration-300 ${
               mobileMenuOpen ? 'rotate-45 translate-y-1' : ''
             }`}
           ></span>
           <span
-            className={`block w-5 h-0.5 ${bgColor} transition transform duration-300 mt-1 ${
+            className={`block w-5 h-0.5 ${
+              styleConfig.mobileBar
+            } transition transform duration-300 mt-1 ${
               mobileMenuOpen ? '-rotate-45 -translate-y-0.5' : ''
             }`}
           ></span>
@@ -118,7 +130,7 @@ export default function Header () {
             >
               <Image
                 className='h-auto object-contain w-44 md:w-56'
-                src={logoSrc}
+                src={styleConfig.logoSrc}
                 alt='Logo Andrea'
                 width={500}
                 height={100}

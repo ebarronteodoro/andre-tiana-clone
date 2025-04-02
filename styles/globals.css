@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'tailwindcss-animated';
 
 /* Declaración de las variantes de la fuente Cardo */
 @font-face {
@@ -36,11 +37,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Clase para aplicar la fuente Cardo a elementos específicos */
-.font-cardo {
-  font-family: 'Cardo', serif;
-}
-
 /* Animación para el slide de los children */
 .slider-container {
   animation: slideIn 0.3s ease-out forwards;
@@ -61,4 +57,11 @@ body {
   --font-helvetica: Helvetica, Arial, sans-serif;
   --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
   --font-times-new-roman: var(--times-new-roman-font), sans-serif;
+  --font-cardo: var(--cardo-font), sans-serif;
+}
+
+[data-animate] {
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(1rem); /* equvalente a translate-y-4 */
 }
