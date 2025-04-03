@@ -1,5 +1,8 @@
 'use client'
 
+import InstagramIcon from '@/app/icons/InstagramIcon'
+import MailIcon from '@/app/icons/MailIcon'
+import TikTokIcon from '@/app/icons/TikTokIcon'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -11,27 +14,27 @@ export default function Header () {
   // Configuración dinámica según la ruta
   const styleConfig = {
     headerBg:
-      pathname === '/'
+      pathname === '/' || pathname === '/brochure'
         ? 'bg-[#1a47c4]'
         : pathname === '/contact'
         ? 'bg-[#B4AE36]'
         : 'bg-white',
-    // Si estás en '/' los enlaces son blancos, en '/contact' se muestran en negro (activo) y gris (inactivo)
     navActive:
-      pathname === '/'
+      pathname === '/' || pathname === '/brochure'
         ? 'md:text-white'
         : pathname === '/contact'
         ? 'md:text-white'
         : 'md:text-[#1a1a1a]',
     navInactive:
-      pathname === '/'
+      pathname === '/' || pathname === '/brochure'
         ? 'md:text-white'
         : pathname === '/contact'
         ? 'md:text-white md:hover:text-white'
         : 'md:text-[#999] md:hover:text-[#1a1a1a]',
-    // Para el logo se cambia de imagen según la ruta
-    logoSrc: pathname === '/' || pathname === '/contact' ? '/logo/logo-blanco.png' : '/logo/logo.png',
-    // Color de las barras del botón móvil según el fondo
+    logoSrc:
+      pathname === '/' || pathname === '/contact' || pathname === '/brochure'
+        ? '/logo/logo-blanco.png'
+        : '/logo/logo.png',
     mobileBar: pathname === '/' ? 'bg-white' : 'bg-black'
   }
 
@@ -39,7 +42,6 @@ export default function Header () {
   const [menuVisible, setMenuVisible] = useState(false)
   const [fadeIn, setFadeIn] = useState(false)
 
-  // Controla el overflow del body cuando el menú móvil está abierto
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? 'hidden' : 'auto'
     if (mobileMenuOpen) {
@@ -53,31 +55,52 @@ export default function Header () {
   }, [mobileMenuOpen])
 
   // Componente para los enlaces del navbar
-  const NavLink = ({ href, children }) => {
+  const NavLink = ({ href, children, target, ...props }) => {
     const isActive = href === pathname
-
     return (
       <Link
         href={href}
         onClick={() => setMobileMenuOpen(false)}
+        target={target}
+        rel={target === '_blank' ? 'noopener noreferrer' : undefined}
         className={`
           ${isActive ? styleConfig.navActive : styleConfig.navInactive}
           md:text-[17px] md:tracking-[1px] md:font-helvetica-neue
         `}
+        {...props}
       >
         {children}
       </Link>
     )
   }
 
-  const navigationLinks = (
-    <>
-      <NavLink href='/work'>WORK</NavLink>
-      <NavLink href='/about'>ABOUT</NavLink>
-      {/* <NavLink href='/news'>NEWS</NavLink> */}
-      <NavLink href='/contact'>CONTACT</NavLink>
-    </>
-  )
+  // Si estamos en la página brochure, mostramos otros links
+  const navigationLinks =
+    pathname === '/brochure' ? (
+      <>
+        <NavLink
+          target='_blank'
+          href='https://www.instagram.com/andreytiana.design/'
+        >
+          <InstagramIcon className='text-white size-7 transition duration-300 hover:scale-105' />
+        </NavLink>
+        <NavLink
+          target='_blank'
+          href='https://www.tiktok.com/@andretiana.design'
+        >
+          <TikTokIcon className='text-white size-7 transition duration-300 hover:scale-105' />
+        </NavLink>
+        <NavLink target='_blank' href='mailto:andrea.tiana.design@gmail.com'>
+          <MailIcon className='text-white size-7 transition duration-300 hover:scale-105' />
+        </NavLink>
+      </>
+    ) : (
+      <>
+        <NavLink href='/work'>WORK</NavLink>
+        <NavLink href='/about'>ABOUT</NavLink>
+        <NavLink href='/contact'>CONTACT</NavLink>
+      </>
+    )
 
   return (
     <header className={styleConfig.headerBg}>
