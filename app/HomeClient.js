@@ -38,16 +38,16 @@ export default function HomeClient() {
         <div className='flex inset-0 w-full h-auto max-w-[1440px] mx-auto justify-center gap-[100px] sm:gap-[16px] md:gap-[32px] lg:gap-[64px]'>
           <picture className='w-full max-w-[300px] relative flex items-center'>
             <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-              <TypewriterHeader text="Andrea Loarte" />
+              Andrea Loarte
             </span>
             <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-              <TypewriterHeader text="CEO &" />
+              CEO &
             </span>
             <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-              <TypewriterHeader text="Director de Arte" />
+              Director de Arte"
             </span>
             <Image
-              className='w-full h-auto object-cover'
+              className='w-full h-auto object-cover animate-fade animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate animate-fill-backwards'
               src='/andrea-foto.png'
               alt='Foto Silueta Andrea'
               width={1920}
