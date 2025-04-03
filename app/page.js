@@ -9,7 +9,7 @@ export const metadata = {
   description: 'Portfolio of Pentagram design agency'
 }
 
-export default async function Home () {
+export default async function Home() {
   return (
     <main className='min-h-screen !relative'>
       <section className='!relative w-full h-[80dvh] bg-[#1a47c4]'>
@@ -50,50 +50,50 @@ export default async function Home () {
         <Link
           href='/dashboard'
           className='
-        mx-auto text-center block w-fit bg-[#B3AE4C] text-[#7e760a] text-[16px] py-1 px-2  rounded-xl mt-8'
+        mx-auto text-center block w-fit bg-[#B3AE4C] text-[#7e760a] text-[16px] py-1 px-2  rounded-xl mt-8 '
         >
           Ver Proyectos
         </Link>
       </section>
 
-      <section className='!relative w-full h-[80dvh] bg-white'>
-        <div className='flex justify-evenly items-center w-full h-[50dvh] max-w-[1440px] mx-auto'>
+      <section className='!relative w-full h-auto bg-white'>
+        <div className='mt-16 md:flex md:align-center md:justify-center md:gap-64 md:px-16 md:mx-auto max-w-[1440px]'>
           <div>
-            <h2 className='font-cardo'>Desing Studio?</h2>
-            <h2 className='font-cardo'>Gallery?</h2>
+            <h2 className='font-cardo text-[#1a47c4] text-5xl text-center md:text-left'>Desing Studio?</h2>
+            <h2 className='font-cardo text-[#1a47c4] text-5xl text-center mt-8 md:text-left'>Gallery?</h2>
           </div>
-          <div>
-            <p>
+          <div className='md:flex md:align-center'>   
+            <p className='w-[256px] text-center mx-auto mt-16 md:mt-0'>
               Estudio multidisciplinario que fusiona creatividad y estrategia
               para crear identidades poderosas.
             </p>
           </div>
         </div>
-        <div className='flex justify-evenly items-center w-full h-[50dvh] max-w-[1440px] mx-auto'>
-          <span className='block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto '>
+        <div className='mt-16 md:flex md:justify-center md:gap-16 md:px-16 md:mx-auto max-w-[1440px]'>
+          <span className='block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto  md:flex md:items-center'>
             <Image
-              className='w-full h-auto object-cover'
-              src='/andrea-foto.png'
+              className='w-[40px] inline-block h-auto object-cover'
+              src='/comillas.png'
               width={100}
               height={100}
               alt='Foto Silueta Andrea'
             />
-            <p>CADA PROYECTO ES</p>
+            <p className='inline-block font-helvetica text-2xl text-black font-bold'>CADA PROYECTO ES</p>
           </span>
-          <picture>
+          <picture className="w-full mt-[32px] block max-w-[300px] mx-auto">
             <Image
-              className='w-full h-auto object-cover'
-              src='/andrea-foto.png'
+              className="w-full h-auto object-cover mx-auto"
+              src="/marco_fotos.png"
               width={100}
               height={100}
-              alt='Foto Silueta Andrea'
+              alt="Foto Silueta Andrea"
             />
           </picture>
-          <span className='block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto '>
-            <p>UNA OBRA ÚNICA</p>
+          <span className='block text-[#1a47c4] mt-[32px] text-center font-cardo m-x-auto md:flex md:items-center'>
+            <p className='inline-block font-helvetica text-2xl text-black font-bold'>UNA OBRA ÚNICA</p>
             <Image
-              className='w-full h-auto object-cover'
-              src='/andrea-foto.png'
+              className='w-[40px] inline-block  h-auto object-cover rotate-180'
+              src='/comillas.png'
               width={100}
               height={100}
               alt='Foto Silueta Andrea'
