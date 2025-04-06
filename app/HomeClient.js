@@ -7,41 +7,15 @@ import { useState, useEffect } from 'react'
 import AnimateOnScroll from './contact/AnimateOnScroll' // Ajusta la ruta según corresponda
 import '../styles/index.css'
 
-export default function HomeClient () {
-  const colors = ['#1c1547', '#521549', '#1a47c4', '#788988']
-  const [currentColor, setCurrentColor] = useState(colors[0])
-  const [prevColor, setPrevColor] = useState(colors[0])
-  const [showAndrea, setShowAndrea] = useState(true)
-  const [isMobile, setIsMobile] = useState(false)
+export default function HomeClient() {
+  const [showRetrato, setShowRetrato] = useState(false) // Cambiamos el estado inicial a false
 
   useEffect(() => {
-    let index = 0
     const interval = setInterval(() => {
-      setPrevColor(currentColor)
-      index = (index + 1) % colors.length
-      setCurrentColor(colors[index])
-    }, 1000)
+      setShowRetrato((prev) => !prev)
+    }, 3000)
     return () => clearInterval(interval)
-  }, [currentColor, colors])
-
-  useEffect(() => {
-    const handleResize = () => {
-      const isMobileDevice = window.matchMedia('(max-width: 768px)').matches
-      setIsMobile(isMobileDevice)
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
   }, [])
-
-  useEffect(() => {
-    if (isMobile) {
-      const interval = setInterval(() => {
-        setShowAndrea(prev => !prev)
-      }, 3000)
-      return () => clearInterval(interval)
-    }
-  }, [isMobile])
 
   return (
     <main className='min-h-screen !relative'>
@@ -65,107 +39,30 @@ export default function HomeClient () {
           </span>
         </AnimateOnScroll>
 
-        <div className='flex w-full h-auto max-w-[1440px] mx-auto justify-center md:gap-16'>
-          {isMobile ? (
-            showAndrea ? (
-              <AnimateOnScroll
-                animationClass='animate-fade-up'
-                delayClass='animate-delay-1s'
-              >
-                <picture className='w-full max-w-[300px] relative flex items-center animate-fade animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate animate-fill-backwards'>
-                  <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-                    Andrea Loarte
-                  </span>
-                  <span className='absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[75%]'>
-                    CEO &
-                  </span>
-                  <span className='absolute w-[118px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[80%]'>
-                    Director de Arte
-                  </span>
-                  <Image
-                    className='w-full h-auto object-cover'
-                    src='/andrea-foto.png'
-                    alt='Foto Silueta Andrea'
-                    width={1920}
-                    height={1080}
-                  />
-                </picture>
-              </AnimateOnScroll>
-            ) : (
-              <AnimateOnScroll
-                animationClass='animate-fade-up'
-                delayClass='animate-delay-1s'
-              >
-                <picture className='w-full max-w-[300px] relative flex items-center animate-fade animate-infinite animate-duration-[3000ms] animate-ease-in-out animate-alternate animate-fill-backwards'>
-                  <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-                    Tatiana Lopez
-                  </span>
-                  <span className='absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[75%]'>
-                    Co-Fundadora &
-                  </span>
-                  <span className='absolute w-[118px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[80%]'>
-                    Asesora Creativa
-                  </span>
-                  <Image
-                    className='w-full h-auto object-cover'
-                    src='/susana-foto.png'
-                    alt='Foto Silueta Tiana'
-                    width={1920}
-                    height={1080}
-                  />
-                </picture>
-              </AnimateOnScroll>
-            )
-          ) : (
-            <>
-              <AnimateOnScroll
-                animationClass='animate-fade-up'
-                delayClass='animate-delay-1s'
-              >
-                <picture className='w-full max-w-[300px] relative flex items-center'>
-                  <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-                    Andrea Loarte
-                  </span>
-                  <span className='absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[75%]'>
-                    CEO &
-                  </span>
-                  <span className='absolute w-[118px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[80%]'>
-                    Director de Arte
-                  </span>
-                  <Image
-                    className='w-full h-auto object-cover'
-                    src='/andrea-foto.png'
-                    alt='Foto Silueta Andrea'
-                    width={1920}
-                    height={1080}
-                  />
-                </picture>
-              </AnimateOnScroll>
-              <AnimateOnScroll
-                animationClass='animate-fade-up'
-                delayClass='animate-delay-1s'
-              >
-                <picture className='w-full max-w-[300px] relative flex items-center'>
-                  <span className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center'>
-                    Tatiana Lopez
-                  </span>
-                  <span className='absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[75%]'>
-                    Co-Fundadora &
-                  </span>
-                  <span className='absolute w-[118px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-cardo text-center top-[80%]'>
-                    Asesora Creativa
-                  </span>
-                  <Image
-                    className='w-full h-auto object-cover'
-                    src='/susana-foto.png'
-                    alt='Foto Silueta Tiana'
-                    width={1920}
-                    height={1080}
-                  />
-                </picture>
-              </AnimateOnScroll>
-            </>
-          )}
+        <div className='relative w-full h-auto max-w-[300px] mx-auto'>
+          {/* Imagen normal de fondo */}
+          <Image
+            className='w-full h-auto object-cover'
+            src='/foto-andrea.png'
+            alt='Foto Andrea'
+            width={1920}
+            height={1080}
+          />
+          {/* Imagen retrato encima con opacity inicial 0 */}
+          <Image
+            className={`absolute top-0 left-0 w-full h-auto object-cover transition-opacity duration-1000 ${showRetrato ? 'opacity-100' : 'opacity-0'
+              }`}
+            src='/foto-andrea-retrato.png'
+            alt='Foto Retrato Andrea'
+            width={1920}
+            height={1080}
+          />
+          <span
+            className='text-center w-x-auto text-white absolute bottom-[10%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo
+'>
+            Designer & Creative Director
+
+          </span>
         </div>
 
         <AnimateOnScroll
@@ -182,26 +79,16 @@ export default function HomeClient () {
       </section>
 
       {/* Resto de la página */}
-      <section className='!relative w-full h-auto bg-white'>
+      <section className='!relative w-full h-auto bg-white p-8'>
         <AnimateOnScroll
           animationClass='animate-fade-up'
           delayClass='animate-delay-1s'
         >
-          <div className='mt-16 md:flex md:items-center md:justify-center md:gap-25 md:px-16 md:mx-auto max-w-[1440px]'>
-            <div>
-              <h2 className='font-cardo text-[#1a47c4] text-5xl text-center md:text-left'>
-                Design Studio?
-              </h2>
-              <h2 className='font-cardo text-[#1a47c4] text-5xl text-center mt-3 md:text-left'>
-                Gallery?
-              </h2>
-            </div>
-            <div className='md:flex md:items-center'>
-              <p className='w-[256px] text-center mx-auto mt-16 md:mt-0 md:text-left text-[#555555]'>
-                Estudio multidisciplinario que fusiona creatividad y estrategia
-                para crear identidades poderosas.
-              </p>
-            </div>
+          <div>
+            <h2 className='text-center text-4xl  text-[#48535d] mt-8'>
+              Cada proyecto es una obra única
+            </h2>
+
           </div>
         </AnimateOnScroll>
 
@@ -209,33 +96,147 @@ export default function HomeClient () {
           animationClass='animate-fade-up'
           delayClass='animate-delay-1s'
         >
-          <div className='mt-16 md:flex md:justify-center md:gap-16 md:px-16 md:mx-auto max-w-[1440px]'>
-            <picture className='w-full mt-[32px] block max-w-[300px] mx-auto relative'>
-              <Image
-                className='w-full h-auto object-cover mx-auto'
-                src='/marco_de_foto.png'
-                width={100}
-                height={100}
-                alt='Foto Marco'
-              />
-              <figcaption className='block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-helvetica-neue text-2xl text-black font-bold text-pretty m-x-auto w-5/6'>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto mt-8">
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
                 <Image
-                  className='w-[40px] inline-block h-auto object-cover'
-                  src='/comillas.png'
-                  width={100}
-                  height={100}
-                  alt='Comillas'
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
                 />
-                CADA PROYECTO ES UNA OBRA ÚNICA
                 <Image
-                  className='w-[40px] inline-block h-auto object-cover rotate-180'
-                  src='/comillas.png'
-                  width={100}
-                  height={100}
-                  alt='Comillas rotadas'
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
                 />
-              </figcaption>
-            </picture>
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+            <Link href="" className='block mt-6 max-w-[500px] mx-auto'>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/bolsa-atelier.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-2xl'>
+                Vita Atelier
+              </span>
+            </Link>
+          </div>
+          
+        </AnimateOnScroll>
+        <AnimateOnScroll
+          animationClass='animate-fade-up'
+          delayClass='animate-delay-1s'
+        >
+          <div>
+          <Link
+            href='#'
+            className='mx-auto text-center  w-fit  text-xl mt-16 block hover:text-[#1a47c4] transition-all'
+          >
+            VIEW ALL PROJECTS
+          </Link>
           </div>
         </AnimateOnScroll>
       </section>
