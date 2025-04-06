@@ -105,7 +105,12 @@ export default function Header () {
   return (
     <header className={styleConfig.headerBg}>
       <div className='container mx-auto px-4 py-6 flex justify-between items-center relative z-10'>
-        <Link href='/' className='relative z-50'>
+        <Link
+          href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
+          target={pathname === '/brochure' ? '_blank' : undefined}
+          rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
+          className='relative z-50'
+        >
           <Image
             className='h-auto object-contain w-44 md:w-56'
             src={styleConfig.logoSrc}
@@ -147,8 +152,9 @@ export default function Header () {
         >
           <div className='container px-4 mx-auto py-6 flex justify-between items-center'>
             <Link
-              href='/'
-              onClick={() => setMobileMenuOpen(false)}
+              href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
+              target={pathname === '/brochure' ? '_blank' : undefined}
+              rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
               className='relative z-50'
             >
               <Image

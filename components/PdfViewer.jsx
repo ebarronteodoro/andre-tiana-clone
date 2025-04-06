@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import PdfPage from './PdfPage' // Ajusta la ruta según corresponda
+import PdfPage from './PdfPage'
 
 export default function PdfViewer () {
   const [pdf, setPdf] = useState(null)
@@ -8,11 +8,8 @@ export default function PdfViewer () {
 
   useEffect(() => {
     const loadPdf = async () => {
-      // Importa pdfjs-dist en modo legacy (para evitar errores de SSR)
       const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
-      // Configura el worker local (asegúrate de tener /pdf.worker.min.mjs en public)
       pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
-      // Carga el PDF (colocado en public/brochure)
       const loadingTask = pdfjsLib.getDocument(
         '/brochure/Andrea&Tiana-Brochure.pdf'
       )
