@@ -65,17 +65,17 @@ export default function HomeClient() {
           </span>
         </div>
 
-        <AnimateOnScroll
+        {/* <AnimateOnScroll
           animationClass='animate-fade-up'
           delayClass='animate-delay-1s'
         >
           <Link
             href='/work'
-            className='mx-auto text-center block w-fit bg-[#B3AE4C] text-[16px] mt-8 px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-[#292605] rounded-[35px] hover:bg-white transition all hover:text-[#1a47c4]'
+            className='mx-auto text-center block w-fit bg-[#B3AE4C] text-[16px] mt-8 px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-[#292605] rounded-[10px] hover:bg-white transition all hover:text-[#1a47c4]'
           >
             Ver Proyectos
           </Link>
-        </AnimateOnScroll>
+        </AnimateOnScroll> */}
       </section>
 
       {/* Resto de la página */}
@@ -114,7 +114,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -135,7 +135,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -156,7 +156,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -177,7 +177,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -198,7 +198,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -219,7 +219,7 @@ export default function HomeClient() {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-2xl'>
+              <span className='mt-4 block text-xl'>
                 Vita Atelier
               </span>
             </Link>
@@ -233,9 +233,9 @@ export default function HomeClient() {
           <div>
           <Link
             href='#'
-            className='mx-auto text-center  w-fit  text-xl mt-16 block hover:text-[#1a47c4] transition-all'
+            className='mx-auto my-8 text-center block w-fit bg-[#1a47c4] text-[16px] px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-white rounded-[10px] hover:bg-white transition all hover:text-[#1a47c4]'
           >
-            VIEW ALL PROJECTS
+            Ver más proyectos
           </Link>
           </div>
         </AnimateOnScroll>
@@ -252,7 +252,7 @@ export default function HomeClient() {
             </h3>
             <Link
               href='/dashboard'
-              className='mx-auto text-center block w-fit bg-[#B3AE4C] text-[16px] mt-4 px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-[#292605] md:m-0 rounded-[35px] hover:bg-white transition all hover:text-[#1a47c4]'
+              className='mx-auto text-center block w-fit bg-white text-[16px] mt-4 px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-[#292605] md:m-0 rounded-[10px] hover:bg-[#1a47c4] transition all hover:text-white'
             >
               Agenda Aquí
             </Link>

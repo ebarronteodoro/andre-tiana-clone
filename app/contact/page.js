@@ -10,7 +10,7 @@ export const metadata = {
 export default async function Home () {
   return (
     <main>
-      <section className='flex bg-[#B4AE36] px-20 2xl:px-64 py-10'>
+      <section className='flex bg-white px-20 2xl:px-64 py-10'>
         <div className='w-1/2 flex flex-col justify-center items-start gap-y-10'>
           <h1 className='sr-only'>Contact — Get in touch</h1>
           <AnimateOnScroll animationClass='animate-fade-up'>
@@ -26,7 +26,7 @@ export default async function Home () {
             animationClass='animate-fade-up'
             delayClass='animate-delay-400'
           >
-            <h2 className='text-[#796d2a] w-[24.5rem] text-4xl font-cardo'>
+            <h2 className=' w-[24.5rem] text-4xl font-cardo'>
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h2>
           </AnimateOnScroll>

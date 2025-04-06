@@ -30,7 +30,7 @@ export default function Footer() {
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/andreytiana.design/"
+                  href="https://www.instagram.com/andrea.loarte.s/"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
@@ -40,7 +40,7 @@ export default function Footer() {
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.tiktok.com/@andretiana.design"
+                  href="https://www.tiktok.com/@andrealoarte?_t=ZM-8vJZ7j61zba&_r=1"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
