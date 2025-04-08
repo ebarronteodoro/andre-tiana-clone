@@ -11,7 +11,7 @@ export default function PdfViewer () {
       const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
       pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
       const loadingTask = pdfjsLib.getDocument(
-        '/brochure/Andrea&Tiana-Brochure.pdf'
+        '/brochure/AndreaLoarte.Studio.pdf'
       )
       const loadedPdf = await loadingTask.promise
       setPdf(loadedPdf)
