@@ -26,7 +26,7 @@ export default function HomeClient() {
           delayClass='animate-delay-1s'
         >
           <h1 className='mx-auto text-4xl text-white text-center font-cardo'>
-            Welcome to our Gallery
+            Welcome to my Gallery
           </h1>
         </AnimateOnScroll>
 

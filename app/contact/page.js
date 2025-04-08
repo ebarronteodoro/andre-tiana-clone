@@ -10,7 +10,7 @@ export const metadata = {
 export default async function Home() {
   return (
     <main>
-      <section className='p-4 h-[200px] md:px-8'>
+      <section className='p-4 md:px-8'>
       <AnimateOnScroll
           animationClass='animate-fade-up'
           delayClass='animate-delay-1s'
@@ -43,7 +43,7 @@ export default async function Home() {
             <h1 className='absolute -translate-y-1/2 top-[50%] left-6 text-white font-cardo w-[200px] text-[80%] x5c:text-[1rem] x5c:w-[262px] sm:text-[1.5rem] md:left-10 lg:left-16'>
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h1>
-            <Link href='#' target='_blank' className='bg-[#1a47c4] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-6 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2'>
+            <Link href='#' target='_blank' className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-6 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2'>
               Agenda aquí
             </Link>
           
@@ -73,6 +73,151 @@ export default async function Home() {
             className='w-full h-auto object-contain'
           />
         </AnimateOnScroll> */}
+      </section>
+      <section className=''>
+        <div className='bg-[#3c251d] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#b89895] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>Branding</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/branding_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#b89895] w-[224px] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Tu marca merece una identidad visual que impacte.</p>
+          </div>
+        </div>
+        <div className='bg-[#b89895] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#3c251d] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>ReBranding</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/rebranding_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#3c251d] w-[15rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Transformemos tu historia para que impacte como nunca.</p>
+          </div>
+        </div>
+        <div className='bg-[#5a0f4a] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#f5a3e7] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold md:w-[10rem]'>Social Media</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/socialmedia_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#f5a3e7] w-[14rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Contenido visual alineado a tu marca</p>
+          </div>
+        </div>
+        <div className='bg-[#cae1de] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#718784] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>Web</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex-column items-center'>
+            <Image
+              src='/contacto/web_request_1.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+            <Image
+              src='/contacto/web_request_2.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#718784] w-[14rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Diseñamos landing y webs con venta en línea.</p>
+          </div>
+        </div>
+        <div className='bg-[#b3ad35] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#6c5c0d] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>Ilustración</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/ilustracion_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#6c5c0d] w-[12rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Gráficos personalizados que cuentan historias.</p>
+          </div>
+        </div>
+        <div className='bg-[#eeac6c] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#af683b] md:absolute md:right-0 md:top-[20%] md:text-3xl md:text-left md:w-[144px] font-bold'>Consultoría Creativa</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/consultoriacreativa_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#af683b] w-[14rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Te guiamos para potenciar tu imagen y comunicación.</p>
+          </div>
+        </div>
+        <div className='bg-[#f0e48e] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#c3ae3a] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>Fotografía</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/fotografia_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#c3ae3a] w-[14rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Imágenes que resaltan la esencia de tu marca.</p>
+          </div>
+        </div>
+        <div className='bg-[#d8c1de] px-4 py-6 md:flex md:h-[380px]'>
+          <div className='md:w-full relative'>
+            <h3 className='text-center font-cardo text-2xl text-[#1c1644] md:absolute md:right-0 md:top-[20%] md:text-3xl font-bold'>Packaging</h3>
+          </div>
+          <picture className='w-full max-w-[400px] mx-auto flex items-center'>
+            <Image
+              src='/contacto/packaging_request.png'
+              width={200}
+              height={100}
+              alt='Imagen de contacto'
+              className='w-full mx-auto max-w-[350px] h-auto my-4'
+            />
+          </picture>
+          <div className='md:w-full relative'>
+            <p className='text-center block mx-auto font-cardo text-xl text-[#1c1644] w-[12.5rem] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>Empaques que comunican valores y conectan con el cliente.</p>
+          </div>
+        </div>
       </section>
     </main>
   )

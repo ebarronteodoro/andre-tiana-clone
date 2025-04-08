@@ -90,9 +90,9 @@ export default function Header () {
       </>
     ) : (
       <>
-        <NavLink href='/work'>WORK</NavLink>
-        <NavLink href='/about'>ABOUT</NavLink>
-        <NavLink href='/contact'>CONTACT</NavLink>
+        <NavLink href='/work'>PROYECTOS</NavLink>
+        <NavLink href='/about'>CONOCER</NavLink>
+        <NavLink href='/contact'>CONTACTO</NavLink>
       </>
     )
 

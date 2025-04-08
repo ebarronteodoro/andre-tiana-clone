@@ -21,7 +21,7 @@ export default function Footer() {
               height={100}
             />
             <p className="text-[#1a47c4] text-base text-left font-cardo">
-              Design and Consulting
+              Design Studio
             </p>
           </div>
 

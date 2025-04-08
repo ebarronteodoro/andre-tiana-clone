@@ -10,7 +10,10 @@ export const metadata = {
 export default async function Home() {
   return (
     <main>
-     
+      <section className='p-4 h-[200px] md:px-8'>
+        
+        </section>
+
     </main>
   )
 }
