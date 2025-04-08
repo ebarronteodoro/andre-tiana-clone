@@ -103,7 +103,7 @@ export default function Header () {
           href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
           target={pathname === '/brochure' ? '_blank' : undefined}
           rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
-          className='relative z-50'
+          className='relative z-50 flex flex-col items-center'
         >
           <Image
             className='h-auto object-contain w-44 md:w-56'
@@ -112,6 +112,9 @@ export default function Header () {
             width={500}
             height={100}
           />
+          <p className={`text-base font-cardo ${pathname === '/' || pathname === '/brochure' ? 'text-white' : 'text-[#1a47c4]'}`}>
+            Design Studio
+          </p>
         </Link>
         <nav className='hidden md:flex items-center space-x-8'>
           {navigationLinks}
@@ -149,7 +152,7 @@ export default function Header () {
               href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
               target={pathname === '/brochure' ? '_blank' : undefined}
               rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
-              className='relative z-50'
+              className='relative z-50 flex flex-col items-center'
             >
               <Image
                 className='h-auto object-contain w-44 md:w-56'
@@ -158,6 +161,9 @@ export default function Header () {
                 width={500}
                 height={100}
               />
+              <p className={`text-base font-cardo ${pathname === '/' || pathname === '/brochure' ? 'text-white' : 'text-[#1a47c4]'}`}>
+                Design Studio
+              </p>
             </Link>
             <button
               onClick={() => setMobileMenuOpen(false)}

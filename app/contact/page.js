@@ -38,12 +38,12 @@ export default async function Home() {
               width={24}
               height={200}
               alt='Imagen de contacto'
-              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-6 x5c:w-[32px] md:left-10 lg:left-16 lg:w-[48px] '
+              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-7 x5c:w-[32px] md:left-10 lg:left-16 lg:w-[48px] '
             />
-            <h1 className='absolute -translate-y-1/2 top-[50%] left-6 text-white font-cardo w-[200px] text-[80%] x5c:text-[1rem] x5c:w-[262px] sm:text-[1.5rem] md:left-10 lg:left-16'>
+            <h1 className='absolute -translate-y-1/2 top-[50%] left-7 text-white font-cardo w-[200px] text-[80%] x5c:text-[1rem] x5c:w-[262px] sm:text-[1.5rem] md:left-10 lg:left-16'>
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h1>
-            <Link href='#' target='_blank' className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-6 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2'>
+            <Link href='#' target='_blank' className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-7 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2 lg:bottom-[10%] xl:bottom-[15%]'>
               Agenda aquí
             </Link>
           
