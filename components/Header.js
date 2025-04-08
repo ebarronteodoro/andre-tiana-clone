@@ -16,23 +16,17 @@ export default function Header () {
     headerBg:
       pathname === '/' || pathname === '/brochure'
         ? 'bg-[#1a47c4]'
-        : pathname === '/contact'
-        ? 'bg-[#B4AE36]'
         : 'bg-white',
     navActive:
       pathname === '/' || pathname === '/brochure'
-        ? 'md:text-white'
-        : pathname === '/contact'
         ? 'md:text-white'
         : 'md:text-[#1a1a1a]',
     navInactive:
       pathname === '/' || pathname === '/brochure'
         ? 'md:text-white'
-        : pathname === '/contact'
-        ? 'md:text-white md:hover:text-white'
         : 'md:text-[#999] md:hover:text-[#1a1a1a]',
     logoSrc:
-      pathname === '/' || pathname === '/contact' || pathname === '/brochure'
+      pathname === '/' || pathname === '/brochure'
         ? '/logo/logo-blanco.png'
         : '/logo/logo.png',
     mobileBar: pathname === '/' ? 'bg-white' : 'bg-black'

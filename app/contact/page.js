@@ -1,66 +1,59 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import AnimateOnScroll from './AnimateOnScroll'
+import AnimateOnScroll from '../../components/AnimateOnScroll'
 
 export const metadata = {
   title: 'Contact — Get in touch',
   description: 'Contact page of Andre & Tania design studio'
 }
 
-export default async function Home () {
+export default async function Home() {
   return (
     <main>
-      <section className='flex bg-white px-20 2xl:px-64 py-10'>
-        <div className='w-1/2 flex flex-col justify-center items-start gap-y-10'>
-          <h1 className='sr-only'>Contact — Get in touch</h1>
-          <AnimateOnScroll animationClass='animate-fade-up'>
+      <section className='p-4 h-[200px] md:px-8'>
+      <AnimateOnScroll
+          animationClass='animate-fade-up'
+          delayClass='animate-delay-1s'
+        >
+          <div className='relative top-10 max-w-[1200px] md:w-[80%] md:mx-auto '>
+          <picture>
             <Image
-              src='/camara-de-video.png'
-              width={100}
-              height={50}
-              alt='Icono camara video'
-              className='w-16 h-auto object-contain'
+              src='/contacto/ticket.png'
+              width={1500}
+              height={800}
+              alt='Imagen de contacto'
+              className='hidden md:block w-full h-auto object-contain'
             />
-          </AnimateOnScroll>
-          <AnimateOnScroll
-            animationClass='animate-fade-up'
-            delayClass='animate-delay-400'
-          >
-            <h2 className=' w-[24.5rem] text-4xl font-cardo'>
+            <Image
+              src='/contacto/ticket_movil.png'
+              width={1500}
+              height={800}
+              alt='Imagen de contacto'
+              className='md:hidden w-full h-auto object-contain'
+            />
+          </picture>
+          
+            <Image
+              src='/contacto/camara.png'
+              width={24}
+              height={200}
+              alt='Imagen de contacto'
+              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-6 x5c:w-[32px] md:left-10 lg:left-16 lg:w-[48px] '
+            />
+            <h1 className='absolute -translate-y-1/2 top-[50%] left-6 text-white font-cardo w-[200px] text-[80%] x5c:text-[1rem] x5c:w-[300px] sm:w-[350px] sm:text-[1.5rem] md:left-10 lg:left-16'>
               Agenda una videollamada gratuita para platicar de tu proyecto
-            </h2>
-          </AnimateOnScroll>
-          <AnimateOnScroll
-            animationClass='animate-fade-up'
-            delayClass='animate-delay-500'
-          >
-            <Link
-              className='text-white bg-[#1a47c4] px-6 text-xs xl:text-base py-2 rounded-xl font-helvetica'
-              href='https://calendly.com/monpalette/reunion?month=2025-04'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
+            </h1>
+            <Link href='#' target='_blank' className='bg-[#1a47c4] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-6 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2'>
               Agenda aquí
             </Link>
-          </AnimateOnScroll>
+          
         </div>
-        <div className='w-1/2 flex justify-center items-center'>
-          <AnimateOnScroll
-            animationClass='animate-fade-up'
-            delayClass='animate-delay-200'
-          >
-            <Image
-              src='/laptop.png'
-              width={1000}
-              height={500}
-              alt='Icono laptop'
-              className='w-2/3 h-auto object-contain'
-            />
-          </AnimateOnScroll>
-        </div>
+        </AnimateOnScroll>
+
+        
       </section>
       <section className='bg-[#1a47c4] px-20 2xl:px-64 pt-10'>
-        <AnimateOnScroll
+        {/* <AnimateOnScroll
           animationClass='animate-fade-up'
           delayClass='animate-delay-200'
         >
@@ -79,7 +72,7 @@ export default async function Home () {
             alt='Imagen referencial proyectos'
             className='w-full h-auto object-contain'
           />
-        </AnimateOnScroll>
+        </AnimateOnScroll> */}
       </section>
     </main>
   )

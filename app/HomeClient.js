@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import TypewriterHeader from './functions/TypewriterHeader.js'
 import { useState, useEffect } from 'react'
-import AnimateOnScroll from './contact/AnimateOnScroll' // Ajusta la ruta según corresponda
+import AnimateOnScroll from '../components/AnimateOnScroll.jsx' // Ajusta la ruta según corresponda
 import '../styles/index.css'
 
 export default function HomeClient() {

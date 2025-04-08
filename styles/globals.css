@@ -36,6 +36,8 @@ body {
   --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
   --font-times-new-roman: var(--times-new-roman-font), sans-serif;
   --font-cardo: var(--cardo-font), sans-serif;
+  --breakpoint-x4c: 400px;
+  --breakpoint-x5c: 500px;
 }
 
 [data-animate] {
