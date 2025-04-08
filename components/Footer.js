@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="max-w-8xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
           {/* Columna 1 */}
-          <div className="w-full flex flex-col items-center justify-center gap-2">
+          <Link href="#" className="w-full flex flex-col items-center justify-center ">
             <Image
               className="h-auto object-contain w-48 mx-auto"
               src="/logo/logo.png"
@@ -23,14 +23,14 @@ export default function Footer() {
             <p className="text-[#1a47c4] text-base text-left font-cardo">
               Design Studio
             </p>
-          </div>
+          </Link>
 
           <div className="w-full">
             <ul className="text-gray-400 text-sm space-y-2">
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/andrea.loarte.s/"
+                  href="#"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
@@ -40,7 +40,7 @@ export default function Footer() {
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.tiktok.com/@andrealoarte?_t=ZM-8vJZ7j61zba&_r=1"
+                  href="#"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
@@ -55,7 +55,7 @@ export default function Footer() {
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.instagram.com/andreytiana.design/"
+                  href="https://www.instagram.com/andrea.loarte.s/"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
@@ -65,7 +65,7 @@ export default function Footer() {
               <li className="text-left">
                 <Link
                   target="_blank"
-                  href="https://www.tiktok.com/@andretiana.design"
+                  href="https://www.tiktok.com/@andrealoarte?_t=ZM-8vJZ7j61zba&_r=1"
                   className="hover:text-[#1a47c4] text-base
 "
                 >
