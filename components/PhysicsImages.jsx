@@ -2,7 +2,15 @@
 import { useEffect, useRef } from 'react'
 import Matter from 'matter-js'
 
-export default function PhysicsImages () {
+export default function PhysicsImages ({
+  images = [
+    '/animated_bubble/bubble_branding.png',
+    '/animated_bubble/bubble_consultoria.png',
+    '/animated_bubble/bubble_ilustracion.png',
+    '/animated_bubble/bubble_packaging.png'
+  ],
+  className = '' // permite pasar clases de Tailwind
+}) {
   const sceneRef = useRef(null)
   const timeouts = useRef([])
 
@@ -15,86 +23,112 @@ export default function PhysicsImages () {
     // Crear engine y mundo
     const engine = Matter.Engine.create()
     const world = engine.world
-    // Aumentar la gravedad para que caigan más rápido
-    engine.world.gravity.y = 0.5
+    engine.world.gravity.y = 1
 
-    // Crear renderizador sin wireframes para ver las texturas
+    // Crear renderizador sin wireframes y fondo transparente
     const render = Matter.Render.create({
       element: sceneRef.current,
       engine: engine,
       options: {
         width,
         height,
-        background: '#ffffff',
+        background: 'transparent',
         wireframes: false
       }
     })
+
+    // Agregar las clases de Tailwind al canvas generado
+    if (className) {
+      render.canvas.className = className
+    }
 
     // Crear runner y ejecutar el motor
     const runner = Matter.Runner.create()
     Matter.Runner.run(runner, engine)
     Matter.Render.run(render)
 
-    // Agregar un suelo estático para detener los cuerpos
-    const ground = Matter.Bodies.rectangle(width / 2, height - 25, width, 50, {
-      isStatic: true
+    // Crear control de mouse con menor stiffness para suavizar el arrastre
+    const mouse = Matter.Mouse.create(render.canvas)
+    const mouseConstraint = Matter.MouseConstraint.create(engine, {
+      mouse: mouse,
+      constraint: {
+        stiffness: 0.05,
+        render: { visible: false }
+      }
     })
+    Matter.World.add(world, mouseConstraint)
+    render.mouse = mouse
+
+    // Definir margen para la caja (todos los cuerpos caerán entre margin y width - margin)
+    const margin = width * 0.2
+
+    // Agregar suelo y paredes laterales (todos invisibles)
+    const ground = Matter.Bodies.rectangle(
+      width / 2,
+      height - 25,
+      width - 2 * margin,
+      50,
+      { isStatic: true, render: { visible: false } }
+    )
     Matter.World.add(world, ground)
 
-    // Rutas de las imágenes a usar
-    const imagePaths = ['/burbuja-1.png', '/burbuja-2.png', '/burbuja-3.png']
-    // Factor de escala para hacer las imágenes más pequeñas
-    const scaleFactor = 0.3
-    // Número de lados para aproximar un óvalo
-    const numSides = 12
+    const leftWall = Matter.Bodies.rectangle(margin, height / 2, 2, height, {
+      isStatic: true,
+      render: { visible: false }
+    })
+    const rightWall = Matter.Bodies.rectangle(
+      width - margin,
+      height / 2,
+      2,
+      height,
+      { isStatic: true, render: { visible: false } }
+    )
+    Matter.World.add(world, [leftWall, rightWall])
 
-    imagePaths.forEach((path, i) => {
-      // Se agrega cada imagen con 500ms de diferencia
-      const delay = i * 500
+    // Configurar y agregar las imágenes
+    const imagePaths = images
+    const scaleFactor = 0.6
+    const numSides = 12
+    const totalImages = imagePaths.length
+
+    for (let i = 0; i < totalImages; i++) {
+      const delay = i * 200
       const timeout = setTimeout(() => {
         const img = new Image()
-        img.src = path
+        const texture = imagePaths[i % imagePaths.length]
+        img.src = texture
         img.onload = () => {
           const originalWidth = img.naturalWidth
           const originalHeight = img.naturalHeight
-          // Dimensiones deseadas en pantalla
           const desiredWidth = originalWidth * scaleFactor
           const desiredHeight = originalHeight * scaleFactor
 
-          // Aproximación de un óvalo: semi-ejes
+          const safeX =
+            margin +
+            desiredWidth / 2 +
+            Math.random() * (width - 2 * margin - desiredWidth)
+          const x = safeX
+          const y = -50 - i * 30
+
           const a = desiredWidth / 2
           const b = desiredHeight / 2
-          // Generar vértices para el óvalo con 'numSides' lados
           const vertices = []
           for (let j = 0; j < numSides; j++) {
             const theta = (2 * Math.PI * j) / numSides
             vertices.push({ x: a * Math.cos(theta), y: b * Math.sin(theta) })
           }
 
-          // Posición horizontal centrada y ajustada
-          let x
-          if (i === 0) {
-            x = width / 2 - 120
-          } else if (i === 1) {
-            x = width / 2
-          } else {
-            x = width / 2 + 120
-          }
-
-          // Menor separación vertical: empezar en -50 y aumentar 30 por imagen
-          const y = -50 - i * 30
-
-          // Crear el cuerpo a partir de los vértices
           const body = Matter.Bodies.fromVertices(
             x,
             y,
             [vertices],
             {
-              restitution: 0.7,
-              friction: 0.1,
+              restitution: 0.4,
+              friction: 0.9,
+              frictionAir: 0.05,
               render: {
                 sprite: {
-                  texture: path,
+                  texture: texture,
                   xScale: scaleFactor,
                   yScale: scaleFactor
                 }
@@ -102,14 +136,29 @@ export default function PhysicsImages () {
             },
             true
           )
-
+          // Etiquetar el cuerpo para identificarlo como imagen
+          body.label = 'imageBody'
           Matter.World.add(world, body)
         }
       }, delay)
       timeouts.current.push(timeout)
+    }
+
+    // Cambiar cursor a pointer al pasar el mouse sobre cuerpos con label 'imageBody'
+    Matter.Events.on(mouseConstraint, 'mousemove', event => {
+      const mousePosition = event.mouse.position
+      const hoveredBodies = Matter.Query.point(
+        world.bodies,
+        mousePosition
+      ).filter(body => body.label === 'imageBody')
+      if (hoveredBodies.length > 0) {
+        render.canvas.style.cursor = 'pointer'
+      } else {
+        render.canvas.style.cursor = 'default'
+      }
     })
 
-    // Cleanup: limpiar los timeouts y detener Matter.js
+    // Cleanup
     return () => {
       timeouts.current.forEach(clearTimeout)
       Matter.Render.stop(render)
@@ -120,15 +169,5 @@ export default function PhysicsImages () {
     }
   }, [])
 
-  return (
-    <div
-      ref={sceneRef}
-      style={{
-        width: '100vw',
-        height: '100vh',
-        overflow: 'hidden',
-        border: '1px solid black'
-      }}
-    />
-  )
+  return <div ref={sceneRef} />
 }
