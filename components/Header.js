@@ -60,6 +60,7 @@ export default function Header () {
         className={`
           ${isActive ? styleConfig.navActive : styleConfig.navInactive}
           md:text-[17px] md:tracking-[1px] md:font-helvetica-neue
+          md:mobile-menu:text-white // El menú móvil siempre tendrá texto blanco
         `}
         {...props}
       >
@@ -90,9 +91,9 @@ export default function Header () {
       </>
     ) : (
       <>
-        <NavLink href='/work'>PROYECTOS</NavLink>
-        <NavLink href='/about'>CONOCER</NavLink>
-        <NavLink href='/contact'>CONTACTO</NavLink>
+        <NavLink href='/work' >PROYECTOS</NavLink>
+        <NavLink href='/about' >CONOCER</NavLink>
+        <NavLink href='/contact' >CONTACTO</NavLink>
       </>
     )
 
@@ -166,15 +167,7 @@ export default function Header () {
                 width={500}
                 height={100}
               />
-              <p
-                className={`text-base font-cardo ${
-                  pathname === '/' || pathname === '/brochure'
-                    ? 'text-white'
-                    : 'text-[#1a47c4]'
-                }`}
-              >
-                Design Studio
-              </p>
+              
             </Link>
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -197,25 +190,8 @@ export default function Header () {
               </svg>
             </button>
           </div>
-          <nav className='flex flex-col ml-4 space-y-3 text-xl mt-16'>
+          <nav className='flex flex-col ml-4 space-y-3 text-xl mt-16 text-white'>
             {navigationLinks}
-            <button aria-label='Search'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='20'
-                height='20'
-                viewBox='0 0 24 24'
-                fill='none'
-                stroke='currentColor'
-                strokeWidth='2'
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                className='text-gray-500'
-              >
-                <circle cx='11' cy='11' r='8'></circle>
-                <path d='m21 21-4.3-4.3'></path>
-              </svg>
-            </button>
           </nav>
         </div>
       )}

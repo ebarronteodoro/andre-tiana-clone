@@ -34,7 +34,7 @@ export default function HomeClient () {
           animationClass='animate-fade-up'
           delayClass='animate-delay-2s'
         >
-          <span className='block text-white mt-[16px] text-center font-cardo'>
+          <span className='block text-white mt-[8px] mb-[8px] text-center font-cardo'>
             <TypewriterHeader text='Where Design Meets Art' />
           </span>
         </AnimateOnScroll>
@@ -102,9 +102,10 @@ export default function HomeClient () {
           delayClass='animate-delay-1s'
         >
           <div>
-            <h2 className='text-center text-4xl  text-[#48535d] mt-8'>
-              Cada proyecto es una obra única
+            <h2 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
+              Cada Proyecto Es Una Obra Única
             </h2>
+            <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>Obras Recientes En Exposición</span>
           </div>
         </AnimateOnScroll>
 
@@ -113,7 +114,10 @@ export default function HomeClient () {
           delayClass='animate-delay-1s'
         >
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto mt-8'>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Revalorizando la cultura shipibo desde el empaque.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'ASHETI'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -124,15 +128,18 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/asheti/asheti_portada.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>ASHETI</span>
             </Link>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Dark kitchen peruana que ofrece una propuesta de pizza artesanal'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Materia Secreta'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -143,15 +150,18 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/materia_secreta/materia_secreta_portada.png'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>Materia Secreta</span>
             </Link>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Rebranding verde que no pasa desapercibido.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Verdânt Inmobiliaria'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -162,15 +172,18 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/verdant/verdant_portada.png'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>Verdânt Inmobiliaria</span>
             </Link>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Una identidad con propósito social.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Asociación Peruana de Bomberos'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -181,15 +194,18 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>Asociación Peruana de Bomberos</span>
             </Link>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Geometría, precisión y herencia familiar.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'NDK Arquitectos'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -200,15 +216,18 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/ndk_arquitectos/portada.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>NDK Arquitectos</span>
             </Link>
-            <Link href='' className='block mt-6 max-w-[500px] mx-auto'>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Solidez y diferenciación para un grupo empresarial.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Haz Group'}>
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -219,13 +238,13 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/bolsa-atelier.jpg'
+                  src='/projects/hazgroup/hazgroup_portada.png'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl'>Vita Atelier</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>Haz Group</span>
             </Link>
           </div>
         </AnimateOnScroll>
