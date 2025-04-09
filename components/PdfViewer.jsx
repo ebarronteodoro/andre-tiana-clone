@@ -9,7 +9,7 @@ export default function PdfViewer () {
   useEffect(() => {
     const loadPdf = async () => {
       const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
-      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs'
+      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js'
       const loadingTask = pdfjsLib.getDocument(
         '/brochure/AndreaLoarte.Studio.pdf'
       )
@@ -21,7 +21,7 @@ export default function PdfViewer () {
   }, [])
 
   return (
-    <div className='w-full max-w-6xl mx-auto py-8 animate-fade-up shadow-2xl'>
+    <div className='w-full max-w-6xl mx-auto animate-fade-up shadow-2xl'>
       {pdf &&
         Array.from({ length: numPages }).map((_, index) => (
           <PdfPage key={index} pdf={pdf} pageNumber={index + 1} />

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Home () {
   return (
-    <main className='bg-[#1a47c4] px-20'>
+    <main className='bg-[#1a47c4] px-20 py-8'>
       <PdfViewer />
     </main>
   )
