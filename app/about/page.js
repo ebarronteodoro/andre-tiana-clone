@@ -10,22 +10,103 @@ export const metadata = {
 export default async function Home() {
   return (
     <main>
-      <section className='p-4 md:px-8 bg-[#1a47c4]'>
-        <div></div>
-        <div>
-          <div></div>
-          <div>
-            <div></div>
-            <div></div>
+
+
+      <AnimateOnScroll
+        animationClass='animate-fade-up'
+        delayClass='animate-delay-1s'
+      >
+        <section className='p-8 md:px-8 bg-[#1a47c4]  '>
+          <div className='mx-auto md:flex max-w-[1440px]'>
+            <div className='md:w-full'>
+              <picture className='hidden relative w-full mx-auto max-w-[300px] md:block '>
+                <Image
+                  src='/foto-andrea.png'
+                  alt='Andrea Loarte'
+                  width={500}
+                  height={500}
+                  className='rounded-full w-full h-auto mx-auto mb-8'
+                />
+                <span
+                  className='text-center w-x-auto text-white absolute bottom-[2rem] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo
+          '
+                >
+                  Designer & Creative Director
+                </span>
+              </picture>
+            </div>
+            <div className='md:w-full'>
+              <div>
+                <h1 className='text-white font-cardo text-3xl mb-8 md:text-5xl'>Hola,<br />soy Andrea Loarte</h1>
+              </div>
+              <div className='md:hidden'>
+                <p className='text-white mb-8'>Fundé este estudio de diseño porque considero que las
+                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales.
+                </p>
+
+                <picture className='relative w-full mx-auto max-w-[300px] md:hidden'>
+                  <Image
+                    src='/foto-andrea.png'
+                    alt='Andrea Loarte'
+                    width={500}
+                    height={500}
+                    className='rounded-full w-full h-auto mx-auto mb-8 max-w-[300px]'
+                  />
+                  <span
+                    className='text-center w-x-auto text-white absolute bottom-[4rem] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo
+          '
+                  >
+                    Designer<br />& Creative Director
+                  </span>
+                </picture>
+                <p className='text-white mb-8'>Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca.
+                  Andrea Loarte Studio es un espacio de creación visual donde el diseño no es solo forma, es pensamiento, es postura, es narrativa. Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse. Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
+                </p>
+
+              </div>
+              <div className='hidden md:flex gap-16'>
+                <p className='text-white mb-8 w-full'>Fundé este estudio de diseño porque considero que las
+                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales. Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca. Andrea Loarte Studio es un espacio de creación visual donde el diseño no es solo forma, es pensamiento, es postura, es narrativa.
+                </p>
+
+                <p className='text-white mb-8 w-full'>
+                  Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse. Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
+                </p>
+
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
-      <section>
-      <div></div>  
-      <div></div>  
-      <div></div>  
-        
-      </section>
+        </section>
+      </AnimateOnScroll>
+      <AnimateOnScroll
+        animationClass='animate-fade-up'
+        delayClass='animate-delay-1s'
+      >
+        <section className='p-8 md:px-8 bg-[#1a47c4]'>
+          <div className='md:flex w-full max-w-[1440px] mx-auto'>
+            <div className='md:w-full'><h2 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Sé que el diseño no es arte pero en mi estudio cada proyecto es una obra única.
+            </h2></div>
+            <div className='md:w-full md:flex'>
+              <div className='md:w-full flex justify-center items-center mb-8'>
+                <picture className='w-full mx-auto'>
+                  <Image
+                    src='/about/little_andre.png'
+                    alt='Andrea Loarte'
+                    width={500}
+                    height={500}
+                    className='w-full mx-auto md:m-0 h-auto  max-w-[300px]'
+                  />
+
+                </picture></div>
+              <div className='md:w-full md:flex md:items-center'>
+                <p className='text-white mb-8 w-full md:max-w-[300px]'>Desde pequeña el arte ha sido parte de mi forma de ver el mundo: la pintura, la cerámica, y la creación siempre han sido mi manera de expresarme.<br /><br /> Hoy, ese mismo espíritu guía mi trabajo como diseñadora y directora de arte.</p></div>
+            </div>
+
+          </div>
+
+
+        </section>
+      </AnimateOnScroll>
       <AnimateOnScroll
         animationClass='animate-fade-up'
         delayClass='animate-delay-1s'
@@ -44,14 +125,62 @@ export default async function Home() {
           </div>
         </section>
       </AnimateOnScroll>
-      <section>
-        <div>
-          <h4></h4>
-          <div></div>
-        </div>
-        <div></div>
-        
-      </section>
+      <AnimateOnScroll
+        animationClass='animate-fade-up'
+        delayClass='animate-delay-1s'
+      >
+        <section className='p-8 md:px-8 bg-[#1a47c4]'>
+          <div className='md:flex w-full max-w-[1440px] mx-auto'>
+          <div className='md:w-[50%]'>
+            <h4 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Diseños Por<br/>El Mundo</h4>
+            <p className='text-white mb-8 w-full md:m-0 md:max-w-[350px] md:mx-auto'>Cada proyecto es una chispa  de autoexpresión, una  oportunidad para darle fuerza y forma a la voz de quienes sueñan con crear. Aquí, el diseño y la estrategia se entrelazan para construir historias con propósito, transformando ideas en realidades que inspiran y dejan huella.</p>
+          </div>
+          <div className='md:w-[50%] md:flex md:justify-center md:items-center'>
+            <picture className='w-full max-w-[500px] mx-auto relative'>
+              <Image
+                src='/about/world_map.png'
+                alt='Mapa del mundo'
+                width={500}
+                height={500}
+                className='w-full mx-auto md:m-0 h-auto  max-w-[500px] md:max-w-[700px]'
+              />
+              <Image
+                src='/about/flag_usa.png'
+                alt='Mapa del mundo'
+                width={500}
+                height={500}
+                className='w-[24px] top-[25%] left-[5%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[0%] md:top-[28%]'
+              />
+              <Image
+                src='/about/flag_peru.png'
+                alt='Mapa del mundo'
+                width={500}
+                height={500}
+                className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%]'
+              />
+              <Image
+                src='/about/flag_argentina.png'
+                alt='Mapa del mundo'
+                width={500}
+                height={500}
+                className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px]'
+              />
+              <Image
+                src='/about/flag_suiza.png'
+                alt='Mapa del mundo'
+                width={500}
+                height={500}
+                className='w-[24px] top-[25%] left-[50%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px]'
+              />
+
+            </picture>
+          </div>
+          </div>
+          
+
+        </section>
+      </AnimateOnScroll>
+
 
     </main>
   )

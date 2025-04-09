@@ -14,22 +14,22 @@ export default function Header () {
   // Configuración dinámica según la ruta
   const styleConfig = {
     headerBg:
-      pathname === '/' || pathname === '/brochure'
+      pathname === '/' || pathname === '/brochure' || pathname === '/about'
         ? 'bg-[#1a47c4]'
         : 'bg-white',
     navActive:
-      pathname === '/' || pathname === '/brochure'
+      pathname === '/' || pathname === '/brochure' || pathname === '/about'
         ? 'md:text-white'
         : 'md:text-[#1a1a1a]',
     navInactive:
-      pathname === '/' || pathname === '/brochure'
+      pathname === '/' || pathname === '/brochure' || pathname === '/about'
         ? 'md:text-white'
         : 'md:text-[#999] md:hover:text-[#1a1a1a]',
     logoSrc:
-      pathname === '/' || pathname === '/brochure'
+      pathname === '/' || pathname === '/brochure' || pathname === '/about'
         ? '/logo/logo-blanco.png'
         : '/logo/logo.png',
-    mobileBar: pathname === '/' ? 'bg-white' : 'bg-black'
+    mobileBar: pathname === '/' || pathname === '/about' ? 'bg-white' : 'bg-black'
   }
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -107,7 +107,7 @@ export default function Header () {
           }
           target={pathname === '/brochure' ? '_blank' : undefined}
           rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
-          className='relative z-50 flex flex-col items-center'
+          className='relative z-50'
         >
           <Image
             className='h-auto object-contain w-44 md:w-56'
@@ -116,15 +116,6 @@ export default function Header () {
             width={500}
             height={100}
           />
-          <p
-            className={`text-base font-cardo ${
-              pathname === '/' || pathname === '/brochure'
-                ? 'text-white'
-                : 'text-[#1a47c4]'
-            }`}
-          >
-            Design Studio
-          </p>
         </Link>
         <nav className='hidden md:flex items-center space-x-8'>
           {navigationLinks}
