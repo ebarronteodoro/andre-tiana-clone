@@ -1,41 +1,46 @@
 'use client'
 // Polyfills para compatibilidad con Safari
 
-// Polyfill para globalThis en navegadores que no lo soporten.
-if (typeof globalThis === 'undefined') {
-  var globalThis = window
-}
-
-// Polyfill para Array.from, en caso de que no esté soportado.
-if (!Array.from) {
-  Array.from = function (iterable) {
-    return [].slice.call(iterable)
+if (typeof window !== 'undefined') {
+  // Polyfill para globalThis (ya existe en window)
+  if (typeof globalThis === 'undefined') {
+    var globalThis = window
   }
-}
 
-// Actualización del polyfill de Promise.withResolvers para establecerlo en globalThis
-if (!globalThis.Promise.withResolvers) {
-  globalThis.Promise.withResolvers = function () {
-    let resolve, reject
-    const promise = new Promise((res, rej) => {
-      resolve = res
-      reject = rej
-    })
-    return { promise, resolve, reject }
+  // Polyfill para Array.from, en caso de que no esté soportado.
+  if (!window.Array.from) {
+    window.Array.from = function (iterable) {
+      return [].slice.call(iterable)
+    }
   }
-}
 
-// Polyfill para Promise.prototype.finally
-if (!Promise.prototype.finally) {
-  Promise.prototype.finally = function (callback) {
-    const P = this.constructor
-    return this.then(
-      value => P.resolve(callback()).then(() => value),
-      reason =>
-        P.resolve(callback()).then(() => {
-          throw reason
+  // Aplicar polyfills para Promise solo si window.Promise existe.
+  if (window.Promise) {
+    // Polyfill para Promise.withResolvers en window.Promise.
+    if (!window.Promise.withResolvers) {
+      window.Promise.withResolvers = function () {
+        let resolve, reject
+        const promise = new window.Promise((res, rej) => {
+          resolve = res
+          reject = rej
         })
-    )
+        return { promise, resolve, reject }
+      }
+    }
+
+    // Polyfill para Promise.prototype.finally.
+    if (!window.Promise.prototype.finally) {
+      window.Promise.prototype.finally = function (callback) {
+        const P = this.constructor
+        return this.then(
+          value => P.resolve(callback()).then(() => value),
+          reason =>
+            P.resolve(callback()).then(() => {
+              throw reason
+            })
+        )
+      }
+    }
   }
 }
 
