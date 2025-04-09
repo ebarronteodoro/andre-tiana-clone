@@ -1,4 +1,39 @@
 'use client'
+// Polyfills para compatibilidad con Safari
+
+// Polyfill para Array.from, en caso de que no esté soportado.
+if (!Array.from) {
+  Array.from = function (iterable) {
+    return [].slice.call(iterable)
+  }
+}
+
+// Polyfill para Promise.withResolvers
+if (!Promise.withResolvers) {
+  Promise.withResolvers = function () {
+    let resolve, reject
+    const promise = new Promise((res, rej) => {
+      resolve = res
+      reject = rej
+    })
+    return { promise, resolve, reject }
+  }
+}
+
+// Polyfill para Promise.prototype.finally
+if (!Promise.prototype.finally) {
+  Promise.prototype.finally = function (callback) {
+    const P = this.constructor
+    return this.then(
+      value => P.resolve(callback()).then(() => value),
+      reason =>
+        P.resolve(callback()).then(() => {
+          throw reason
+        })
+    )
+  }
+}
+
 import React, { useEffect, useState } from 'react'
 import PdfPage from './PdfPage'
 
