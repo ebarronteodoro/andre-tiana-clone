@@ -2,7 +2,7 @@ import PdfViewer from '@/components/PdfViewer'
 
 export const metadata = {
   title: 'Brochure',
-  description: 'Brochure page of Andre & Tania design studio'
+  description: 'Brochure of Andrea Loarte Studio',
 }
 
 export default function Home () {

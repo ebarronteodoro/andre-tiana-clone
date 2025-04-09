@@ -74,17 +74,17 @@ export default function Header () {
       <>
         <NavLink
           target='_blank'
-          href='https://www.instagram.com/andreytiana.design/'
+          href='https://www.instagram.com/andrea.loarte.s/'
         >
           <InstagramIcon className='text-white size-7 transition duration-300 hover:scale-105' />
         </NavLink>
         <NavLink
           target='_blank'
-          href='https://www.tiktok.com/@andretiana.design'
+          href='https://www.tiktok.com/@andrealoarte?_t=ZM-8vJZ7j61zba&_r=1'
         >
           <TikTokIcon className='text-white size-7 transition duration-300 hover:scale-105' />
         </NavLink>
-        <NavLink target='_blank' href='mailto:andrea.tiana.design@gmail.com'>
+        <NavLink target='_blank' href='mailto:adrealoarte.studio@gmail.com'>
           <MailIcon className='text-white size-7 transition duration-300 hover:scale-105' />
         </NavLink>
       </>
@@ -100,7 +100,11 @@ export default function Header () {
     <header className={styleConfig.headerBg}>
       <div className='container mx-auto px-4 py-6 flex justify-between items-center relative z-10'>
         <Link
-          href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
+          href={
+            pathname === '/brochure'
+              ? 'https://www.instagram.com/andrea.loarte.s/'
+              : '/'
+          }
           target={pathname === '/brochure' ? '_blank' : undefined}
           rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
           className='relative z-50 flex flex-col items-center'
@@ -112,7 +116,13 @@ export default function Header () {
             width={500}
             height={100}
           />
-          <p className={`text-base font-cardo ${pathname === '/' || pathname === '/brochure' ? 'text-white' : 'text-[#1a47c4]'}`}>
+          <p
+            className={`text-base font-cardo ${
+              pathname === '/' || pathname === '/brochure'
+                ? 'text-white'
+                : 'text-[#1a47c4]'
+            }`}
+          >
             Design Studio
           </p>
         </Link>
@@ -149,7 +159,11 @@ export default function Header () {
         >
           <div className='container px-4 mx-auto py-6 flex justify-between items-center'>
             <Link
-              href={pathname === '/brochure' ? 'https://www.instagram.com/andreytiana.design/' : '/'}
+              href={
+                pathname === '/brochure'
+                  ? 'https://www.instagram.com/andreytiana.design/'
+                  : '/'
+              }
               target={pathname === '/brochure' ? '_blank' : undefined}
               rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
               className='relative z-50 flex flex-col items-center'
@@ -161,7 +175,13 @@ export default function Header () {
                 width={500}
                 height={100}
               />
-              <p className={`text-base font-cardo ${pathname === '/' || pathname === '/brochure' ? 'text-white' : 'text-[#1a47c4]'}`}>
+              <p
+                className={`text-base font-cardo ${
+                  pathname === '/' || pathname === '/brochure'
+                    ? 'text-white'
+                    : 'text-[#1a47c4]'
+                }`}
+              >
                 Design Studio
               </p>
             </Link>
