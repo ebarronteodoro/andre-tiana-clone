@@ -68,7 +68,7 @@ export default function HomeClient () {
           images={[
             '/animated_bubble/bubble_ilustracion.png',
             '/animated_bubble/bubble_web.png',
-            '/animated_bubble/bubble_photografia.png',
+            '/animated_bubble/bubble_fotografia.png',
             '/animated_bubble/bubble_consultoria.png'
           ]}
         />
