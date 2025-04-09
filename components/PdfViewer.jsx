@@ -1,6 +1,11 @@
 'use client'
 // Polyfills para compatibilidad con Safari
 
+// Polyfill para globalThis en navegadores que no lo soporten.
+if (typeof globalThis === 'undefined') {
+  var globalThis = window
+}
+
 // Polyfill para Array.from, en caso de que no esté soportado.
 if (!Array.from) {
   Array.from = function (iterable) {
@@ -43,14 +48,18 @@ export default function PdfViewer () {
 
   useEffect(() => {
     const loadPdf = async () => {
-      const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
-      pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js'
-      const loadingTask = pdfjsLib.getDocument(
-        '/brochure/AndreaLoarte.Studio.pdf'
-      )
-      const loadedPdf = await loadingTask.promise
-      setPdf(loadedPdf)
-      setNumPages(loadedPdf.numPages)
+      try {
+        const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf')
+        pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js'
+        const loadingTask = pdfjsLib.getDocument(
+          '/brochure/AndreaLoarte.Studio.pdf'
+        )
+        const loadedPdf = await loadingTask.promise
+        setPdf(loadedPdf)
+        setNumPages(loadedPdf.numPages)
+      } catch (err) {
+        console.error('Error loading PDF:', err)
+      }
     }
     loadPdf()
   }, [])
