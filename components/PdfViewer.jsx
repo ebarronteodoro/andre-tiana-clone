@@ -8,9 +8,9 @@ if (!Array.from) {
   }
 }
 
-// Polyfill para Promise.withResolvers
-if (!Promise.withResolvers) {
-  Promise.withResolvers = function () {
+// Actualización del polyfill de Promise.withResolvers para establecerlo en globalThis
+if (!globalThis.Promise.withResolvers) {
+  globalThis.Promise.withResolvers = function () {
     let resolve, reject
     const promise = new Promise((res, rej) => {
       resolve = res
