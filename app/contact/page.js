@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import AnimateOnScroll from '../../components/AnimateOnScroll'
+import CustomPhysicsImages from '@/components/CustomPhysicsImages'
 
 export const metadata = {
   title: 'Contact — Get in touch',
@@ -53,12 +54,12 @@ export default async function Home () {
           </div>
         </AnimateOnScroll>
       </section>
-      <section className='bg-[#1a47c4] px-20 2xl:px-64 pt-10'>
+      <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10'>
         <AnimateOnScroll
-          animationClass='animate-fade-up'
+          animationClass='animate-fade-up relative z-10'
           delayClass='animate-delay-200'
         >
-          <h2 className='text-white w-[30rem] text-left text-pretty py-10 text-4xl font-cardo -mb-10 2xl:-mb-20'>
+          <h2 className='text-white w-full md:w-[30rem] text-left text-pretty py-10 text-xl md:text-4xl font-cardo -mb-10 2xl:-mb-20'>
             Recuerda que podemos apoyarte con proyectos de:
           </h2>
         </AnimateOnScroll>
@@ -66,13 +67,14 @@ export default async function Home () {
           animationClass='animate-fade-up'
           delayClass='animate-delay-200'
         >
-          <Image
+          <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-64 w-full' />
+          {/* <Image
             src='/elementos.png'
             width={1500}
             height={800}
             alt='Imagen referencial proyectos'
             className='w-full h-auto object-contain'
-          />
+          /> */}
         </AnimateOnScroll>
       </section>
       <section className=''>

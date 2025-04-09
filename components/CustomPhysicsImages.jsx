@@ -1,33 +1,50 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Matter from 'matter-js'
 
 export default function CustomPhysicsImages ({
   images = [
-    '/animated_bubble/bubble_a.png',
-    '/animated_bubble/bubble_b.png',
-    '/animated_bubble/bubble_c.png',
-    '/animated_bubble/bubble_d.png',
-    '/animated_bubble/bubble_e.png',
-    '/animated_bubble/bubble_f.png',
-    '/animated_bubble/bubble_g.png',
-    '/animated_bubble/bubble_h.png'
+    '/animated_bubble/bubble_packaging.png',
+    '/animated_bubble/bubble_socialmedia.png',
+    '/animated_bubble/bubble_ilustracion.png',
+    '/animated_bubble/bubble_web.png',
+    '/animated_bubble/bubble_fotografia.png',
+    '/animated_bubble/bubble_consultoria.png',
+    '/animated_bubble/bubble_branding.png',
+    '/animated_bubble/bubble_rebranding.png'
   ],
   className = '' // Permite pasar clases de Tailwind
 }) {
   const sceneRef = useRef(null)
   const timeouts = useRef([])
+  // Nuevo estado para dimensiones responsivas
+  const [dimensions, setDimensions] = useState({
+    width: typeof window !== 'undefined' ? window.innerWidth : 0,
+    height: typeof window !== 'undefined' ? window.innerHeight : 0
+  })
 
+  // Escuchar resize para actualizar dimensiones
+  useEffect(() => {
+    const handleResize = () => {
+      setDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight
+      })
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // Re-inicializar la simulación al cambiar dimensiones
   useEffect(() => {
     if (!sceneRef.current) return
 
-    const width = window.innerWidth
-    const height = window.innerHeight
+    const { width, height } = dimensions
 
-    // Crear engine, mundo, render y runner
+    // --- Configuración de Matter.js ---
     const engine = Matter.Engine.create()
     const world = engine.world
-    engine.world.gravity.y = 1
+    engine.world.gravity.y = 1.3
 
     const render = Matter.Render.create({
       element: sceneRef.current,
@@ -39,15 +56,12 @@ export default function CustomPhysicsImages ({
         wireframes: false
       }
     })
-    if (className) {
-      render.canvas.className = className
-    }
+    if (className) render.canvas.className = className
 
     const runner = Matter.Runner.create()
     Matter.Runner.run(runner, engine)
     Matter.Render.run(render)
 
-    // Agregar control de mouse
     const mouse = Matter.Mouse.create(render.canvas)
     const mouseConstraint = Matter.MouseConstraint.create(engine, {
       mouse: mouse,
@@ -56,43 +70,47 @@ export default function CustomPhysicsImages ({
     Matter.World.add(world, mouseConstraint)
     render.mouse = mouse
 
-    // Definir un margen (para centrar los cuerpos en un área)
-    const margin = width * 0.1
-
-    // Agregar suelo y paredes (invisibles)
-    const ground = Matter.Bodies.rectangle(
-      width / 2,
-      height - 25,
-      width - 2 * margin,
-      50,
-      { isStatic: true, render: { visible: false } }
-    )
-    const leftWall = Matter.Bodies.rectangle(margin, height / 2, 2, height, {
+    const margin = 0
+    const ground = Matter.Bodies.rectangle(width / 2, height - 25, width, 50, {
       isStatic: true,
       render: { visible: false }
     })
-    const rightWall = Matter.Bodies.rectangle(
-      width - margin,
-      height / 2,
-      2,
-      height,
-      { isStatic: true, render: { visible: false } }
-    )
+    const leftWall = Matter.Bodies.rectangle(0, height / 2, 2, height, {
+      isStatic: true,
+      render: { visible: false }
+    })
+    const rightWall = Matter.Bodies.rectangle(width, height / 2, 2, height, {
+      isStatic: true,
+      render: { visible: false }
+    })
     Matter.World.add(world, [ground, leftWall, rightWall])
+    // --- Fin configuración Matter.js ---
 
-    // Configurar las 8 imágenes:
-    // - Grupo 1 (índices 0,1,2): caen a la derecha
-    // - Grupo 2 (índices 3,4,5): caen a la izquierda
-    // - Grupo 3 (índices 6,7): caen a la derecha
+    // Configuración para cajas
     const totalImages = 8
-    const scaleFactor = 0.6
+    const scaleFactor = 0.35
     const numSides = 12
+    const safeMargin = width * 0.05
+    const offsetX = safeMargin * 1.2
 
+    // Definir regiones basadas en porcentajes
+    const rightStart = width / 2 + safeMargin
+    const rightEnd = width - safeMargin
+    const regionWidthRight = rightEnd - rightStart
+
+    const leftStart = safeMargin
+    const leftEnd = width / 2 - safeMargin
+    const regionWidthLeft = leftEnd - leftStart
+
+    const middleStart = width / 3 + safeMargin
+    const middleEnd = (2 * width) / 3 - safeMargin
+    const regionWidthMiddle = middleEnd - middleStart
+
+    // Crear cuerpos con un retardo
     for (let i = 0; i < totalImages; i++) {
-      const delay = i * 200
+      const delay = i * 100
       const timeout = setTimeout(() => {
         const img = new Image()
-        // Usa el arreglo de imágenes (si i es mayor que images.length, se recicla)
         const texture = images[i % images.length]
         img.src = texture
         img.onload = () => {
@@ -101,31 +119,32 @@ export default function CustomPhysicsImages ({
           const desiredWidth = originalWidth * scaleFactor
           const desiredHeight = originalHeight * scaleFactor
 
-          // Definir posición X según grupo:
-          // Para grupos a la derecha: safeX entre width/2 + margin y width - margin - desiredWidth/2
-          // Para grupo a la izquierda: safeX entre margin + desiredWidth/2 y width/2 - margin
-          let safeX = 0
-          if (i < 3 || i >= 6) {
-            // Caen a la derecha
-            safeX =
-              width / 2 +
-              margin +
-              Math.random() * (width / 2 - 2 * margin - desiredWidth)
+          let safeX = 0,
+            y = 0
+          if (i < 3) {
+            // Grupo 1: cajas en la región derecha
+            const fraction = (i + 0.5) / 3
+            safeX = rightStart + fraction * regionWidthRight - desiredWidth / 2
+            y = -height * 0.07
+          } else if (i < 6) {
+            // Grupo 2: cajas en la región izquierda
+            const fraction = (i - 3 + 0.5) / 3
+            safeX = leftStart + fraction * regionWidthLeft - desiredWidth / 2
+            y = -height * 0.17
           } else {
-            // Caen a la izquierda
+            // Grupo 3: cajas en la región central
+            const fraction = (i - 6 + 0.5) / 2
             safeX =
-              margin +
-              desiredWidth / 2 +
-              Math.random() * (width / 2 - margin - desiredWidth)
+              middleStart + fraction * regionWidthMiddle - desiredWidth / 2
+            y = -height * 0.27
           }
-
-          // Posición inicial en Y elevada (así caen desde arriba)
+          // Desplazar ligeramente a la derecha
+          safeX = safeX + offsetX
           const x = safeX
-          const y = -50 - i * 30
 
-          // Crear un polígono regular aproximado
-          const a = desiredWidth / 2
-          const b = desiredHeight / 2
+          // Crear los vértices del polígono
+          const a = desiredWidth / 2,
+            b = desiredHeight / 2
           const vertices = []
           for (let j = 0; j < numSides; j++) {
             const theta = (2 * Math.PI * j) / numSides
@@ -137,9 +156,9 @@ export default function CustomPhysicsImages ({
             y,
             [vertices],
             {
-              restitution: 0.4,
-              friction: 0.9,
-              frictionAir: 0.05,
+              restitution: 0.2, // menor rebote para evitar saltos exagerados
+              friction: 0.8, // mayor fricción para reducir el deslizamiento
+              frictionAir: 0.05, // mayor resistencia al aire para ralentizar el movimiento
               render: {
                 sprite: {
                   texture: texture,
@@ -157,7 +176,6 @@ export default function CustomPhysicsImages ({
       timeouts.current.push(timeout)
     }
 
-    // Cambio de cursor al pasar sobre cuerpos con etiqueta 'imageBody'
     Matter.Events.on(mouseConstraint, 'mousemove', event => {
       const mousePosition = event.mouse.position
       const hoveredBodies = Matter.Query.point(
@@ -175,7 +193,7 @@ export default function CustomPhysicsImages ({
       if (render.canvas) render.canvas.remove()
       render.textures = {}
     }
-  }, [])
+  }, [dimensions, className, images])
 
   return <div ref={sceneRef} />
 }
