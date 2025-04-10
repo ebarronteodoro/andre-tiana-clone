@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Work — Browse by type of client',
-  description: 'Portfolio of Pentagram design agency'
+  title: 'Andrea Design Studio - Portfolio of projects and design works.',
+  keywords: 'Andrea Design Studio, Portfolio, Projects, Design, Web Design, Graphic Design',
+  description: 'Andrea Design Studio is a portfolio showcasing a variety of projects and design works.',
 }
 
 import HomeClient from './HomeClient'

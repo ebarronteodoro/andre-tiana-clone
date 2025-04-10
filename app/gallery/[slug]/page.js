@@ -15,9 +15,15 @@ export async function generateMetadata ({ params }) {
     }
   }
 
+  const additionalTag = project.tagline ? ` - ${project.tagline}` : ''
+  const improvedTitle = `${project.name}${additionalTag} | Andrea Design Studio`
+  const firstParagraph =
+    project.data && project.data[0] ? ` - ${project.data[0]}` : ''
+  const improvedDescription = `${project.phrase}${firstParagraph}`
+
   return {
-    title: project.name || 'Proyecto',
-    description: project.phrase || ''
+    title: improvedTitle,
+    description: improvedDescription
   }
 }
 
@@ -38,14 +44,20 @@ export default async function GalleryPage ({ params }) {
             <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
               {project.name}
             </h1>
-            <span className='text-lg md:text-xl flex w-80 text-pretty'>
+            <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance'>
               {project.phrase}
             </span>
           </div>
           <div className='w-full max-w-[740px] mt-8 md:mt-0'>
-            <p className='text-lg md:text-2xl font-medium text-pretty'>
-              {project.data}
-            </p>
+            {project.data &&
+              project.data.map((paragraph, i) => (
+                <p
+                  key={i}
+                  className='mb-4 md:text-lg 2xl:text-2xl font-medium text-pretty'
+                >
+                  {paragraph}
+                </p>
+              ))}
           </div>
         </div>
       </section>
