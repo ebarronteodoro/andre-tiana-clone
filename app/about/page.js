@@ -151,28 +151,28 @@ export default async function Home() {
                 alt='Mapa del mundo'
                 width={500}
                 height={500}
-                className='w-[24px] top-[25%] left-[5%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[0%] md:top-[28%]'
+                className='w-[24px] top-[25%] left-[5%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[0%] md:top-[28%] lg:w-[56px] flag-animation'
               />
               <Image
                 src='/about/flag_peru.png'
                 alt='Mapa del mundo'
                 width={500}
                 height={500}
-                className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%]'
+                className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%] lg:w-[56px] flag-animation'
               />
               <Image
                 src='/about/flag_argentina.png'
                 alt='Mapa del mundo'
                 width={500}
                 height={500}
-                className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px]'
+                className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
               />
               <Image
                 src='/about/flag_suiza.png'
                 alt='Mapa del mundo'
                 width={500}
                 height={500}
-                className='w-[24px] top-[25%] left-[50%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px]'
+                className='w-[24px] top-[25%] left-[50%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
               />
 
             </picture>

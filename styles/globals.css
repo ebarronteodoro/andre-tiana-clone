@@ -45,3 +45,18 @@ body {
   opacity: 0;
   transform: translateY(1rem); /* equvalente a translate-y-4 */
 }
+
+.flag-animation{
+  transition: all .3s ease;
+  animation: andrealoarte-floating-flag_pulse-animation 2s infinite;
+  border-radius: 100%;
+}
+
+@keyframes andrealoarte-floating-flag_pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+}
