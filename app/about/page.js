@@ -133,20 +133,20 @@ export default async function Home() {
         animationClass='animate-fade-up'
         delayClass='animate-delay-1s'
       >
-        <section className='p-8 md:px-8 bg-[#1a47c4]'>
+        <section className='p-8 md:px-8 bg-[#1a47c4] pb-16'>
           <div className='md:flex w-full max-w-[1440px] mx-auto'>
-            <div className='md:w-[50%]'>
+            <div className='md:w-[50%] md:mt-16'>
               <h4 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Diseños Por<br />El Mundo</h4>
               <p className='text-white mb-8 w-full md:m-0 md:max-w-[350px] md:mx-auto'>Cada proyecto es una chispa  de autoexpresión, una  oportunidad para darle fuerza y forma a la voz de quienes sueñan con crear. Aquí, el diseño y la estrategia se entrelazan para construir historias con propósito, transformando ideas en realidades que inspiran y dejan huella.</p>
             </div>
             <div className='md:w-[50%] md:flex md:justify-center md:items-center'>
-              <picture className='w-full max-w-[500px] mx-auto relative'>
+              <picture className='w-full  md:max-w-[100%] mx-auto relative'>
                 <Image
                   src='/about/world_map.png'
                   alt='Mapa del mundo'
                   width={500}
                   height={500}
-                  className='w-full mx-auto md:m-0 h-auto  max-w-[500px] md:max-w-[700px]'
+                  className='w-full mx-auto md:m-0 h-auto   md:max-w-[100%]'
                 />
                 <Image
                   src='/about/flag_usa.png'
@@ -160,14 +160,14 @@ export default async function Home() {
                   alt='Mapa del mundo'
                   width={500}
                   height={500}
-                  className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%] lg:w-[56px] flag-animation'
+                  className='w-[24px] bottom-[20%] left-[15%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%] lg:w-[56px] flag-animation'
                 />
                 <Image
                   src='/about/flag_argentina.png'
                   alt='Mapa del mundo'
                   width={500}
                   height={500}
-                  className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
+                  className='w-[24px] bottom-[10%] left-[25%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
                 />
                 <Image
                   src='/about/flag_suiza.png'
