@@ -67,10 +67,11 @@ export default function ProjectsClient () {
               key={project.id}
               href={`/gallery/${project.slug}`}
               className='group'
+              title={`Proyecto ${project.name}`}
             >
               <div className='space-y-4'>
-                <h2 className='text-xl font-medium font-helvetica-neue tracking-[.8px] group-hover:[background-image:linear-gradient(to_bottom,_#1a1a1a_75%,_#1a1a1a_75%)] group-hover:[background-repeat:repeat-x] group-hover:[background-size:1px_1px] group-hover:[background-position:0_98%]'>
-                  {project.title}
+                <h2 className='text-xl font-medium font-helvetica-neue tracking-[.8px] group-hover:[background-image:linear-gradient(to_bottom,_#1a1a1a_75%,_#1a1a1a_75%)] group-hover:[background-repeat:repeat-x] group-hover:[background-size:100%_1px] group-hover:[background-position:0_98%] w-max max-w-full text-ellipsis overflow-hidden whitespace-nowrap'>
+                  Proyecto {project.name}
                 </h2>
                 <div className='w-full h-[200px] relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300'>
                   <Image
