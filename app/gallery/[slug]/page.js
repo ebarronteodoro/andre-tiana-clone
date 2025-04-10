@@ -1,5 +1,7 @@
 import { getSlugProjects } from '@/lib/data'
-import GalleryImage from '@/components/GalleryImage'
+import Image from 'next/image'
+import Testimonial from '@/components/Testimonial'
+import ImageGallery from '@/components/ImageGallery'
 
 export async function generateMetadata ({ params }) {
   const { slug } = await params
@@ -14,33 +16,72 @@ export async function generateMetadata ({ params }) {
   }
 
   return {
-    title: project.name,
-    description: project.phrase
+    title: project.name || 'Proyecto',
+    description: project.phrase || ''
   }
 }
 
 export default async function GalleryPage ({ params }) {
   const { slug } = await params
   const { projects } = await getSlugProjects()
-
   const project = projects.find(p => p.slug === slug)
 
   if (!project) {
     return <p>Proyecto no encontrado.</p>
   }
 
-  const galleryImage = project.galleryImage || project.image
-
   return (
     <>
-      <GalleryImage src={galleryImage} alt={`Gallery ${slug}`} slug={slug} />
-      <section className='container mx-auto px-4 py-8'>
-        <div className='space-y-4'>
-          <h2 className='text-2xl font-bold'>{project.name}</h2>
-          <p className='text-lg'>{project.phrase}</p>
-          <p>{project.data}</p>
+      <section className='container mx-auto px-4 mt-16'>
+        <div className='flex flex-col md:flex-row md:items-center md:justify-between relative'>
+          <div className='w-full'>
+            <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
+              {project.name}
+            </h1>
+            <span className='text-lg md:text-xl flex w-80 text-pretty'>
+              {project.phrase}
+            </span>
+          </div>
+          <div className='w-full max-w-[740px] mt-8 md:mt-0'>
+            <p className='text-lg md:text-2xl font-medium text-pretty'>
+              {project.data}
+            </p>
+          </div>
         </div>
       </section>
+
+      {project.animationImage && (
+        <section className='container mx-auto px-4 mt-16'>
+          <div>
+            <Image
+              src={project.animationImage}
+              alt={`Animación de ${project.name}`}
+              className='w-full h-auto'
+              width={100}
+              height={200}
+              unoptimized
+            />
+          </div>
+        </section>
+      )}
+
+      {project.testimonialText && (
+        <section className='container mx-auto px-4 mt-16'>
+          <div className='w-full md:w-1/2 md:ml-auto'>
+            <Testimonial
+              text={project.testimonialText}
+              linkText='Saber más'
+              linkUrl='/saber-mas'
+            />
+          </div>
+        </section>
+      )}
+
+      {project.galleryImages && project.galleryImages.length > 0 && (
+        <section className='container mx-auto px-4 mt-16'>
+          <ImageGallery images={project.galleryImages} columns={2} />
+        </section>
+      )}
     </>
   )
 }

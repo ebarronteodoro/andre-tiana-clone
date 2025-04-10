@@ -18,9 +18,9 @@ export default function HomeClient() {
   // Definición de las imágenes para la galería:
   // Cada objeto puede incluir la propiedad "horizontal" para extender la imagen.
   const galleryImages = [
-    { src: "/building.png", alt: "Edificio" },
-    { src: "/building.png", alt: "Edificio 2" },
-    { src: "/bolsa-atelier.jpg", alt: "Bolsa Atelier", horizontal: true },
+    { src: "/projects/bita_atelier/building.png", alt: "Edificio" },
+    { src: "/projects/bita_atelier/building.png", alt: "Edificio 2" },
+    { src: "/projects/bita_atelier/bolsa-atelier.jpg", alt: "Bolsa Atelier", horizontal: true },
   ];
 
   return (
@@ -46,7 +46,7 @@ export default function HomeClient() {
       <section className="container mx-auto px-4 mt-16">
         <div>
           <Image
-            src="/bita-atelier-gif.gif"
+            src="/projects/bita_atelier/bita-atelier-gif.gif"
             className="w-full h-auto"
             width={100}
             height={200}
@@ -67,7 +67,6 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* Sección de galería (incluye imagen horizontal) */}
       <section className="container mx-auto px-4 mt-16">
         <ImageGallery images={galleryImages} columns={2} />
       </section>
