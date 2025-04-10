@@ -103,7 +103,7 @@ export default function HomeClient () {
         >
           <div>
             <h2 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
-              Cada Proyecto Es Una Obra Única
+              Cada Proyecto Es Una Obra Unica
             </h2>
             <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>Obras Recientes En Exposición</span>
           </div>
@@ -182,6 +182,28 @@ export default function HomeClient () {
             </Link>
             <Link href='' 
                   className='block mt-6 max-w-[500px] mx-auto'
+                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Solidez y diferenciación para un grupo empresarial.'}
+                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Haz Group'}>
+              <div className='relative'>
+                <Image
+                  className='w-full h-auto object-cover'
+                  src='/marco_de_foto.png'
+                  alt='Foto Andrea'
+                  width={1920}
+                  height={1080}
+                />
+                <Image
+                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
+                  src='/projects/hazgroup/portada.jpg'
+                  alt='Foto Retrato Andrea'
+                  width={1920}
+                  height={1080}
+                />
+              </div>
+              <span className='mt-4 block text-xl transition-all duration-300'>Haz Group</span>
+            </Link>
+            <Link href='' 
+                  className='block mt-6 max-w-[500px] mx-auto'
                   onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Una identidad con propósito social.'}
                   onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Asociación Peruana de Bomberos'}>
               <div className='relative'>
@@ -224,28 +246,7 @@ export default function HomeClient () {
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>NDK Arquitectos</span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Solidez y diferenciación para un grupo empresarial.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Haz Group'}>
-              <div className='relative'>
-                <Image
-                  className='w-full h-auto object-cover'
-                  src='/marco_de_foto.png'
-                  alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
-                />
-                <Image
-                  className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/hazgroup/portada.jpg'
-                  alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
-                />
-              </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>Haz Group</span>
-            </Link>
+            
           </div>
         </AnimateOnScroll>
         <AnimateOnScroll

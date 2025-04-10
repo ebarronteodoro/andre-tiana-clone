@@ -9,7 +9,7 @@ export const metadata = {
 
 export default async function Home() {
   return (
-    <main>
+    <main className='bg-[#1a47c4]'>
 
 
       <AnimateOnScroll
@@ -66,12 +66,12 @@ export default async function Home() {
               </div>
               <div className='hidden md:flex gap-16'>
                 <p className='text-white mb-8 w-full md:max-w-[300px]'>Fundé este estudio de diseño porque considero que las
-                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales.<br/><br/> Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca. 
+                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales.<br /><br /> Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca.
                 </p>
 
                 <p className='text-white mb-8 w-full md:max-w-[300px]'> <span className='font-extrabold
 '>Andrea Loarte Studio</span> es un espacio de creación visual donde el diseño no es solo forma, es pensamiento, es postura, es narrativa.
-                  Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse.<br/><br/>Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
+                  Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse.<br /><br />Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
                 </p>
 
               </div>
@@ -85,8 +85,10 @@ export default async function Home() {
       >
         <section className='p-8 md:px-8 bg-[#1a47c4]'>
           <div className='md:flex w-full max-w-[1440px] mx-auto'>
-            <div className='md:w-full'><h2 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Sé que el diseño no es arte pero en mi estudio cada proyecto es una obra única.
-            </h2></div>
+            <div className='md:w-full'>
+              <h2 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Sé que el diseño no es arte, pero en mi estudio cada proyecto es una obra única.
+              </h2>
+            </div>
             <div className='md:w-full md:flex md:gap-16'>
               <div className='md:w-full flex justify-center items-center mb-8 md:max-w-[300px]'>
                 <picture className='w-full mx-auto md:max-w-[300px]'>
@@ -99,7 +101,7 @@ export default async function Home() {
                   />
 
                 </picture>
-                </div>
+              </div>
               <div className='md:w-full md:flex  md:items-center'>
                 <p className='text-white mb-8 w-full md:max-w-[300px]'>Desde pequeña el arte ha sido parte de mi forma de ver el mundo: la pintura, la cerámica, y la creación siempre han sido mi manera de expresarme.<br /><br /> Hoy, ese mismo espíritu guía mi trabajo como diseñadora y directora de arte.</p></div>
             </div>
@@ -133,52 +135,52 @@ export default async function Home() {
       >
         <section className='p-8 md:px-8 bg-[#1a47c4]'>
           <div className='md:flex w-full max-w-[1440px] mx-auto'>
-          <div className='md:w-[50%]'>
-            <h4 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Diseños Por<br/>El Mundo</h4>
-            <p className='text-white mb-8 w-full md:m-0 md:max-w-[350px] md:mx-auto'>Cada proyecto es una chispa  de autoexpresión, una  oportunidad para darle fuerza y forma a la voz de quienes sueñan con crear. Aquí, el diseño y la estrategia se entrelazan para construir historias con propósito, transformando ideas en realidades que inspiran y dejan huella.</p>
-          </div>
-          <div className='md:w-[50%] md:flex md:justify-center md:items-center'>
-            <picture className='w-full max-w-[500px] mx-auto relative'>
-              <Image
-                src='/about/world_map.png'
-                alt='Mapa del mundo'
-                width={500}
-                height={500}
-                className='w-full mx-auto md:m-0 h-auto  max-w-[500px] md:max-w-[700px]'
-              />
-              <Image
-                src='/about/flag_usa.png'
-                alt='Mapa del mundo'
-                width={500}
-                height={500}
-                className='w-[24px] top-[25%] left-[5%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[0%] md:top-[28%] lg:w-[56px] flag-animation'
-              />
-              <Image
-                src='/about/flag_peru.png'
-                alt='Mapa del mundo'
-                width={500}
-                height={500}
-                className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%] lg:w-[56px] flag-animation'
-              />
-              <Image
-                src='/about/flag_argentina.png'
-                alt='Mapa del mundo'
-                width={500}
-                height={500}
-                className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
-              />
-              <Image
-                src='/about/flag_suiza.png'
-                alt='Mapa del mundo'
-                width={500}
-                height={500}
-                className='w-[24px] top-[25%] left-[50%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
-              />
+            <div className='md:w-[50%]'>
+              <h4 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Diseños Por<br />El Mundo</h4>
+              <p className='text-white mb-8 w-full md:m-0 md:max-w-[350px] md:mx-auto'>Cada proyecto es una chispa  de autoexpresión, una  oportunidad para darle fuerza y forma a la voz de quienes sueñan con crear. Aquí, el diseño y la estrategia se entrelazan para construir historias con propósito, transformando ideas en realidades que inspiran y dejan huella.</p>
+            </div>
+            <div className='md:w-[50%] md:flex md:justify-center md:items-center'>
+              <picture className='w-full max-w-[500px] mx-auto relative'>
+                <Image
+                  src='/about/world_map.png'
+                  alt='Mapa del mundo'
+                  width={500}
+                  height={500}
+                  className='w-full mx-auto md:m-0 h-auto  max-w-[500px] md:max-w-[700px]'
+                />
+                <Image
+                  src='/about/flag_usa.png'
+                  alt='Mapa del mundo'
+                  width={500}
+                  height={500}
+                  className='w-[24px] top-[25%] left-[5%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[0%] md:top-[28%] lg:w-[56px] flag-animation'
+                />
+                <Image
+                  src='/about/flag_peru.png'
+                  alt='Mapa del mundo'
+                  width={500}
+                  height={500}
+                  className='w-[24px] bottom-[20%] left-[20%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] md:left-[15%] md:bottom-[25%] lg:w-[56px] flag-animation'
+                />
+                <Image
+                  src='/about/flag_argentina.png'
+                  alt='Mapa del mundo'
+                  width={500}
+                  height={500}
+                  className='w-[24px] bottom-2 left-[30%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
+                />
+                <Image
+                  src='/about/flag_suiza.png'
+                  alt='Mapa del mundo'
+                  width={500}
+                  height={500}
+                  className='w-[24px] top-[25%] left-[50%] mx-auto md:m-0 h-auto absolute max-w-[300px] md:w-[32px] lg:w-[56px] flag-animation'
+                />
 
-            </picture>
+              </picture>
+            </div>
           </div>
-          </div>
-          
+
 
         </section>
       </AnimateOnScroll>
