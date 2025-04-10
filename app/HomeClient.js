@@ -150,7 +150,7 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/materia_secreta/materia_secreta_portada.png'
+                  src='/projects/materia_secreta/portada_2.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
@@ -172,7 +172,7 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/verdant/verdant_portada.png'
+                  src='/projects/verdant/portada.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
@@ -194,7 +194,7 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png'
+                  src='/projects/asociacion_peruana_de_bomberos/portada.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
@@ -216,7 +216,7 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/ndk_arquitectos/portada.jpg'
+                  src='/projects/ndk_arquitectos/portada-final-.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}

@@ -65,12 +65,13 @@ export default async function Home() {
 
               </div>
               <div className='hidden md:flex gap-16'>
-                <p className='text-white mb-8 w-full'>Fundé este estudio de diseño porque considero que las
-                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales. Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca. Andrea Loarte Studio es un espacio de creación visual donde el diseño no es solo forma, es pensamiento, es postura, es narrativa.
+                <p className='text-white mb-8 w-full md:max-w-[300px]'>Fundé este estudio de diseño porque considero que las
+                  marcas más potentes nacen desde la empatía. Escuchar, observar y conectar con las personas detrás de cada proyecto es lo que me permite crear identidades que no solo comunican bien, sino que también se sienten reales.<br/><br/> Desde hace más de seis años, he acompañado a marcas de distintos sectores en procesos de construcción visual estratégicos y auténticos. Cada proyecto que entra al estudio lo trato con el mismo compromiso y detalle que si fuera propio, porque sé lo importante que es sentirte representado con tu marca. 
                 </p>
 
-                <p className='text-white mb-8 w-full'>
-                  Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse. Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
+                <p className='text-white mb-8 w-full md:max-w-[300px]'> <span className='font-extrabold
+'>Andrea Loarte Studio</span> es un espacio de creación visual donde el diseño no es solo forma, es pensamiento, es postura, es narrativa.
+                  Aquí, cada proyecto parte de una pregunta, no de una plantilla. Porque creemos que cada marca tiene su propia voz —solo necesita el lenguaje correcto para expresarse.<br/><br/>Nos movemos entre el branding, la ilustración, la animación, la publicidad y la fotografía, conectando disciplinas para contar historias relevantes con claridad y carácter. Nuestra filosofía es clara: “El diseño no es arte… pero cada proyecto es una obra única.”
                 </p>
 
               </div>
@@ -86,19 +87,20 @@ export default async function Home() {
           <div className='md:flex w-full max-w-[1440px] mx-auto'>
             <div className='md:w-full'><h2 className='text-white font-cardo text-3xl mb-8 text-center md:text-5xl md:text-left max-w-[350px] mx-auto'>Sé que el diseño no es arte pero en mi estudio cada proyecto es una obra única.
             </h2></div>
-            <div className='md:w-full md:flex'>
-              <div className='md:w-full flex justify-center items-center mb-8'>
-                <picture className='w-full mx-auto'>
+            <div className='md:w-full md:flex md:gap-16'>
+              <div className='md:w-full flex justify-center items-center mb-8 md:max-w-[300px]'>
+                <picture className='w-full mx-auto md:max-w-[300px]'>
                   <Image
                     src='/about/little_andre.png'
                     alt='Andrea Loarte'
                     width={500}
                     height={500}
-                    className='w-full mx-auto md:m-0 h-auto  max-w-[300px]'
+                    className='w-full mx-auto md:m-0 h-auto max-w-[300px]'
                   />
 
-                </picture></div>
-              <div className='md:w-full md:flex md:items-center'>
+                </picture>
+                </div>
+              <div className='md:w-full md:flex  md:items-center'>
                 <p className='text-white mb-8 w-full md:max-w-[300px]'>Desde pequeña el arte ha sido parte de mi forma de ver el mundo: la pintura, la cerámica, y la creación siempre han sido mi manera de expresarme.<br /><br /> Hoy, ese mismo espíritu guía mi trabajo como diseñadora y directora de arte.</p></div>
             </div>
 
