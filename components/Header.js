@@ -29,7 +29,8 @@ export default function Header () {
       pathname === '/' || pathname === '/brochure' || pathname === '/about'
         ? '/logo/logo-blanco.png'
         : '/logo/logo.png',
-    mobileBar: pathname === '/' || pathname === '/about' ? 'bg-white' : 'bg-black'
+    mobileBar:
+      pathname === '/' || pathname === '/about' ? 'bg-white' : 'bg-black'
   }
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -50,7 +51,7 @@ export default function Header () {
 
   // Componente para los enlaces del navbar
   const NavLink = ({ href, children, target, ...props }) => {
-    const isActive = href === pathname
+    const isActive = href === '/' ? pathname === '/' : pathname.startsWith(href)
     return (
       <Link
         href={href}
@@ -91,9 +92,9 @@ export default function Header () {
       </>
     ) : (
       <>
-        <NavLink href='/gallery' >PROYECTOS</NavLink>
-        <NavLink href='/about' >CONOCER</NavLink>
-        <NavLink href='/contact' >CONTACTO</NavLink>
+        <NavLink href='/gallery'>PROYECTOS</NavLink>
+        <NavLink href='/about'>CONOCER</NavLink>
+        <NavLink href='/contact'>CONTACTO</NavLink>
       </>
     )
 
@@ -167,7 +168,6 @@ export default function Header () {
                 width={500}
                 height={100}
               />
-              
             </Link>
             <button
               onClick={() => setMobileMenuOpen(false)}
