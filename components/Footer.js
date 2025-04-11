@@ -13,7 +13,7 @@ export default function Footer () {
             className='w-full flex flex-col items-center justify-center'
           >
             <img
-              className='h-auto object-contain w-48 mx-auto'
+              className='h-auto object-contain w-48 mx-auto aspect-[8/1]'
               src='/logo/logo.png'
               alt='Logo Andrea Loarte Design Studio'
               loading='lazy'

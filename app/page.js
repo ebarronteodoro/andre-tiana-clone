@@ -30,21 +30,17 @@ export default async function HomePage () {
         </span>
 
         <div className='relative w-full z-10 h-auto max-w-[300px] mx-auto animate-fade-up animate-delay-500'>
-          <Image
+          <img
             className='w-full h-auto object-cover aspect-[3/4]'
-            src='/foto-andrea.png'
-            alt='Foto Andrea'
-            width={800}
-            height={900}
-            priority
+            src='/foto-andrea.webp'
+            alt='Foto Andrea Loarte'
+            loading='eager'
           />
-          <Image
+          <img
             className='fadeToggle w-full h-auto object-cover aspect-[3/4]'
-            src='/foto-andrea-retrato.png'
-            alt='Foto Retrato Andrea'
-            width={800}
-            height={900}
-            priority
+            src='/foto-andrea-retrato.webp'
+            alt='Foto Retrato Andrea Loarte'
+            loading='eager'
           />
           <span className='text-center w-x-auto text-white absolute bottom-[10%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo'>
             Designer & Creative Director
