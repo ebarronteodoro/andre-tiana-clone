@@ -4,30 +4,51 @@
       "id": "asheti",
       "name": "ASHETI",
       "slug": "asheti",
-      "phrase": "Revalorizando la cultura shipibo desde el empaque",
+      "phrase": "Revalorizando la cultura shipibo desde el empaque. Ashéti, vocablo shipibo que significa “aprender”, es una marca de chocolates originaria de Tingo María, Perú.",
       "introductionText":"example test of an introduction for the project",
       "data": [
-        "Ashéti, vocablo shipibo que significa 'aprender', es una marca de chocolates originaria de Tingo María, Perú, comprometida con la revalorización de la cultura ancestral amazónica y el comercio justo con agricultores cacaoteros locales. Para su rebranding se desarrolló una línea gráfica que conecta lo simbólico con lo sensorial.",
+        "Esta marca de chocolates originaria de Tingo María, Perú, está comprometida con la revalorización de la cultura ancestral amazónica y el comercio justo con agricultores cacaoteros locales. Para su rebranding se desarrolló una línea gráfica que conecta lo simbólico con lo sensorial.",
         "Inspirado en la iconografía shipibo-conibo, el diseño toma patrones nativos reinterpretados como lenguaje visual para cada uno de los sabores: aguaymanto, café, pasas, bitter y pasta pura de cacao. Cada barra funciona como una pieza narrativa que celebra identidad, origen y biodiversidad."
       ],
       "galleryImage": "/projects/asheti/asheti_portada.jpg",
-      "firstImage": "/projects/asheti/asheti_portada.jpg",
+      "firstImage": "/projects/asheti/GIF-DE-PATRONES_ASHETI.gif",
       "galleryImages": [
         {
           "src": "/projects/asheti/asheti_portada.jpg",
-          "alt": "Portada Asheti"
+          "alt": "Portada Asheti",
+          "horizontal": true
         },
         {
-          "src": "/projects/asheti/collage_asheti.jpg",
-          "alt": "Collage Asheti"
+          "src": "/projects/asheti/moodboard_asheti.jpg",
+          "alt": "Collage Asheti",
+          "horizontal": true
         },
         {
           "src": "/projects/asheti/productos_asheti_2.jpg",
+          "alt": "Productos Asheti"
+        },
+        {
+          "src": "/projects/asheti/productos_asheti.jpg",
+          "alt": "Productos Asheti"
+        },
+        {
+          "src": "/projects/asheti/gif-empaques.gif",
           "alt": "Productos Asheti",
           "horizontal": true
         },
         {
-          "src": "/projects/asheti/productos_asheti.jpg",
+          "src": "/projects/asheti/GIF-DE-PATRONES_ASHETI.gif",
+          "alt": "Productos Asheti",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/asheti/asheti_portada.jpg",
+          "alt": "Productos Asheti",
+          "horizontal": true
+        }
+        ,
+        {
+          "src": "/projects/asheti/asheti_snr.jpg",
           "alt": "Productos Asheti",
           "horizontal": true
         }
