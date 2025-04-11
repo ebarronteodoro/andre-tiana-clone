@@ -56,6 +56,7 @@ export default function HomeClient () {
             alt='Foto Retrato Andrea'
             width={800}
             height={900}
+            priority
           />
           <span
             className='text-center w-x-auto text-white absolute bottom-[10%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo
