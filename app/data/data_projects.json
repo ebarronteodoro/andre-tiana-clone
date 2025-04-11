@@ -15,7 +15,7 @@
       "galleryImages": [
         {
           "src": "/projects/asheti/asheti_portada.jpg",
-          "alt": "Portada"
+          "alt": "Portada Asheti"
         },
         {
           "src": "/projects/asheti/collage_asheti.jpg",
@@ -23,11 +23,13 @@
         },
         {
           "src": "/projects/asheti/productos_asheti_2.jpg",
-          "alt": "Productos Asheti"
+          "alt": "Productos Asheti",
+          "horizontal": true
         },
         {
           "src": "/projects/asheti/productos_asheti.jpg",
-          "alt": "Productos Asheti"
+          "alt": "Productos Asheti",
+          "horizontal": true
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -46,17 +48,17 @@
       "firstImage": "/projects/materia_secreta/portada_2.jpg",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/materia_secreta/materia_secreta_portada.png",
+          "alt": "Portada Materia Secreta",
           "horizontal": true
+        },
+        {
+          "src": "/projects/materia_secreta/portada_2.jpg",
+          "alt": "Portada 2 Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/portada.jpg",
+          "alt": "Portada Materia Secreta"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -76,17 +78,12 @@
       "firstImage": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
+          "src": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
+          "alt": "Portada Asociación Peruana de Bomberos"
         },
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
-          "horizontal": true
+          "src": "/projects/asociacion_peruana_de_bomberos/portada.jpg",
+          "alt": "Portada Bomberos"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -106,16 +103,18 @@
       "firstImage": "/projects/verdant/portada.jpg",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
+          "src": "/projects/verdant/inmobiliaria-verdant.png",
+          "alt": "Verdant Inmobiliaria",
+          "horizontal": true
         },
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
+          "src": "/projects/verdant/portada.jpg",
+          "alt": "Portada Verdant",
+          "horizontal": true
         },
         {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/verdant/verdant_portada.png",
+          "alt": "Verdant Portada",
           "horizontal": true
         }
       ],
@@ -136,17 +135,22 @@
       "firstImage": "/projects/ndk_arquitectos/portada-final-.jpg",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/ndk_arquitectos/ndk_arquitectos_portada.jpg",
+          "alt": "Portada NDK Arquitectos",
           "horizontal": true
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada-final-.jpg",
+          "alt": "Portada Final NDK"
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada.jpg",
+          "alt": "Portada NDK"
+          
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada.png",
+          "alt": "Portada NDK"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -162,20 +166,48 @@
         "El sistema de marca se diseñó con el objetivo de diferenciarse de la competencia, alejándose de códigos visuales genéricos del sector. Cada logotipo responde a una estructura madre que articula coherencia visual y autonomía estratégica, posicionando a Haz Group como una organización moderna, estructurada y visualmente reconocible en múltiples contextos."
       ],
       "galleryImage": "/projects/hazgroup/hazgroup_portada.png",
-      "firstImage": "/projects/hazgroup/hazgroup_portada.png",
+      "firstImage": "/projects/haz-group/GIF HAZ GROUP.gif",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/haz-group/CONCRELAB.jpg",
+          "alt": "Concrelab",
           "horizontal": true
+        },
+        {
+          "src": "/projects/haz-group/contenedores-.jpg",
+          "alt": "Contenedores"
+        },
+        {
+          "src": "/projects/haz-group/GIF HAZ GROUP.gif",
+          "alt": "GIF Haz Group"
+        },
+        {
+          "src": "/projects/haz-group/H&M-.jpg",
+          "alt": "H&M"
+        },
+        {
+          "src": "/projects/haz-group/H&M.jpg",
+          "alt": "H&M"
+        },
+        {
+          "src": "/projects/haz-group/HAZ.jpg",
+          "alt": "HAZ"
+        },
+        {
+          "src": "/projects/haz-group/hazgroup_portada.png",
+          "alt": "Portada Haz Group"
+        },
+        {
+          "src": "/projects/haz-group/HG-Files.jpg",
+          "alt": "HG Files"
+        },
+        {
+          "src": "/projects/haz-group/HG-Papeleria.jpg",
+          "alt": "HG Papeleria"
+        },
+        {
+          "src": "/projects/haz-group/HG-Tela.jpg",
+          "alt": "HG Tela"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -194,16 +226,16 @@
       "firstImage": "/projects/bita_atelier/bita-atelier-gif.gif",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
+          "src": "/projects/bita_atelier/bita-atelier-gif.gif",
+          "alt": "Bita Atelier GIF"
         },
         {
           "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "alt": "Bolsa Atelier"
+        },
+        {
+          "src": "/projects/bita_atelier/building.png",
+          "alt": "Building",
           "horizontal": true
         }
       ],
@@ -223,16 +255,8 @@
       "firstImage": "/projects/plena/portada_plena.png",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/plena/portada_plena.png",
+          "alt": "Portada Plena",
           "horizontal": true
         }
       ],
@@ -252,16 +276,8 @@
       "firstImage": "/projects/empapa_t/portada_empapa_t.png",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
-        },
-        {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "src": "/projects/empapa_t/portada_empapa_t.png",
+          "alt": "Portada Empapa-T",
           "horizontal": true
         }
       ],
