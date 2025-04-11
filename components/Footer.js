@@ -14,7 +14,7 @@ export default function Footer () {
           >
             <img
               className='h-auto object-contain w-48 mx-auto aspect-[8/1]'
-              src='/logo/logo.png'
+              src='/logo/logo.webp'
               alt='Logo Andrea Loarte Design Studio'
               loading='lazy'
             />
