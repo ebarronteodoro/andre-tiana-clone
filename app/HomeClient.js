@@ -64,7 +64,7 @@ export default function HomeClient () {
           </span>
         </div>
         <PhysicsImages
-          className='overflow-hidden w-2/5 absolute -bottom-4 left-0'
+          className='overflow-hidden hidden md:block w-2/5 absolute -bottom-4 left-0'
           images={[
             '/animated_bubble/bubble_ilustracion.png',
             '/animated_bubble/bubble_web.png',
@@ -105,7 +105,9 @@ export default function HomeClient () {
             <h2 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
               Cada Proyecto Es Una Obra Unica
             </h2>
-            <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>Obras Recientes En Exposición</span>
+            <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>
+              Obras Recientes En Exposición
+            </span>
           </div>
         </AnimateOnScroll>
 
@@ -114,10 +116,17 @@ export default function HomeClient () {
           delayClass='animate-delay-1s'
         >
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto mt-8'>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Revalorizando la cultura shipibo desde el empaque.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'ASHETI'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Revalorizando la cultura shipibo desde el empaque.')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent = 'ASHETI')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -134,12 +143,22 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>ASHETI</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                ASHETI
+              </span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Dark kitchen peruana que ofrece una propuesta de pizza artesanal'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Materia Secreta'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Dark kitchen peruana que ofrece una propuesta de pizza artesanal')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Materia Secreta')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -156,12 +175,22 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>Materia Secreta</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                Materia Secreta
+              </span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Rebranding verde que no pasa desapercibido.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Verdânt Inmobiliaria'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Rebranding verde que no pasa desapercibido.')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Verdânt Inmobiliaria')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -178,12 +207,22 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>Verdânt Inmobiliaria</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                Verdânt Inmobiliaria
+              </span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Solidez y diferenciación para un grupo empresarial.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Haz Group'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Solidez y diferenciación para un grupo empresarial.')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Haz Group')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -200,12 +239,22 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>Haz Group</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                Haz Group
+              </span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Una identidad con propósito social.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'Asociación Peruana de Bomberos'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Una identidad con propósito social.')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Asociación Peruana de Bomberos')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -222,12 +271,22 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>Asociación Peruana de Bomberos</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                Asociación Peruana de Bomberos
+              </span>
             </Link>
-            <Link href='' 
-                  className='block mt-6 max-w-[500px] mx-auto'
-                  onMouseEnter={(e) => e.currentTarget.querySelector('span').textContent = 'Geometría, precisión y herencia familiar.'}
-                  onMouseLeave={(e) => e.currentTarget.querySelector('span').textContent = 'NDK Arquitectos'}>
+            <Link
+              href=''
+              className='block mt-6 max-w-[500px] mx-auto'
+              onMouseEnter={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'Geometría, precisión y herencia familiar.')
+              }
+              onMouseLeave={e =>
+                (e.currentTarget.querySelector('span').textContent =
+                  'NDK Arquitectos')
+              }
+            >
               <div className='relative'>
                 <Image
                   className='w-full h-auto object-cover'
@@ -244,9 +303,10 @@ export default function HomeClient () {
                   height={1080}
                 />
               </div>
-              <span className='mt-4 block text-xl transition-all duration-300'>NDK Arquitectos</span>
+              <span className='mt-4 block text-xl transition-all duration-300'>
+                NDK Arquitectos
+              </span>
             </Link>
-            
           </div>
         </AnimateOnScroll>
         <AnimateOnScroll
