@@ -103,13 +103,11 @@ export default function Header () {
           rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
           className='relative z-50'
         >
-          <Image
+          <img
             src={styleConfig.logoSrc}
             alt='Logo Andrea Loarte Design Studio'
-            width={224}
-            height={28}
-            priority
             className='h-auto object-contain w-44 md:w-56 aspect-[8/1]'
+            loading='eager'
           />
         </Link>
         <nav className='hidden md:flex items-center space-x-8'>
