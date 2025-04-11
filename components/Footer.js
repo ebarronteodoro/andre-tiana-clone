@@ -8,10 +8,9 @@ export default function Footer() {
     <footer className="bg-white text-white py-8">
       <div className="max-w-8xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center md:text-left">
-          {/* Columna 1 */}
           <Link href="/" className="w-full flex flex-col items-center justify-center">
             <Image
-              className="h-auto object-contain w-48 mx-auto"
+              className="w-auto h-10 2xl:h-14 object-contain mx-auto"
               src="/logo/logo.png"
               alt="Logo AyT"
               width={500}

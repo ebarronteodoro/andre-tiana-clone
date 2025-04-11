@@ -112,7 +112,7 @@ export default function Header () {
           className='relative z-50'
         >
           <Image
-            className='h-auto object-contain w-44 md:w-56'
+            className='object-contain w-auto h-10 2xl:h-14'
             src={styleConfig.logoSrc}
             alt='Logo Andrea'
             width={500}

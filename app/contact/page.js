@@ -56,7 +56,7 @@ export default async function Home () {
       </section>
       <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10 overflow-hidden'>
         <AnimateOnScroll
-          animationClass='animate-fade-up relative z-10'
+          animationClass='animate-fade-up relative z-10 max-w-[1200px] mx-auto'
           delayClass='animate-delay-200'
         >
           <h2 className='text-white w-full md:w-[30rem] text-left text-pretty py-10 text-xl md:text-4xl font-cardo -mb-10 2xl:-mb-20'>
@@ -64,10 +64,10 @@ export default async function Home () {
           </h2>
         </AnimateOnScroll>
         <AnimateOnScroll
-          animationClass='animate-fade-up'
+          animationClass='animate-fade-up max-w-[1200px] mx-auto'
           delayClass='animate-delay-200'
         >
-          <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-64 w-full' />
+          <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-64 2xl:-mt-[32rem] w-full' />
         </AnimateOnScroll>
       </section>
       <section className=''>

@@ -58,6 +58,12 @@ export default function CustomPhysicsImages ({
     })
     if (className) render.canvas.className = className
 
+    // Permitir scroll en dispositivos táctiles (mobile)
+    render.canvas.style.touchAction = 'pan-y'
+
+    // Elimina el listener "wheel" innecesario (esto podría estar bloqueando el scroll en desktop)
+    // render.canvas.addEventListener('wheel', e => {}, { passive: true })
+
     const runner = Matter.Runner.create()
     Matter.Runner.run(runner, engine)
     Matter.Render.run(render)
@@ -195,5 +201,14 @@ export default function CustomPhysicsImages ({
     }
   }, [dimensions, className, images])
 
-  return <div ref={sceneRef} />
+  return (
+    <div
+      ref={sceneRef}
+      style={{
+        width: dimensions.width,
+        height: dimensions.height
+      }}
+      className='w-full h-screen' // o usa clases adecuadas de Tailwind
+    />
+  )
 }
