@@ -49,16 +49,16 @@ export default async function GalleryPage ({ params }) {
             <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
               {project.name}
             </h1>
-            {/* <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance'>
+            <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance text-gray-400'>
               {project.phrase}
-            </span> */}
+            </span>
           </div> 
           <div className='w-full max-w-[740px] mt-8 md:mt-0'>
           <p
                  
                   className='mb-4 2xl:text-2xl font-medium text-pretty md:text-[27px]'
                 >
-                  {project.phrase}
+                  {project.introductionText}
                 </p>
           </div>
         </div>

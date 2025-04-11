@@ -71,7 +71,7 @@ export default function ProjectsClient () {
             >
               <div className='space-y-4'>
                 <h2 className='text-xl font-medium font-helvetica-neue tracking-[.8px] group-hover:[background-image:linear-gradient(to_bottom,_#1a1a1a_75%,_#1a1a1a_75%)] group-hover:[background-repeat:repeat-x] group-hover:[background-size:100%_1px] group-hover:[background-position:0_98%] w-max max-w-full text-ellipsis overflow-hidden whitespace-nowrap'>
-                  Proyecto {project.name}
+                  {project.name}
                 </h2>
                 <div className='w-full h-[200px] relative overflow-hidden group-hover:opacity-80 transition-opacity duration-300'>
                   <Image
