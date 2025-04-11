@@ -1,31 +1,26 @@
-"use client";
+'use client'
 
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react'
 
-export default function TypewriterHeader({ text = "" }) {
-  const [displayedText, setDisplayedText] = useState("");
+export default function TypewriterHeader ({ text = '' }) {
+  const [displayedText, setDisplayedText] = useState('')
 
   useEffect(() => {
-    console.log("Texto recibido:", text);
-    let index = 0;
-    const interval = setInterval(() => {
-      //   console.log(`Index: ${index} / Longitud del texto: ${text.length}`);
-      if (index < text.length) {
-        const nextChar = text[index];
-        if (nextChar === undefined) {
-          console.error(`Carácter undefined en el índice ${index}`);
-        } else {
-          //   console.log(`Agregando carácter: ${nextChar}`);
-          setDisplayedText((prev) => prev + nextChar);
-        }
-        index++;
-      } else {
-        console.log("Texto completo, deteniendo intervalo.");
-        clearInterval(interval);
-      }
-    }, 100); // Ajusta la velocidad (100ms entre cada letra)
-    return () => clearInterval(interval);
-  }, [text]);
+    let active = true
+    setDisplayedText('')
 
-  return <>{displayedText}</>;
+    const typeNext = (index = 0) => {
+      if (!active || index >= text.length) return
+      setDisplayedText(prev => prev + text[index])
+      setTimeout(() => typeNext(index + 1), 100)
+    }
+
+    typeNext()
+
+    return () => {
+      active = false
+    }
+  }, [text])
+
+  return <>{displayedText}</>
 }
