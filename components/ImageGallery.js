@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import FsLightbox from "fslightbox-react";
 
-export default function ImageGallery({ images, columns = 2 }) {
+export default function ImageGallery({ images, columns = 2, isFull=true }) {
   const [toggler, setToggler] = useState(false);
   const [activeSlide, setActiveSlide] = useState(1);
 
@@ -26,23 +26,23 @@ export default function ImageGallery({ images, columns = 2 }) {
   };
 
   return (
-    <div>
-      <div className={`grid ${baseGridClass} gap-4`}>
+    <div className="h-full">
+      <div className={`grid ${baseGridClass} gap-4 h-full`}>
         {images.map((img, index) => {
           // Si la imagen es horizontal, se extiende en todas las columnas
           const itemClass = img.horizontal ? horizontalClass : "";
           return (
             <div
               key={index}
-              className={`cursor-pointer ${itemClass}`}
+              className={`cursor-pointer ${itemClass} h-full ${isFull=== false && "max-h-[847.91px]"}`}
               onClick={() => handleClick(index)}
             >
               <Image
                 src={img.src}
                 alt={img.alt || `Imagen ${index + 1}`}
-                width={300}
-                height={200}
-                className="object-cover w-full h-auto"
+                width={1000}
+                height={600}
+                className={`w-full  ${isFull=== true ? "object-cover h-auto" : "object-contain h-full"}`}
               />
             </div>
           );

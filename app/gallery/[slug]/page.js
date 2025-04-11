@@ -44,21 +44,21 @@ export default async function GalleryPage ({ params }) {
   return (
     <>
       <section className='container mx-auto px-4 mt-16'>
-        <div className='flex flex-col md:flex-row md:items-center md:justify-between relative'>
+        <div className='flex flex-col md:flex-row md:justify-between relative'>
           <div className='w-full'>
             <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
               {project.name}
             </h1>
-            <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance'>
+            {/* <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance'>
               {project.phrase}
-            </span>
+            </span> */}
           </div> 
           <div className='w-full max-w-[740px] mt-8 md:mt-0'>
           <p
                  
-                  className='mb-4 md:text-lg 2xl:text-2xl font-medium text-pretty'
+                  className='mb-4 2xl:text-2xl font-medium text-pretty md:text-[27px]'
                 >
-                  {project.introductionText}
+                  {project.phrase}
                 </p>
           </div>
         </div>
@@ -70,7 +70,8 @@ export default async function GalleryPage ({ params }) {
             <Image
               src={project.firstImage}
               alt={`Animación de ${project.name}`}
-              className='w-full h-auto relative -translate-y-[15%]'
+              className='w-full h-auto relative'
+              // className='w-full h-auto relative -translate-y-[15%]'
               width={100}
               height={200}
               unoptimized
@@ -86,6 +87,7 @@ export default async function GalleryPage ({ params }) {
               text={project.data[0]}
               linkText='Saber más'
               linkUrl='/saber-mas'
+              className="md:text-[27px]"
             />
           </div>
         </section>
