@@ -12,12 +12,10 @@ export default function Footer () {
             href='/'
             className='w-full flex flex-col items-center justify-center'
           >
-            <Image
+            <img
               className='h-auto object-contain w-48 mx-auto'
               src='/logo/logo.png'
               alt='Logo Andrea Loarte Design Studio'
-              width={280}
-              height={30}
               loading='lazy'
             />
             <p className='text-[#1a47c4] text-base text-left font-cardo'>
