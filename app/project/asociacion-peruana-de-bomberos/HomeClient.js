@@ -16,8 +16,18 @@ export default async function HomeClient() {
   return (
     <main className="min-h-screen">
       <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[0], galleryImages[1]]} columns={2} />
+        <ImageGallery images={[galleryImages[3], galleryImages[4]]} columns={2} />
       </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[2]]} columns={1} />
+      </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[6], galleryImages[13]]} columns={2} />
+      </section>
+      {/* <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[12]]} columns={1} />
+      </section> */}
+
       
       <section className='container mx-auto px-4 mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
@@ -29,8 +39,29 @@ export default async function HomeClient() {
         </div>
       </section>
       <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[2]]} columns={1} />
+        <ImageGallery images={[galleryImages[7]]} columns={1} />
       </section>
+      {/* <section className="container mx-auto px-4 mt-16 max-h-[800px]">
+        <ImageGallery images={[galleryImages[5], galleryImages[14]]} columns={2} />
+      </section> */}
+      <section className='container mx-auto px-4 mt-16'>
+        <div className='w-full md:w-1/2 md:ml-auto'>
+          <Testimonial
+            text={project.data[2]}
+            linkText='Saber más'
+            linkUrl='/saber-mas'
+          />
+        </div>
+      </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[1]]} columns={1} />
+      </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[15]]} columns={1} />
+      </section>
+      {/* <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[16]]} columns={1} />
+      </section> */}
       
     </main>
   );

@@ -59,14 +59,14 @@
       "id": "materia-secreta",
       "name": "Materia Secreta",
       "slug": "materia-secreta",
-      "phrase": "Pizza artesanal con identidad elegante y juvenil",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Branding and Packaging",
+      "introductionText":"Dark kitchen peruana que ofrece una propuesta de pizza artesanal con una identidad elegante, juvenil y fuera de lo convencional. El concepto gira en torno a lo oculto y lo inesperado, creando una experiencia sensorial que se descubre bocado a bocado.",
       "data": [
-        "Materia Secreta es una dark kitchen peruana que ofrece una propuesta de pizza artesanal con una identidad elegante, juvenil y fuera de lo convencional. El concepto gira en torno a lo oculto y lo inesperado, creando una experiencia sensorial que se descubre bocado a bocado.",
-        "El proyecto fusiona branding, ilustración y fotografía para construir una narrativa visual introspectiva. Se optó por una estética mística que explora lo simbólico y lo emocional, utilizando composiciones en alto contraste y un lenguaje gráfico editorial. La marca sugiere exclusividad a través de texturas, detalles metálicos y un tono sofisticado que se aleja del típico fast food."
+        "El proyecto fusiona branding, ilustración y fotografía para construir una narrativa visual introspectiva.",
+        "Se optó por una estética mística que explora lo simbólico y lo emocional, utilizando composiciones en alto contraste y un lenguaje gráfico editorial. La marca sugiere exclusividad a través de texturas, detalles metálicos y un tono sofisticado que se aleja del típico fast food."
       ],
       "galleryImage": "/projects/materia_secreta/portada_2.jpg",
-      "firstImage": "/projects/materia_secreta/portada_2.jpg",
+      "firstImage": "/projects/materia_secreta/materia_secreta_portada.png",
       "galleryImages": [
         {
           "src": "/projects/materia_secreta/materia_secreta_portada.png",
@@ -75,11 +75,46 @@
         },
         {
           "src": "/projects/materia_secreta/portada_2.jpg",
-          "alt": "Portada 2 Materia Secreta"
+          "alt": "Portada 2 Materia Secreta",
+          "horizontal": true
         },
         {
           "src": "/projects/materia_secreta/portada.jpg",
           "alt": "Portada Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/ADAPTACION.jpg",
+          "alt": "Adaptación Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/carta.jpg",
+          "alt": "Carta Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/etiqueta.jpg",
+          "alt": "Etiqueta Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/FLYER.jpg",
+          "alt": "Flyer Materia Secreta",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/materia_secreta/graficos.jpg",
+          "alt": "Gráficos Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/LOGO II.jpg",
+          "alt": "Logo II Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/LOGO.jpg",
+          "alt": "Logo Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/PALETA DE COLOR.jpg",
+          "alt": "Paleta de Color Materia Secreta",
+          "horizontal": true
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -88,10 +123,10 @@
       "id": "asociacion-peruana-de-bomberos",
       "name": "Asociación Peruana de Bomberos",
       "slug": "asociacion-peruana-de-bomberos",
-      "phrase": "Una identidad con propósito social",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Branding & Art Direction",
+      "introductionText":"Una identidad con propósito social. Este proyecto implicó una auditoría visual profunda y un rediseño estratégico orientado a resolver los problemas de comunicación institucional.",
       "data": [
-        "Este proyecto implicó una auditoría visual profunda y un rediseño estratégico orientado a resolver los problemas de comunicación institucional. Se trabajó la propuesta desde la definición de su ADN organizacional, abarcando identidad, propósito y proyección futura.",
+        "Se trabajó la propuesta desde la definición de su ADN organizacional, abarcando identidad, propósito y proyección futura.",
         "La propuesta de branding partió desde la definición de su ADN organizacional, abarcando identidad, propósito y proyección futura. Se trabajó el concepto desde la raíz, con la creación de un logotipo que reinterpretara símbolos tradicionales bajo una estética joven, activa y solidaria. La nueva identidad incluyó un sistema visual adaptable para múltiples formatos, así como una línea gráfica que acompaña desde productos de merch hasta comunicación institucional.",
         "La gama cromática, liderada por el rojo, se equilibró con tonos metálicos y neutros para conservar la autoridad simbólica de la institución, mientras que las ilustraciones y recursos visuales apuntan a una comunidad en formación, con vocación, pero también con cercanía."
       ],
@@ -104,7 +139,70 @@
         },
         {
           "src": "/projects/asociacion_peruana_de_bomberos/portada.jpg",
-          "alt": "Portada Bomberos"
+          "alt": "Portada Bomberos",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/APB WEB-.png",
+          "alt": "APB Web"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/MANUAL.png",
+          "alt": "Manual APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/concepto.png",
+          "alt": "Concepto APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/CARRO.jpg",
+          "alt": "Manual APB"        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/PORTADA_chicos.jpg",
+          "alt": "Portada Alternativa APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/SocialMediaMockup.jpg",
+          "alt": "Social Media Mockup APB",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/BRANDING.jpg",
+          "alt": "Branding APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/FLYERS.jpg",
+          "alt": "Flyers APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/MOODBOARD.jpg",
+          "alt": "Moodboard APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/PATTERN.jpg",
+          "alt": "Pattern APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/EXTINTOR.jpg",
+          "alt": "EXTINTOR APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/uniforme.png",
+          "alt": "UNIFORME APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/FAMILIA2.png",
+          "alt": "FAMILIA APB"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/post.png",
+          "alt": "POST APB",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/FINAL.png",
+          "alt": "FINAL APB",
+          "horizontal": true
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -180,31 +278,33 @@
       "id": "haz-group",
       "name": "Haz Group",
       "slug": "haz-group",
-      "phrase": "Solidez y diferenciación para un grupo empresarial",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "ReBranding",
+      "introductionText":"Solidez y diferenciación para un grupo empresarial. Con más de dos décadas de experiencia en el mercado peruano, Haz Group reúne distintas unidades comerciales como Concrelab&Mix, H&M y HAZ, especializadas en sectores técnicos e industriales.",
       "data": [
-        "Con más de dos décadas de experiencia en el mercado peruano, Haz Group reúne distintas unidades comerciales como Concrelab&Mix, H&M y HAZ, especializadas en sectores técnicos e industriales. El reto fue construir una identidad visual corporativa sólida que permitiera unificar al grupo sin diluir la esencia de cada empresa.",
-        "El sistema de marca se diseñó con el objetivo de diferenciarse de la competencia, alejándose de códigos visuales genéricos del sector. Cada logotipo responde a una estructura madre que articula coherencia visual y autonomía estratégica, posicionando a Haz Group como una organización moderna, estructurada y visualmente reconocible en múltiples contextos."
+        "El reto fue construir una identidad visual corporativa sólida que permitiera unificar al grupo sin diluir la esencia de cada empresa.",
+        "El sistema de marca se diseñó con el objetivo de diferenciarse de la competencia, alejándose de códigos visuales genéricos del sector.",
+        " Cada logotipo responde a una estructura madre que articula coherencia visual y autonomía estratégica, posicionando a Haz Group como una organización moderna, estructurada y visualmente reconocible en múltiples contextos."
       ],
       "galleryImage": "/projects/haz-group/hazgroup_portada.png",
-      "firstImage": "/projects/haz-group/contenedores-.jpg",
+      "firstImage": "/projects/haz-group/HG-Tela.jpg",
       "galleryImages": [
         {
           "src": "/projects/haz-group/CONCRELAB.jpg",
-          "alt": "Concrelab",
-          "horizontal": true
+          "alt": "Concrelab"
         },
         {
           "src": "/projects/haz-group/contenedores-.jpg",
-          "alt": "Contenedores"
+          "alt": "Contenedores",
+          "horizontal": true
         },
         {
           "src": "/projects/haz-group/GIF HAZ GROUP.gif",
           "alt": "GIF Haz Group"
         },
         {
-          "src": "/projects/haz-group/H&M-.jpg",
-          "alt": "H&M"
+          "src": "/projects/haz-group/H&M-cajas.jpg",
+          "alt": "H&M",
+          "horizontal": true
         },
         {
           "src": "/projects/haz-group/H&M.jpg",
@@ -212,11 +312,11 @@
         },
         {
           "src": "/projects/haz-group/HAZ.jpg",
-          "alt": "HAZ"
-        },
+          "alt": "HAZ"        },
         {
           "src": "/projects/haz-group/hazgroup_portada.png",
-          "alt": "Portada Haz Group"
+          "alt": "Portada Haz Group",
+          "horizontal": true
         },
         {
           "src": "/projects/haz-group/HG-Files.jpg",
@@ -229,6 +329,16 @@
         {
           "src": "/projects/haz-group/HG-Tela.jpg",
           "alt": "HG Tela"
+        },
+        {
+          "src": "/projects/haz-group/ORGANIZACION_EMPRESA.jpg",
+          "alt": "ORGANIZACION EMPRESA",
+          "horizontal":true
+        },
+        {
+          "src": "/projects/haz-group/portada.jpg",
+          "alt": "Concrelab",
+          "horizontal": true
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."

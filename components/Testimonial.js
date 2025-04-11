@@ -17,12 +17,12 @@ export default function Testimonial({
           <img src={imageSrc} alt={imageAlt} className="w-full h-auto object-cover" />
         </div>
       )}
-      <div className="w-full md:w-2/3">
+      <div className="w-full md:w-[68%]">
         <blockquote>
-          <p className="text-base md:text-2xl">{text}</p>
-          <a href={linkUrl} className="block text-[#e61428] mt-4">
+          <p className="text-base md:text-[27px]">{text}</p>
+          {/* <a href={linkUrl} className="block text-[#e61428] mt-4">
             {linkText}
-          </a>
+          </a> */}
         </blockquote>
       </div>
       {imageSrc && imagePosition === "right" && (
