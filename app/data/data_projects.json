@@ -5,93 +5,237 @@
       "name": "ASHETI",
       "slug": "asheti",
       "phrase": "Revalorizando la cultura shipibo desde el empaque",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Ashéti, vocablo shipibo que significa 'aprender', es una marca de chocolates originaria de Tingo María, Perú, comprometida con la revalorización de la cultura ancestral amazónica y el comercio justo con agricultores cacaoteros locales. Para su rebranding se desarrolló una línea gráfica que conecta lo simbólico con lo sensorial.",
         "Inspirado en la iconografía shipibo-conibo, el diseño toma patrones nativos reinterpretados como lenguaje visual para cada uno de los sabores: aguaymanto, café, pasas, bitter y pasta pura de cacao. Cada barra funciona como una pieza narrativa que celebra identidad, origen y biodiversidad."
       ],
-      "galleryImage": "/projects/asheti/asheti_portada.jpg"
+      "galleryImage": "/projects/asheti/asheti_portada.jpg",
+      "firstImage": "/projects/asheti/asheti_portada.jpg",
+      "galleryImages": [
+        {
+          "src": "/projects/asheti/asheti_portada.jpg",
+          "alt": "Portada Asheti"
+        },
+        {
+          "src": "/projects/asheti/collage_asheti.jpg",
+          "alt": "Collage Asheti"
+        },
+        {
+          "src": "/projects/asheti/productos_asheti_2.jpg",
+          "alt": "Productos Asheti",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/asheti/productos_asheti.jpg",
+          "alt": "Productos Asheti",
+          "horizontal": true
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "materia-secreta",
       "name": "Materia Secreta",
       "slug": "materia-secreta",
       "phrase": "Pizza artesanal con identidad elegante y juvenil",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Materia Secreta es una dark kitchen peruana que ofrece una propuesta de pizza artesanal con una identidad elegante, juvenil y fuera de lo convencional. El concepto gira en torno a lo oculto y lo inesperado, creando una experiencia sensorial que se descubre bocado a bocado.",
         "El proyecto fusiona branding, ilustración y fotografía para construir una narrativa visual introspectiva. Se optó por una estética mística que explora lo simbólico y lo emocional, utilizando composiciones en alto contraste y un lenguaje gráfico editorial. La marca sugiere exclusividad a través de texturas, detalles metálicos y un tono sofisticado que se aleja del típico fast food."
       ],
-      "galleryImage": "/projects/materia_secreta/portada_2.jpg"
+      "galleryImage": "/projects/materia_secreta/portada_2.jpg",
+      "firstImage": "/projects/materia_secreta/portada_2.jpg",
+      "galleryImages": [
+        {
+          "src": "/projects/materia_secreta/materia_secreta_portada.png",
+          "alt": "Portada Materia Secreta",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/materia_secreta/portada_2.jpg",
+          "alt": "Portada 2 Materia Secreta"
+        },
+        {
+          "src": "/projects/materia_secreta/portada.jpg",
+          "alt": "Portada Materia Secreta"
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "asociacion-peruana-de-bomberos",
       "name": "Asociación Peruana de Bomberos",
       "slug": "asociacion-peruana-de-bomberos",
       "phrase": "Una identidad con propósito social",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Este proyecto implicó una auditoría visual profunda y un rediseño estratégico orientado a resolver los problemas de comunicación institucional. Se trabajó la propuesta desde la definición de su ADN organizacional, abarcando identidad, propósito y proyección futura.",
         "La propuesta de branding partió desde la definición de su ADN organizacional, abarcando identidad, propósito y proyección futura. Se trabajó el concepto desde la raíz, con la creación de un logotipo que reinterpretara símbolos tradicionales bajo una estética joven, activa y solidaria. La nueva identidad incluyó un sistema visual adaptable para múltiples formatos, así como una línea gráfica que acompaña desde productos de merch hasta comunicación institucional.",
         "La gama cromática, liderada por el rojo, se equilibró con tonos metálicos y neutros para conservar la autoridad simbólica de la institución, mientras que las ilustraciones y recursos visuales apuntan a una comunidad en formación, con vocación, pero también con cercanía."
       ],
-      "galleryImage": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png"
+      "galleryImage": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
+      "firstImage": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
+      "galleryImages": [
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
+          "alt": "Portada Asociación Peruana de Bomberos"
+        },
+        {
+          "src": "/projects/asociacion_peruana_de_bomberos/portada.jpg",
+          "alt": "Portada Bomberos"
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "verdant-inmobiliaria",
       "name": "Verdânt Inmobiliaria",
       "slug": "verdant-inmobiliaria",
       "phrase": "Rebranding verde que no pasa desapercibido",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Verdânt necesitaba una nueva forma de habitar el mercado. Se construyó una identidad visual que rompe con el discurso estándar de lo 'ecoamigable', apostando por una comunicación fresca, humana y visualmente memorable.",
         "El desarrollo de marca trascendió lo gráfico, tocando múltiples puntos de contacto: desde los uniformes del equipo de ventas hasta la colaboración con arquitectos para el diseño de stands, con el equipo audiovisual, todo para mantener los valores de la marca.",
         "La propuesta visual combinó ilustración orgánica, una paleta de verdes y tipografía geométrica funcional. El sistema se diseñó como una red adaptable que permite que la marca respire con coherencia en cada superficie: digital, impresa o espacial."
       ],
-      "galleryImage": "/projects/verdant/portada.jpg"
+      "galleryImage": "/projects/verdant/portada.jpg",
+      "firstImage": "/projects/verdant/portada.jpg",
+      "galleryImages": [
+        {
+          "src": "/projects/verdant/inmobiliaria-verdant.png",
+          "alt": "Verdant Inmobiliaria",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/verdant/portada.jpg",
+          "alt": "Portada Verdant",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/verdant/verdant_portada.png",
+          "alt": "Verdant Portada",
+          "horizontal": true
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "ndk-arquitectos",
       "name": "NDK Arquitectos",
       "slug": "ndk-arquitectos",
       "phrase": "Geometría, precisión y herencia familiar",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "NDK Arquitectos surge como una colaboración intergeneracional entre el arquitecto Narciso Soto Moscoso y sus hijas, Daniela y Karla Soto. Con raíces en Suiza y Perú, el estudio busca combinar experiencia técnica con una mirada joven, flexible y creativa hacia el diseño arquitectónico.",
         "El proyecto de identidad visual se desarrolló con una lógica basada en precisión, geometría y sobriedad. La marca debía transmitir la solidez de más de tres décadas de trayectoria, sin dejar de proyectar innovación. Se trabajó una paleta acromática y un sistema gráfico modular basado en retículas, que otorgan orden y flexibilidad al lenguaje visual.",
         "El resultado es una identidad elegante, funcional y adaptable a diferentes superficies, desde papelería institucional hasta soportes digitales y animados. Una marca que respira arquitectura desde la forma hasta el fondo."
       ],
-      "galleryImage": "/projects/ndk_arquitectos/portada-final-.jpg"
+      "galleryImage": "/projects/ndk_arquitectos/portada-final-.jpg",
+      "firstImage": "/projects/ndk_arquitectos/portada-final-.jpg",
+      "galleryImages": [
+        {
+          "src": "/projects/ndk_arquitectos/ndk_arquitectos_portada.jpg",
+          "alt": "Portada NDK Arquitectos",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada-final-.jpg",
+          "alt": "Portada Final NDK"
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada.jpg",
+          "alt": "Portada NDK"
+          
+        },
+        {
+          "src": "/projects/ndk_arquitectos/portada.png",
+          "alt": "Portada NDK"
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "haz-group",
       "name": "Haz Group",
       "slug": "haz-group",
       "phrase": "Solidez y diferenciación para un grupo empresarial",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Con más de dos décadas de experiencia en el mercado peruano, Haz Group reúne distintas unidades comerciales como Concrelab&Mix, H&M y HAZ, especializadas en sectores técnicos e industriales. El reto fue construir una identidad visual corporativa sólida que permitiera unificar al grupo sin diluir la esencia de cada empresa.",
         "El sistema de marca se diseñó con el objetivo de diferenciarse de la competencia, alejándose de códigos visuales genéricos del sector. Cada logotipo responde a una estructura madre que articula coherencia visual y autonomía estratégica, posicionando a Haz Group como una organización moderna, estructurada y visualmente reconocible en múltiples contextos."
       ],
-      "galleryImage": "/projects/hazgroup/hazgroup_portada.png"
+      "galleryImage": "/projects/hazgroup/hazgroup_portada.png",
+      "firstImage": "/projects/haz-group/GIF HAZ GROUP.gif",
+      "galleryImages": [
+        {
+          "src": "/projects/haz-group/CONCRELAB.jpg",
+          "alt": "Concrelab",
+          "horizontal": true
+        },
+        {
+          "src": "/projects/haz-group/contenedores-.jpg",
+          "alt": "Contenedores"
+        },
+        {
+          "src": "/projects/haz-group/GIF HAZ GROUP.gif",
+          "alt": "GIF Haz Group"
+        },
+        {
+          "src": "/projects/haz-group/H&M-.jpg",
+          "alt": "H&M"
+        },
+        {
+          "src": "/projects/haz-group/H&M.jpg",
+          "alt": "H&M"
+        },
+        {
+          "src": "/projects/haz-group/HAZ.jpg",
+          "alt": "HAZ"
+        },
+        {
+          "src": "/projects/haz-group/hazgroup_portada.png",
+          "alt": "Portada Haz Group"
+        },
+        {
+          "src": "/projects/haz-group/HG-Files.jpg",
+          "alt": "HG Files"
+        },
+        {
+          "src": "/projects/haz-group/HG-Papeleria.jpg",
+          "alt": "HG Papeleria"
+        },
+        {
+          "src": "/projects/haz-group/HG-Tela.jpg",
+          "alt": "HG Tela"
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "bita-atelier",
       "name": "Bita Atelier",
       "slug": "bita-atelier",
       "phrase": "Diseño consciente, hecho en colaboración artesanal",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Bita Atelier es una marca peruana de diseño consciente que une arte, sostenibilidad y compromiso social. Su propuesta nace del trabajo colaborativo con artesanos locales, creando productos únicos elaborados con materiales ecoamigables. Cada pieza no solo viste, sino que educa y promueve una relación respetuosa con el entorno.",
         "El desarrollo visual tradujo estos valores en una identidad delicada pero poderosa. Se diseñó un sistema gráfico orgánico, con una estética artesanal y cercana, que acompaña con coherencia desde etiquetas hasta empaques. El resultado: una marca que no solo diseña, sino que inspira a cuidar y amar el planeta."
       ],
       "galleryImage": "/projects/bita_atelier/bolsa-atelier.jpg",
-      "animationImage": "/projects/bita_atelier/bita-atelier-gif.gif",
+      "firstImage": "/projects/bita_atelier/bita-atelier-gif.gif",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio"
-        },
-        {
-          "src": "/projects/bita_atelier/building.png",
-          "alt": "Edificio 2"
+          "src": "/projects/bita_atelier/bita-atelier-gif.gif",
+          "alt": "Bita Atelier GIF"
         },
         {
           "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier",
+          "alt": "Bolsa Atelier"
+        },
+        {
+          "src": "/projects/bita_atelier/building.png",
+          "alt": "Building",
           "horizontal": true
         }
       ],
@@ -102,22 +246,42 @@
       "name": "Plena",
       "slug": "plena",
       "phrase": "Bienestar activo al alcance de tu mano",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Plena es un proyecto digital de salud y bienestar que promueve una vida más activa, participativa y consciente. A través de un aplicativo, invita a los usuarios a reconectar con su cuerpo y mente, creando hábitos saludables desde la experiencia diaria.",
         "El reto fue construir una identidad visual que transmita cercanía y energía sin recurrir a clichés del mundo fitness. La propuesta se basó en formas orgánicas, colores vibrantes y un lenguaje visual que respira optimismo y vitalidad. El diseño equilibra tecnología y humanidad, invitando al bienestar sin imposiciones."
       ],
-      "galleryImage": "/projects/plena/portada_plena.png"
+      "galleryImage": "/projects/plena/portada_plena.png",
+      "firstImage": "/projects/plena/portada_plena.png",
+      "galleryImages": [
+        {
+          "src": "/projects/plena/portada_plena.png",
+          "alt": "Portada Plena",
+          "horizontal": true
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     },
     {
       "id": "empapa-t",
       "name": "Empapa-T",
       "slug": "empapa-t",
       "phrase": "Comida rápida nativa",
+      "introductionText":"example test of an introduction for the project",
       "data": [
         "Empapa-T es una marca peruana de comida rápida que reivindica la herencia gastronómica andina desde una propuesta urbana, nativa y contemporánea. Su producto estrella: papas fritas hechas con variedades nativas servidas en cono, acompañadas de cremas caseras y bebidas naturales a base de frutas como aguaymanto, fresa y maracuyá.",
         "El desarrollo de marca partió de un concepto identitario: #SOLOLAMEJORCOSECHA. La identidad visual fusiona tradición y modernidad con una estética vibrante, gráfica y cercana, pensada para destacar en el entorno competitivo del street food sin perder autenticidad."
       ],
-      "galleryImage": "/projects/empapa_t/portada_empapa_t.png"
+      "galleryImage": "/projects/empapa_t/portada_empapa_t.png",
+      "firstImage": "/projects/empapa_t/portada_empapa_t.png",
+      "galleryImages": [
+        {
+          "src": "/projects/empapa_t/portada_empapa_t.png",
+          "alt": "Portada Empapa-T",
+          "horizontal": true
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
     }
   ]
 }
