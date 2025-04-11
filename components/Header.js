@@ -114,9 +114,10 @@ export default function Header () {
           <Image
             className='h-auto object-contain w-44 md:w-56'
             src={styleConfig.logoSrc}
-            alt='Logo Andrea'
-            width={500}
-            height={100}
+            alt='Logo Andrea Loarte Design Studio'
+            width={280}
+            height={30}
+            priority
           />
         </Link>
         <nav className='hidden md:flex items-center space-x-8'>
