@@ -2,11 +2,15 @@ import { getSlugProjects } from '@/lib/data'
 import Image from 'next/image'
 import Testimonial from '@/components/Testimonial'
 import ImageGallery from '@/components/ImageGallery'
+import { renderContenidoPorSlug } from './renderContenidoPorSlug';
 
 export async function generateMetadata ({ params }) {
   const { slug } = await params
   const { projects } = await getSlugProjects()
   const project = projects.find(p => p.slug === slug)
+  const Componente = renderContenidoPorSlug(slug);
+
+  if (!Componente) return <div>Página no encontrada</div>;
 
   if (!project) {
     return {
@@ -31,6 +35,7 @@ export default async function GalleryPage ({ params }) {
   const { slug } = await params
   const { projects } = await getSlugProjects()
   const project = projects.find(p => p.slug === slug)
+  const Componente = renderContenidoPorSlug(slug);
 
   if (!project) {
     return <p>Proyecto no encontrado.</p>
@@ -47,28 +52,25 @@ export default async function GalleryPage ({ params }) {
             <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance'>
               {project.phrase}
             </span>
-          </div>
+          </div> 
           <div className='w-full max-w-[740px] mt-8 md:mt-0'>
-            {project.data &&
-              project.data.map((paragraph, i) => (
-                <p
-                  key={i}
+          <p
+                 
                   className='mb-4 md:text-lg 2xl:text-2xl font-medium text-pretty'
                 >
-                  {paragraph}
+                  {project.introductionText}
                 </p>
-              ))}
           </div>
         </div>
       </section>
 
-      {project.animationImage && (
+      {project.firstImage && (
         <section className='container mx-auto px-4 mt-16'>
-          <div>
+          <div className='max-h-[847.91px] overflow-hidden relative'>
             <Image
-              src={project.animationImage}
+              src={project.firstImage}
               alt={`Animación de ${project.name}`}
-              className='w-full h-auto'
+              className='w-full h-auto relative -translate-y-[15%]'
               width={100}
               height={200}
               unoptimized
@@ -77,11 +79,11 @@ export default async function GalleryPage ({ params }) {
         </section>
       )}
 
-      {project.testimonialText && (
+      {project.data && (
         <section className='container mx-auto px-4 mt-16'>
           <div className='w-full md:w-1/2 md:ml-auto'>
             <Testimonial
-              text={project.testimonialText}
+              text={project.data[0]}
               linkText='Saber más'
               linkUrl='/saber-mas'
             />
@@ -89,11 +91,13 @@ export default async function GalleryPage ({ params }) {
         </section>
       )}
 
-      {project.galleryImages && project.galleryImages.length > 0 && (
+      {/* {project.galleryImages && project.galleryImages.length > 0 && (
         <section className='container mx-auto px-4 mt-16'>
           <ImageGallery images={project.galleryImages} columns={2} />
         </section>
-      )}
+      )} */}
+
+      {Componente && <Componente />}
     </>
   )
 }
