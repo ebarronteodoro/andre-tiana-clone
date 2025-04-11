@@ -44,8 +44,8 @@ export default function HomeClient () {
             className='w-full h-auto object-cover'
             src='/foto-andrea.png'
             alt='Foto Andrea'
-            width={1920}
-            height={1080}
+            width={800}
+            height={900}
             priority
           />
           <Image
@@ -54,8 +54,8 @@ export default function HomeClient () {
             }`}
             src='/foto-andrea-retrato.png'
             alt='Foto Retrato Andrea'
-            width={1920}
-            height={1080}
+            width={800}
+            height={900}
           />
           <span
             className='text-center w-x-auto text-white absolute bottom-[10%] left-[50%] -translate-x-1/2 -translate-y-1/2 font-cardo
@@ -74,7 +74,7 @@ export default function HomeClient () {
           ]}
         />
         <PhysicsImages
-          className='overflow-hidden w-2/5 absolute -bottom-4 right-0'
+          className='overflow-hidden hidden md:block w-2/5 absolute -bottom-4 right-0'
           images={[
             '/animated_bubble/bubble_packaging.png',
             '/animated_bubble/bubble_socialmedia.png',
