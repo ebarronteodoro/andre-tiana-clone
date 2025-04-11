@@ -233,7 +233,7 @@ export default function HomeClient () {
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
-                  src='/projects/hazgroup/portada.jpg'
+                  src='/projects/haz-group/portada.jpg'
                   alt='Foto Retrato Andrea'
                   width={1920}
                   height={1080}
