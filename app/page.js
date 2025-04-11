@@ -4,7 +4,8 @@ import AnimateOnScroll from '../components/AnimateOnScroll.jsx'
 import PhysicsImages from '@/components/PhysicsImages.jsx'
 import '../styles/index.css'
 import InteractiveProjectLink from '@/components/InteractiveProjectLink'
-import Image from 'next/image.js'
+import Image from 'next/image'
+import { getSlugProjects } from '@/lib/data'
 
 export const metadata = {
   title: 'Andrea Design Studio - Portfolio of projects and design works.',
@@ -14,7 +15,9 @@ export const metadata = {
     'Andrea Design Studio is a portfolio showcasing a variety of projects and design works.'
 }
 
-export default function HomePage () {
+export default async function HomePage () {
+  const { projects } = await getSlugProjects()
+
   return (
     <main className='min-h-screen !relative'>
       <section className='!relative w-full h-auto bg-[#1a47c4] p-8'>
@@ -69,11 +72,11 @@ export default function HomePage () {
       <section className='!relative w-full h-auto bg-white p-8'>
         <AnimateOnScroll
           animationClass='animate-fade-up'
-          delayClass='animate-delay-1s'
+          delayClass='animate-delay-100'
         >
           <div>
             <h2 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
-              Cada Proyecto Es Una Obra Unica
+              Cada Proyecto Es Una Obra Única
             </h2>
             <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>
               Obras Recientes En Exposición
@@ -83,46 +86,60 @@ export default function HomePage () {
 
         <AnimateOnScroll
           animationClass='animate-fade-up'
-          delayClass='animate-delay-1s'
+          delayClass='animate-delay-200'
         >
           <div className='grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1200px] mx-auto mt-8'>
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'ASHETI')?.slug || ''
+              }`}
               defaultText='ASHETI'
               hoverText='Revalorizando la cultura shipibo desde el empaque.'
               marcoSrc='/marco_de_foto.png'
               projectSrc='/projects/asheti/asheti_portada.jpg'
             />
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'Materia Secreta')?.slug || ''
+              }`}
               defaultText='Materia Secreta'
               hoverText='Dark kitchen peruana que ofrece una propuesta de pizza artesanal'
               marcoSrc='/marco_de_foto.png'
               projectSrc='/projects/materia_secreta/portada_2.jpg'
             />
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'Verdânt Inmobiliaria')?.slug ||
+                ''
+              }`}
               defaultText='Verdânt Inmobiliaria'
               hoverText='Rebranding verde que no pasa desapercibido.'
               marcoSrc='/marco_de_foto.png'
               projectSrc='/projects/verdant/portada.jpg'
             />
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'Haz Group')?.slug || ''
+              }`}
               defaultText='Haz Group'
               hoverText='Solidez y diferenciación para un grupo empresarial.'
               marcoSrc='/marco_de_foto.png'
               projectSrc='/projects/haz-group/portada.jpg'
             />
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'Asociación Peruana de Bomberos')
+                  ?.slug || ''
+              }`}
               defaultText='Asociación Peruana de Bomberos'
               hoverText='Una identidad con propósito social.'
               marcoSrc='/marco_de_foto.png'
               projectSrc='/projects/asociacion_peruana_de_bomberos/portada.jpg'
             />
             <InteractiveProjectLink
-              href=''
+              href={`/gallery/${
+                projects.find(p => p.name === 'NDK Arquitectos')?.slug || ''
+              }`}
               defaultText='NDK Arquitectos'
               hoverText='Geometría, precisión y herencia familiar.'
               marcoSrc='/marco_de_foto.png'
@@ -132,7 +149,7 @@ export default function HomePage () {
         </AnimateOnScroll>
         <AnimateOnScroll
           animationClass='animate-fade-up'
-          delayClass='animate-delay-1s'
+          delayClass='animate-delay-200'
         >
           <div>
             <Link
@@ -145,11 +162,11 @@ export default function HomePage () {
         </AnimateOnScroll>
       </section>
 
-      <AnimateOnScroll
-        animationClass='animate-fade-up'
-        delayClass='animate-delay-1s'
-      >
-        <section className='wrapper py-8'>
+      <section className='wrapper py-8'>
+        <AnimateOnScroll
+          animationClass='animate-fade-up'
+          delayClass='animate-delay-300'
+        >
           <div className='md:flex md:items-center max-w-[1440px] md:mx-auto md:justify-center'>
             <h3 className='font-cardo text-white text-center text-2xl px-8 md:text-5xl'>
               Quiero Empezar A Construir Mi Obra
@@ -161,8 +178,8 @@ export default function HomePage () {
               Agenda Aquí
             </Link>
           </div>
-        </section>
-      </AnimateOnScroll>
+        </AnimateOnScroll>
+      </section>
     </main>
   )
 }
