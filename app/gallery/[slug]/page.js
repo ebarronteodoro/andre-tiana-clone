@@ -2,15 +2,15 @@ import { getSlugProjects } from '@/lib/data'
 import Image from 'next/image'
 import Testimonial from '@/components/Testimonial'
 import ImageGallery from '@/components/ImageGallery'
-import { renderContenidoPorSlug } from './renderContenidoPorSlug';
+import { renderContenidoPorSlug } from './renderContenidoPorSlug'
 
 export async function generateMetadata ({ params }) {
   const { slug } = await params
   const { projects } = await getSlugProjects()
   const project = projects.find(p => p.slug === slug)
-  const Componente = renderContenidoPorSlug(slug);
+  const Componente = renderContenidoPorSlug(slug)
 
-  if (!Componente) return <div>Página no encontrada</div>;
+  if (!Componente) return <div>Página no encontrada</div>
 
   if (!project) {
     return {
@@ -35,7 +35,7 @@ export default async function GalleryPage ({ params }) {
   const { slug } = await params
   const { projects } = await getSlugProjects()
   const project = projects.find(p => p.slug === slug)
-  const Componente = renderContenidoPorSlug(slug);
+  const Componente = renderContenidoPorSlug(slug)
 
   if (!project) {
     return <p>Proyecto no encontrado.</p>
@@ -43,7 +43,7 @@ export default async function GalleryPage ({ params }) {
 
   return (
     <>
-      <section className='container mx-auto px-4 mt-16'>
+      <section className='container mx-auto px-4 mt-16 animate-fade-up'>
         <div className='flex flex-col md:flex-row md:justify-between relative'>
           <div className='w-full'>
             <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
@@ -52,14 +52,11 @@ export default async function GalleryPage ({ params }) {
             <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance text-gray-400'>
               {project.phrase}
             </span>
-          </div> 
+          </div>
           <div className='w-full max-w-[740px] mt-8 md:mt-0'>
-          <p
-                 
-                  className='mb-4 2xl:text-2xl font-medium text-pretty md:text-[27px]'
-                >
-                  {project.introductionText}
-                </p>
+            <p className='mb-4 2xl:text-2xl font-medium text-pretty md:text-[27px]'>
+              {project.introductionText}
+            </p>
           </div>
         </div>
       </section>
@@ -70,7 +67,7 @@ export default async function GalleryPage ({ params }) {
             <Image
               src={project.firstImage}
               alt={`Animación de ${project.name}`}
-              className='w-full h-auto relative'
+              className='w-full h-auto relative animate-fade-up animate-delay-200'
               // className='w-full h-auto relative -translate-y-[15%]'
               width={100}
               height={200}
@@ -87,7 +84,7 @@ export default async function GalleryPage ({ params }) {
               text={project.data[0]}
               linkText='Saber más'
               linkUrl='/saber-mas'
-              className="md:text-[27px]"
+              className='md:text-[27px]'
             />
           </div>
         </section>
