@@ -45,7 +45,7 @@ export default async function Home () {
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h1>
             <Link
-              href='https://wa.link/zz0sll'
+              href='https://docs.google.com/forms/d/e/1FAIpQLScJ5p8uYDnV24f9Ivg-PVMUNG70N1XbUvGZCRw0lXMoATVxuA/viewform?usp=sharing'
               target='_blank'
               className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-7 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2 lg:bottom-[10%] xl:bottom-[15%]'
             >
@@ -54,7 +54,7 @@ export default async function Home () {
           </div>
         </AnimateOnScroll>
       </section>
-      <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10'>
+      <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10 overflow-hidden'>
         <AnimateOnScroll
           animationClass='animate-fade-up relative z-10'
           delayClass='animate-delay-200'
@@ -68,13 +68,6 @@ export default async function Home () {
           delayClass='animate-delay-200'
         >
           <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-64 w-full' />
-          {/* <Image
-            src='/elementos.png'
-            width={1500}
-            height={800}
-            alt='Imagen referencial proyectos'
-            className='w-full h-auto object-contain'
-          /> */}
         </AnimateOnScroll>
       </section>
       <section className=''>
