@@ -133,15 +133,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/asheti/asheti_portada.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
@@ -165,15 +165,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/materia_secreta/portada_2.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
@@ -197,15 +197,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/verdant/portada.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
@@ -229,15 +229,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/haz-group/portada.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
@@ -261,15 +261,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/asociacion_peruana_de_bomberos/portada.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
@@ -293,15 +293,15 @@ export default function HomeClient () {
                   className='w-full h-auto object-cover'
                   src='/marco_de_foto.png'
                   alt='Foto Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
                 <Image
                   className={`absolute top-[50%] left-[50%] w-full h-[100%] object-cover -z-10 -translate-x-1/2 -translate-y-1/2`}
                   src='/projects/ndk_arquitectos/portada-final-.jpg'
                   alt='Foto Retrato Andrea'
-                  width={1920}
-                  height={1080}
+                  width={600}
+                  height={500}
                 />
               </div>
               <span className='mt-4 block text-xl transition-all duration-300'>
