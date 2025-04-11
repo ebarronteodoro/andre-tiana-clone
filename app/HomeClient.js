@@ -46,6 +46,7 @@ export default function HomeClient () {
             alt='Foto Andrea'
             width={1920}
             height={1080}
+            priority
           />
           <Image
             className={`absolute top-0 left-0 w-full h-auto object-cover transition-opacity duration-1000 ${
