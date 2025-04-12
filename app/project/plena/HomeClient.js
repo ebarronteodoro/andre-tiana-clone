@@ -16,7 +16,7 @@ export default async function HomeClient() {
   return (
     <main className="min-h-screen">
       <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[0]]} columns={2} />
+        <ImageGallery images={[galleryImages[1]]} columns={2} />
       </section>
       
       
@@ -29,6 +29,18 @@ export default async function HomeClient() {
           />
         </div>
       </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[4]]} columns={2} />
+      </section>
+
+      
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[2]]} columns={2} />
+      </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[3]]} columns={2} />
+      </section>
+      
       
 
       

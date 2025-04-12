@@ -3,13 +3,25 @@
 import React from "react";
 
 export default function Testimonial({
-  text,
+  text = "", // Agregamos un valor por defecto
   linkText = "Saber más",
   linkUrl = "#",
   imageSrc,         // opcional
   imageAlt = "",
   imagePosition = "left" // "left" o "right"
 }) {
+  // Función para procesar el texto y convertir <br/> en elementos JSX
+  const renderText = (text) => {
+    if (!text) return null; // Validación adicional
+    
+    return text.split('<br/>').map((line, index) => (
+      <React.Fragment key={index}>
+        {line}
+        {index < text.split('<br/>').length - 1 && <br />}
+      </React.Fragment>
+    ));
+  };
+
   return (
     <div className="flex flex-col md:flex-row items-center">
       {imageSrc && imagePosition === "left" && (
@@ -19,7 +31,7 @@ export default function Testimonial({
       )}
       <div className="w-full md:w-[68%]">
         <blockquote>
-          <p className="text-base md:text-[27px]">{text}</p>
+          <p className="text-base md:text-[27px]">{renderText(text)}</p>
           {/* <a href={linkUrl} className="block text-[#e61428] mt-4">
             {linkText}
           </a> */}

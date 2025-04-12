@@ -63,7 +63,8 @@ export default async function GalleryPage ({ params }) {
 
       {project.firstImage && (
         <section className='container mx-auto px-4 mt-16'>
-          <div className='max-h-[847.91px] overflow-hidden relative'>
+          <div className='relative'>
+          {/* <div className='max-h-[847.91px] overflow-hidden relative'> */}
             <Image
               src={project.firstImage}
               alt={`Animación de ${project.name}`}
