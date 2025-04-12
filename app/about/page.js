@@ -21,7 +21,7 @@ export default async function Home() {
             <div className='md:w-full'>
               <picture className='hidden relative w-full mx-auto max-w-[300px] md:block '>
                 <Image
-                  src='/foto-andrea.png'
+                  src='/foto-andrea.webp'
                   alt='Andrea Loarte'
                   width={500}
                   height={500}
@@ -46,7 +46,7 @@ export default async function Home() {
 
                 <picture className='relative w-full mx-auto max-w-[300px] md:hidden'>
                   <Image
-                    src='/foto-andrea.png'
+                    src='/foto-andrea.webp'
                     alt='Andrea Loarte'
                     width={500}
                     height={500}
