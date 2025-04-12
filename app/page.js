@@ -111,7 +111,7 @@ export default async function HomePage () {
               defaultText='Verdânt Inmobiliaria'
               hoverText='Rebranding verde que no pasa desapercibido.'
               marcoSrc='/marco_de_foto.png'
-              projectSrc='/projects/verdant/portada.jpg'
+              projectSrc='/projects/verdant-inmobiliaria/PORTADA.jpg'
             />
             <InteractiveProjectLink
               href={`/gallery/${
