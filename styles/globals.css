@@ -36,18 +36,20 @@ body {
   --font-helvetica-neue: var(--helvetica-neue-font), sans-serif;
   --font-times-new-roman: var(--times-new-roman-font), sans-serif;
   --font-cardo: var(--cardo-font), sans-serif;
-  --breakpoint-x4c: 400px;
-  --breakpoint-x5c: 500px;
 }
 
-[data-animate] {
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-  opacity: 0;
-  transform: translateY(1rem); /* equvalente a translate-y-4 */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {    
+    transform: translateY(-10px);
+  }
 }
 
-.flag-animation{
-  transition: all .3s ease;
+.flag-animation {
+  transition: all 0.3s ease;
   animation: andrealoarte-floating-flag_pulse-animation 2s infinite;
   border-radius: 100%;
 }

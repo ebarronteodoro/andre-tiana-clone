@@ -54,7 +54,7 @@ export default async function Home () {
           </div>
         </AnimateOnScroll>
       </section>
-      <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10 overflow-hidden'>
+      <section className='bg-[#1a47c4] px-8 md:px-20 2xl:px-64 pt-10 overflow-hidden hidden md:block'>
         <AnimateOnScroll
           animationClass='animate-fade-up relative z-10 max-w-[1200px] mx-auto'
           delayClass='animate-delay-200'
@@ -70,7 +70,7 @@ export default async function Home () {
           <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-64 2xl:-mt-[32rem] w-full' />
         </AnimateOnScroll>
       </section>
-      <section className=''>
+      <section className='pt-4 md:pt-0'>
         <div className='bg-[#3c251d] px-4 py-6 md:flex md:h-[380px]'>
           <div className='md:w-full md:relative'>
             <div className='right-0 md:absolute w-[200px] md:top-[20%] mx-auto'>
@@ -85,11 +85,10 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite_300ms]'
             />
           </picture>
           <div className='md:w-full relative'>
-            <div className=''></div>
             <p className='text-center block mx-auto font-cardo text-xl text-[#b89895] w-[224px] md:absolute md:left-0 md:top-[50%] md:-translate-y-1/2 md:text-2xl font-bold'>
               Tu marca merece una identidad visual que impacte.
             </p>
@@ -109,7 +108,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -133,7 +132,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -157,14 +156,14 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
             <Image
               src='/contacto/web_request_2.png'
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -188,7 +187,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -212,7 +211,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -236,7 +235,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>
@@ -260,7 +259,7 @@ export default async function Home () {
               width={200}
               height={100}
               alt='Imagen de contacto'
-              className='w-full mx-auto max-w-[350px] h-auto my-4'
+              className='w-full mx-auto max-w-[350px] h-auto my-4 animate-[float_3s_ease-in-out_infinite]'
             />
           </picture>
           <div className='md:w-full relative'>

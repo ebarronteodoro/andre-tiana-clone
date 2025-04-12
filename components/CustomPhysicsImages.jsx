@@ -204,11 +204,7 @@ export default function CustomPhysicsImages ({
   return (
     <div
       ref={sceneRef}
-      style={{
-        width: dimensions.width,
-        height: dimensions.height
-      }}
-      className='w-full h-screen' // o usa clases adecuadas de Tailwind
+      className='w-full'
     />
   )
 }
