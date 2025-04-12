@@ -15,9 +15,14 @@ export default async function HomeClient() {
 
   return (
     <main className="min-h-screen">
+      
       <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[0], galleryImages[1]]} columns={2} />
+        <ImageGallery images={[galleryImages[3]]} columns={2} />
       </section>
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[9]]} columns={2} />
+      </section>
+      
       
       <section className='container mx-auto px-4 mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
@@ -27,6 +32,22 @@ export default async function HomeClient() {
             linkUrl='/saber-mas'
           />
         </div>
+      </section>
+
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[10], galleryImages[2]]} columns={2} />
+      </section>
+
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[6], galleryImages[4]]} columns={2} />
+      </section>
+
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[7], galleryImages[8]]} columns={2} />
+      </section>
+
+      <section className="container mx-auto px-4 mt-16">
+        <ImageGallery images={[galleryImages[5]]} columns={2} />
       </section>
       
       

@@ -14,40 +14,47 @@
       "firstImage": "/projects/asheti/GIF-DE-PATRONES_ASHETI.gif",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/asheti/asheti_portada.jpg",
           "alt": "Portada Asheti",
           "horizontal": true
         },
         {
+          "index": 1,
           "src": "/projects/asheti/moodboard_asheti.jpg",
           "alt": "Collage Asheti",
           "horizontal": true
         },
         {
+          "index": 2,
           "src": "/projects/asheti/productos_asheti_2.jpg",
           "alt": "Productos Asheti"
         },
         {
+          "index": 3,
           "src": "/projects/asheti/productos_asheti.jpg",
           "alt": "Productos Asheti"
         },
         {
+          "index": 4,
           "src": "/projects/asheti/gif-empaques.gif",
           "alt": "Productos Asheti",
           "horizontal": true
         },
         {
+          "index": 5,
           "src": "/projects/asheti/GIF-DE-PATRONES_ASHETI.gif",
           "alt": "Productos Asheti",
           "horizontal": true
         },
         {
+          "index": 6,
           "src": "/projects/asheti/asheti_portada.jpg",
           "alt": "Productos Asheti",
           "horizontal": true
-        }
-        ,
+        },
         {
+          "index": 7,
           "src": "/projects/asheti/asheti_snr.jpg",
           "alt": "Productos Asheti",
           "horizontal": true
@@ -69,49 +76,60 @@
       "firstImage": "/projects/materia_secreta/materia_secreta_portada.png",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/materia_secreta/materia_secreta_portada.png",
           "alt": "Portada Materia Secreta",
           "horizontal": true
         },
         {
+          "index": 1,
           "src": "/projects/materia_secreta/portada_2.jpg",
           "alt": "Portada 2 Materia Secreta",
           "horizontal": true
         },
         {
+          "index": 2,
           "src": "/projects/materia_secreta/portada.jpg",
           "alt": "Portada Materia Secreta"
         },
         {
+          "index": 3,
           "src": "/projects/materia_secreta/ADAPTACION.jpg",
           "alt": "Adaptación Materia Secreta"
         },
         {
+          "index": 4,
           "src": "/projects/materia_secreta/carta.jpg",
           "alt": "Carta Materia Secreta"
         },
         {
+          "index": 5,
           "src": "/projects/materia_secreta/etiqueta.jpg",
           "alt": "Etiqueta Materia Secreta"
         },
         {
+          "index": 6,
           "src": "/projects/materia_secreta/FLYER.jpg",
           "alt": "Flyer Materia Secreta",
           "horizontal": true
         },
         {
+          "index": 7,
           "src": "/projects/materia_secreta/graficos.jpg",
           "alt": "Gráficos Materia Secreta"
         },
         {
+          "index": 8,
           "src": "/projects/materia_secreta/LOGO II.jpg",
           "alt": "Logo II Materia Secreta"
         },
         {
+          "index": 9,
           "src": "/projects/materia_secreta/LOGO.jpg",
           "alt": "Logo Materia Secreta"
         },
         {
+          "index": 10,
           "src": "/projects/materia_secreta/PALETA DE COLOR.jpg",
           "alt": "Paleta de Color Materia Secreta",
           "horizontal": true
@@ -134,72 +152,90 @@
       "firstImage": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/asociacion_peruana_de_bomberos/asociacion_peruana_de_bomberos_portada.png",
           "alt": "Portada Asociación Peruana de Bomberos"
         },
         {
+          "index": 1,
           "src": "/projects/asociacion_peruana_de_bomberos/portada.jpg",
           "alt": "Portada Bomberos",
           "horizontal": true
         },
         {
+          "index": 2,
           "src": "/projects/asociacion_peruana_de_bomberos/APB WEB-.png",
           "alt": "APB Web"
         },
         {
+          "index": 3,
           "src": "/projects/asociacion_peruana_de_bomberos/MANUAL.png",
           "alt": "Manual APB"
         },
         {
+          "index": 4,
           "src": "/projects/asociacion_peruana_de_bomberos/concepto.png",
           "alt": "Concepto APB"
         },
         {
+          "index": 5,
           "src": "/projects/asociacion_peruana_de_bomberos/CARRO.jpg",
-          "alt": "Manual APB"        },
+          "alt": "Manual APB"
+        },
         {
+          "index": 6,
           "src": "/projects/asociacion_peruana_de_bomberos/PORTADA_chicos.jpg",
           "alt": "Portada Alternativa APB"
         },
         {
+          "index": 7,
           "src": "/projects/asociacion_peruana_de_bomberos/SocialMediaMockup.jpg",
           "alt": "Social Media Mockup APB",
           "horizontal": true
         },
         {
+          "index": 8,
           "src": "/projects/asociacion_peruana_de_bomberos/BRANDING.jpg",
           "alt": "Branding APB"
         },
         {
+          "index": 9,
           "src": "/projects/asociacion_peruana_de_bomberos/FLYERS.jpg",
           "alt": "Flyers APB"
         },
         {
+          "index": 10,
           "src": "/projects/asociacion_peruana_de_bomberos/MOODBOARD.jpg",
           "alt": "Moodboard APB"
         },
         {
+          "index": 11,
           "src": "/projects/asociacion_peruana_de_bomberos/PATTERN.jpg",
           "alt": "Pattern APB"
         },
         {
+          "index": 12,
           "src": "/projects/asociacion_peruana_de_bomberos/EXTINTOR.jpg",
           "alt": "EXTINTOR APB"
         },
         {
+          "index": 13,
           "src": "/projects/asociacion_peruana_de_bomberos/uniforme.png",
           "alt": "UNIFORME APB"
         },
         {
+          "index": 14,
           "src": "/projects/asociacion_peruana_de_bomberos/FAMILIA2.png",
           "alt": "FAMILIA APB"
         },
         {
+          "index": 15,
           "src": "/projects/asociacion_peruana_de_bomberos/post.png",
           "alt": "POST APB",
           "horizontal": true
         },
         {
+          "index": 16,
           "src": "/projects/asociacion_peruana_de_bomberos/FINAL.png",
           "alt": "FINAL APB",
           "horizontal": true
@@ -211,30 +247,51 @@
       "id": "verdant-inmobiliaria",
       "name": "Verdânt Inmobiliaria",
       "slug": "verdant-inmobiliaria",
-      "phrase": "Rebranding verde que no pasa desapercibido",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Rebranding & Art Direction",
+      "introductionText":"Verdânt requería más que un cambio visual: necesitaba una nueva forma de habitar el mercado.",
       "data": [
-        "Verdânt necesitaba una nueva forma de habitar el mercado. Se construyó una identidad visual que rompe con el discurso estándar de lo 'ecoamigable', apostando por una comunicación fresca, humana y visualmente memorable.",
+        "Se construyó una identidad visual que rompe con el discurso estándar de lo 'ecoamigable', apostando por una comunicación fresca, humana y visualmente memorable.",
         "El desarrollo de marca trascendió lo gráfico, tocando múltiples puntos de contacto: desde los uniformes del equipo de ventas hasta la colaboración con arquitectos para el diseño de stands, con el equipo audiovisual, todo para mantener los valores de la marca.",
         "La propuesta visual combinó ilustración orgánica, una paleta de verdes y tipografía geométrica funcional. El sistema se diseñó como una red adaptable que permite que la marca respire con coherencia en cada superficie: digital, impresa o espacial."
       ],
       "galleryImage": "/projects/verdant/portada.jpg",
-      "firstImage": "/projects/verdant/portada.jpg",
+      "firstImage": "/projects/verdant-inmobiliaria/PORTADA_1.jpg",
       "galleryImages": [
         {
-          "src": "/projects/verdant/inmobiliaria-verdant.png",
-          "alt": "Verdant Inmobiliaria",
+          "index": 0,
+          "src": "/projects/verdant-inmobiliaria/BOLSOS.png",
+          "alt": "Bolsos Verdant",
           "horizontal": true
         },
         {
-          "src": "/projects/verdant/portada.jpg",
-          "alt": "Portada Verdant",
-          "horizontal": true
+          "index": 1,
+          "src": "/projects/verdant-inmobiliaria/IPHONE.png",
+          "alt": "iPhone Verdant"
         },
         {
-          "src": "/projects/verdant/verdant_portada.png",
-          "alt": "Verdant Portada",
-          "horizontal": true
+          "index": 2,
+          "src": "/projects/verdant-inmobiliaria/mural.jpg",
+          "alt": "Mural Verdant"
+        },
+        {
+          "index": 3,
+          "src": "/projects/verdant-inmobiliaria/PORTADA.jpg",
+          "alt": "Portada Verdant"
+        },
+        {
+          "index": 4,
+          "src": "/projects/verdant-inmobiliaria/post_1.png",
+          "alt": "Post 1 Verdant"
+        },
+        {
+          "index": 5,
+          "src": "/projects/verdant-inmobiliaria/post_2.png",
+          "alt": "Post 2 Verdant"
+        },
+        {
+          "index": 6,
+          "src": "/projects/verdant-inmobiliaria/VERDI_CALL.png",
+          "alt": "Verdi Call Verdant"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -254,20 +311,23 @@
       "firstImage": "/projects/ndk_arquitectos/portada-final-.jpg",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/ndk_arquitectos/ndk_arquitectos_portada.jpg",
           "alt": "Portada NDK Arquitectos",
           "horizontal": true
         },
         {
+          "index": 1,
           "src": "/projects/ndk_arquitectos/portada-final-.jpg",
           "alt": "Portada Final NDK"
         },
         {
+          "index": 2,
           "src": "/projects/ndk_arquitectos/portada.jpg",
           "alt": "Portada NDK"
-          
         },
         {
+          "index": 3,
           "src": "/projects/ndk_arquitectos/portada.png",
           "alt": "Portada NDK"
         }
@@ -285,57 +345,69 @@
         "El sistema de marca se diseñó con el objetivo de diferenciarse de la competencia, alejándose de códigos visuales genéricos del sector.",
         " Cada logotipo responde a una estructura madre que articula coherencia visual y autonomía estratégica, posicionando a Haz Group como una organización moderna, estructurada y visualmente reconocible en múltiples contextos."
       ],
-      "galleryImage": "/projects/haz-group/hazgroup_portada.png",
+      "galleryImage": "/projects/haz-group/portada.jpg",
       "firstImage": "/projects/haz-group/HG-Tela.jpg",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/haz-group/CONCRELAB.jpg",
           "alt": "Concrelab"
         },
         {
+          "index": 1,
           "src": "/projects/haz-group/contenedores-.jpg",
           "alt": "Contenedores",
           "horizontal": true
         },
         {
+          "index": 2,
           "src": "/projects/haz-group/GIF HAZ GROUP.gif",
           "alt": "GIF Haz Group"
         },
         {
+          "index": 3,
           "src": "/projects/haz-group/H&M-cajas.jpg",
-          "alt": "H&M",
-          "horizontal": true
+          "alt": "H&M"
         },
         {
+          "index": 4,
           "src": "/projects/haz-group/H&M.jpg",
           "alt": "H&M"
         },
         {
+          "index": 5,
           "src": "/projects/haz-group/HAZ.jpg",
-          "alt": "HAZ"        },
+          "alt": "HAZ"
+        },
         {
+          "index": 6,
           "src": "/projects/haz-group/hazgroup_portada.png",
           "alt": "Portada Haz Group",
           "horizontal": true
         },
         {
+          "index": 7,
           "src": "/projects/haz-group/HG-Files.jpg",
           "alt": "HG Files"
         },
         {
+          "index": 8,
           "src": "/projects/haz-group/HG-Papeleria.jpg",
           "alt": "HG Papeleria"
         },
         {
+          "index": 9,
           "src": "/projects/haz-group/HG-Tela.jpg",
           "alt": "HG Tela"
         },
         {
+          "index": 10,
           "src": "/projects/haz-group/ORGANIZACION_EMPRESA.jpg",
           "alt": "ORGANIZACION EMPRESA",
-          "horizontal":true
+          "horizontal": true
         },
         {
+          "index": 11,
           "src": "/projects/haz-group/portada.jpg",
           "alt": "Concrelab",
           "horizontal": true
@@ -347,27 +419,105 @@
       "id": "bita-atelier",
       "name": "Bita Atelier",
       "slug": "bita-atelier",
-      "phrase": "Diseño consciente, hecho en colaboración artesanal",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Branding",
+      "introductionText":"Diseño consciente, hecho en colaboración artesanal. Bita Atelier es una marca peruana que une arte, sostenibilidad y compromiso social.",
       "data": [
-        "Bita Atelier es una marca peruana de diseño consciente que une arte, sostenibilidad y compromiso social. Su propuesta nace del trabajo colaborativo con artesanos locales, creando productos únicos elaborados con materiales ecoamigables. Cada pieza no solo viste, sino que educa y promueve una relación respetuosa con el entorno.",
-        "El desarrollo visual tradujo estos valores en una identidad delicada pero poderosa. Se diseñó un sistema gráfico orgánico, con una estética artesanal y cercana, que acompaña con coherencia desde etiquetas hasta empaques. El resultado: una marca que no solo diseña, sino que inspira a cuidar y amar el planeta."
+        "Su propuesta nace del trabajo colaborativo con artesanos locales, creando productos únicos elaborados con materiales ecoamigables. Cada pieza no solo viste, sino que educa y promueve una relación respetuosa con el entorno.",
+        "El desarrollo visual tradujo estos valores en una identidad delicada pero poderosa. Se diseñó un sistema gráfico orgánico, con una estética artesanal y cercana, que acompaña con coherencia desde etiquetas hasta empaques. <br/>El resultado: una marca que no solo diseña, sino que inspira a cuidar y amar el planeta."
       ],
       "galleryImage": "/projects/bita_atelier/bolsa-atelier.jpg",
-      "firstImage": "/projects/bita_atelier/bita-atelier-gif.gif",
+      "firstImage": "/projects/bita_atelier/florero_atelier.jpg",
       "galleryImages": [
         {
-          "src": "/projects/bita_atelier/bita-atelier-gif.gif",
-          "alt": "Bita Atelier GIF"
+          "index": 0,
+          "src": "/projects/bita_atelier/atelier_gif.gif",
+          "alt": "Bita Atelier GIF",
+          "horizontal": true
         },
         {
-          "src": "/projects/bita_atelier/bolsa-atelier.jpg",
-          "alt": "Bolsa Atelier"
+          "index": 1,
+          "src": "/projects/bita_atelier/bolsa_atelier.jpg",
+          "alt": "Bolsa Atelier",
+          "horizontal": true
         },
         {
-          "src": "/projects/bita_atelier/building.png",
+          "index": 2,
+          "src": "/projects/bita_atelier/bita_edificios.jpg",
           "alt": "Building",
           "horizontal": true
+        },
+        {
+          "index": 3,
+          "src": "/projects/bita_atelier/bita_bocetos.jpg",
+          "alt": "Bocetos Bita"
+        },
+        {
+          "index": 4,
+          "src": "/projects/bita_atelier/bita_catalogo.jpg",
+          "alt": "Catálogo Bita"
+        },
+        {
+          "index": 5,
+          "src": "/projects/bita_atelier/bita_cronicas.jpg",
+          "alt": "Crónicas Bita"
+        },
+        {
+          "index": 6,
+          "src": "/projects/bita_atelier/bita_cuidados.jpg",
+          "alt": "Cuidados Bita"
+        },
+        {
+          "index": 7,
+          "src": "/projects/bita_atelier/bita_folders.jpg",
+          "alt": "Folders Bita",
+          "horizontal": true
+        },
+        {
+          "index": 8,
+          "src": "/projects/bita_atelier/bolsa_atelier2.jpg",
+          "alt": "Bolsa Atelier 2",
+          "horizontal": true
+        },
+        {
+          "index": 9,
+          "src": "/projects/bita_atelier/bolsa_atelier3.jpg",
+          "alt": "Bolsa Atelier 3"
+        },
+        {
+          "index": 10,
+          "src": "/projects/bita_atelier/bolsa_atelier4.jpg",
+          "alt": "Bolsa Atelier 4"
+        },
+        {
+          "index": 11,
+          "src": "/projects/bita_atelier/bolsita.jpg",
+          "alt": "Bolsita"
+        },
+        {
+          "index": 12,
+          "src": "/projects/bita_atelier/cuaderno_atelier.jpg",
+          "alt": "Cuaderno Atelier"
+        },
+        {
+          "index": 13,
+          "src": "/projects/bita_atelier/florero_atelier.jpg",
+          "horizontal":true,
+          "alt": "Florero Atelier"
+        },
+        {
+          "index": 14,
+          "src": "/projects/bita_atelier/flores_atelier.jpg",
+          "alt": "Flores Atelier"
+        },
+        {
+          "index": 15,
+          "src": "/projects/bita_atelier/mano.jpg",
+          "alt": "Mano"
+        },
+        {
+          "index": 16,
+          "src": "/projects/bita_atelier/producto_peruano.jpg",
+          "alt": "Producto Peruano"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
@@ -376,18 +526,43 @@
       "id": "plena",
       "name": "Plena",
       "slug": "plena",
-      "phrase": "Bienestar activo al alcance de tu mano",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Consultoría Creativa e Identidad",
+      "introductionText":"Bienestar activo al alcance de tu mano. Plena es un proyecto digital de salud y bienestar que promueve una vida más activa, participativa y consciente.",
       "data": [
-        "Plena es un proyecto digital de salud y bienestar que promueve una vida más activa, participativa y consciente. A través de un aplicativo, invita a los usuarios a reconectar con su cuerpo y mente, creando hábitos saludables desde la experiencia diaria.",
+        "A través de un aplicativo, invita a los usuarios a reconectar con su cuerpo y mente, creando hábitos saludables desde la experiencia diaria.",
         "El reto fue construir una identidad visual que transmita cercanía y energía sin recurrir a clichés del mundo fitness. La propuesta se basó en formas orgánicas, colores vibrantes y un lenguaje visual que respira optimismo y vitalidad. El diseño equilibra tecnología y humanidad, invitando al bienestar sin imposiciones."
       ],
-      "galleryImage": "/projects/plena/portada_plena.png",
+      "galleryImage": "/projects/plena/banner.jpg",
       "firstImage": "/projects/plena/portada_plena.png",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/plena/portada_plena.png",
           "alt": "Portada Plena",
+          "horizontal": true
+        },
+        {
+          "index": 1,
+          "src": "/projects/plena/banner.jpg",
+          "alt": "Banner Plena",
+          "horizontal": true
+        },
+        {
+          "index": 2,
+          "src": "/projects/plena/colores.jpg",
+          "alt": "Paleta de Colores Plena",
+          "horizontal": true
+        },
+        {
+          "index": 3,
+          "src": "/projects/plena/iPad.jpg",
+          "alt": "iPad Plena",
+          "horizontal": true
+        },
+        {
+          "index": 4,
+          "src": "/projects/plena/moodboard.jpg",
+          "alt": "Moodboard Plena",
           "horizontal": true
         }
       ],
@@ -397,19 +572,124 @@
       "id": "empapa-t",
       "name": "Empapa-T",
       "slug": "empapa-t",
-      "phrase": "Comida rápida nativa",
-      "introductionText":"example test of an introduction for the project",
+      "phrase": "Branding, Illustration and Packaging",
+      "introductionText":"Comida rápida nativa. Empapa-T es una marca peruana de comida rápida que reivindica la herencia gastronómica andina desde una propuesta urbana, nativa y contemporánea.",
       "data": [
-        "Empapa-T es una marca peruana de comida rápida que reivindica la herencia gastronómica andina desde una propuesta urbana, nativa y contemporánea. Su producto estrella: papas fritas hechas con variedades nativas servidas en cono, acompañadas de cremas caseras y bebidas naturales a base de frutas como aguaymanto, fresa y maracuyá.",
+        "Su producto estrella: papas fritas hechas con variedades nativas servidas en cono, acompañadas de cremas caseras y bebidas naturales a base de frutas como aguaymanto, fresa y maracuyá.",
         "El desarrollo de marca partió de un concepto identitario: #SOLOLAMEJORCOSECHA. La identidad visual fusiona tradición y modernidad con una estética vibrante, gráfica y cercana, pensada para destacar en el entorno competitivo del street food sin perder autenticidad."
       ],
-      "galleryImage": "/projects/empapa_t/portada_empapa_t.png",
-      "firstImage": "/projects/empapa_t/portada_empapa_t.png",
+      "galleryImage": "/projects/empapa_t/food.jpg",
+      "firstImage": "/projects/empapa_t/3c98c238-d3d5-40be-ad68-3c94866c8d5c_rw_1920.gif",
       "galleryImages": [
         {
+          "index": 0,
           "src": "/projects/empapa_t/portada_empapa_t.png",
           "alt": "Portada Empapa-T",
           "horizontal": true
+        },
+        {
+          "index": 1,
+          "src": "/projects/empapa_t/3c98c238-d3d5-40be-ad68-3c94866c8d5c_rw_1920.gif",
+          "alt": "Empapa-T Animation",
+          "horizontal": true
+        },
+        {
+          "index": 2,
+          "src": "/projects/empapa_t/celulares.jpg",
+          "alt": "Celulares Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 3,
+          "src": "/projects/empapa_t/construccion_de_logo.jpg",
+          "alt": "Construcción de Logo Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 4,
+          "src": "/projects/empapa_t/etiquetas.gif",
+          "alt": "Etiquetas Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 5,
+          "src": "/projects/empapa_t/food.jpg",
+          "alt": "Food Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 6,
+          "src": "/projects/empapa_t/foto de etiqueta.jpg",
+          "alt": "Foto de Etiqueta Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 7,
+          "src": "/projects/empapa_t/logoseñal.jpg",
+          "alt": "Logo Señal Empapa-T"
+        },
+        {
+          "index": 8,
+          "src": "/projects/empapa_t/marcodefoto.jpg",
+          "alt": "Marco de Foto Empapa-T"
+        },
+        {
+          "index": 9,
+          "src": "/projects/empapa_t/merch.jpg",
+          "alt": "Merchandising Empapa-T",
+          "horizontal": true
+        },
+        {
+          "index": 10,
+          "src": "/projects/empapa_t/mural.jpg",
+          "alt": "Mural Empapa-T",
+          "horizontal": true
+        }
+      ],
+      "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."
+    },
+    {
+      "id": "santa-cruz",
+      "name": "Santa Cruz",
+      "slug": "santa-cruz",
+      "phrase": "Branding, Illustration and Packaging",
+      "introductionText":"Comida rápida nativa. Empapa-T es una marca peruana de comida rápida que reivindica la herencia gastronómica andina desde una propuesta urbana, nativa y contemporánea.",
+      "data": [
+        "Su producto estrella: papas fritas hechas con variedades nativas servidas en cono, acompañadas de cremas caseras y bebidas naturales a base de frutas como aguaymanto, fresa y maracuyá.",
+        "El desarrollo de marca partió de un concepto identitario: #SOLOLAMEJORCOSECHA. La identidad visual fusiona tradición y modernidad con una estética vibrante, gráfica y cercana, pensada para destacar en el entorno competitivo del street food sin perder autenticidad."
+      ],
+      "galleryImage": "/projects/santa-cruz/CONCRETO.jpg",
+      "firstImage": "/projects/santa-cruz/CONCRETO.jpg",
+      "galleryImages": [
+        {
+          "index": 0,
+          "src": "/projects/santa-cruz/CONCRETO.jpg",
+          "alt": "Concreto Santa Cruz"
+        },
+        {
+          "index": 1,
+          "src": "/projects/santa-cruz/NICOMEDES.jpg",
+          "alt": "Nicomedes Santa Cruz"
+        },
+        {
+          "index": 2,
+          "src": "/projects/santa-cruz/NICOMEDEZ-.jpg",
+          "alt": "Nicomedez Santa Cruz"
+        },
+        {
+          "index": 3,
+          "src": "/projects/santa-cruz/NICOMEDEZ-II.jpg",
+          "alt": "Nicomedez II Santa Cruz"
+        },
+        {
+          "index": 4,
+          "src": "/projects/santa-cruz/T-Shirt-Mockup.jpg",
+          "alt": "T-Shirt Mockup Santa Cruz"
+        },
+        {
+          "index": 5,
+          "src": "/projects/santa-cruz/TSHIRT.jpg",
+          "alt": "T-Shirt Santa Cruz"
         }
       ],
       "testimonialText": "Bita atelier es una marca peruana que fomenta una consciencia ambiental, artística y social. Trabajan de la mano con artesanos peruanos diseñando productos con materiales ecoamigables que permitan a los usuarios aprender a cuidar y amar el planeta, porque Bita atelier ‘Diseña consciente’."

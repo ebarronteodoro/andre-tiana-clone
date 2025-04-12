@@ -54,11 +54,11 @@ export default async function HomeClient() {
         <ImageGallery images={[galleryImages[0], galleryImages[5]]} columns={2} />
       </section>
       <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[4]]} columns={2} />
+        <ImageGallery images={[galleryImages[4], galleryImages[3]]} columns={2} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
+      {/* <section className="container mx-auto px-4 mt-16">
         <ImageGallery images={[galleryImages[3]]} columns={2} />
-      </section>
+      </section> */}
       <section className="container mx-auto px-4 mt-16">
         <ImageGallery images={[galleryImages[1]]} columns={2} />
       </section>

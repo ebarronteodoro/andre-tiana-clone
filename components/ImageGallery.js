@@ -42,7 +42,7 @@ export default function ImageGallery({ images, columns = 2, isFull=true }) {
                 alt={img.alt || `Imagen ${index + 1}`}
                 width={1000}
                 height={600}
-                className={`w-full h-auto object-cover h-full ${isFull=== false && "max-h-[847.91px]"}`}
+                className={`w-full  ${isFull=== true ? "object-cover h-auto" : "object-contain h-full"}`}
               />
             </div>
           );
