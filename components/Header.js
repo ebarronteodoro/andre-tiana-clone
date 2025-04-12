@@ -23,7 +23,7 @@ export default function Header () {
       navInactive: isSpecial
         ? 'md:text-white'
         : 'md:text-[#999] md:hover:text-[#1a1a1a]',
-      logoSrc: isSpecial ? '/logo/logo-blanco.webp' : '/logo/logo.webp',
+      logoSrc: isSpecial ? '/logo/logo-blanco.png' : '/logo/logo.webp',
       mobileBar:
         pathname === '/' || pathname === '/about' ? 'bg-white' : 'bg-black'
     }
