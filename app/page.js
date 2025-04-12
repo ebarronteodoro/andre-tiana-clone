@@ -149,7 +149,7 @@ export default async function HomePage () {
         >
           <div>
             <Link
-              href='#'
+              href='/gallery'
               className='mx-auto my-8 text-center block w-fit bg-[#1a47c4] text-[16px] px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-white rounded-[10px] hover:bg-white transition all hover:text-[#1a47c4]'
             >
               Ver más proyectos
@@ -168,7 +168,9 @@ export default async function HomePage () {
               Quiero Empezar A Construir Mi Obra
             </h3>
             <Link
-              href='/dashboard'
+              href='https://docs.google.com/forms/d/e/1FAIpQLScJ5p8uYDnV24f9Ivg-PVMUNG70N1XbUvGZCRw0lXMoATVxuA/viewform?usp=sharing'
+              target='_blank'
+              rel='noopener noreferrer'
               className='mx-auto text-center block w-fit bg-white text-[16px] mt-4 px-4 py-2 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-[#292605] md:m-0 rounded-[10px] hover:bg-[#1a47c4] transition all hover:text-white'
             >
               Agenda Aquí
