@@ -26,7 +26,7 @@ export default async function Home () {
           <AnimateOnScroll>
             <div className="space-y-6">
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
-                ¿Cómo contrato el servicio de branding en Andre & Tiana?
+                ¿Cómo contrato el servicio de branding en Andre Studio?
               </h2>
               <p className="text-gray-600 leading-relaxed">
                 El primer paso es agendar una sesión con Mon, nuestra experta en branding, para conocer más sobre tu negocio y necesidades. Esta sesión virtual es un espacio cómodo y relajado, como tomar un café con amigos. Durante esta conversación, te sugerimos el paquete que mejor se adapte a ti y podremos comenzar cuando estés listo.

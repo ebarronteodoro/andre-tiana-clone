@@ -7,19 +7,20 @@ import { getSlugProjects } from '@/lib/data'
 export default async function HomeClient() {
 
   const { projects } = await getSlugProjects()
-  const project = projects.find(p => p.slug === "verdant-inmobiliaria")
+  const project = projects.find(p => p.slug === "santa-cruz")
 
   // Usamos directamente el array galleryImages del proyecto
   const galleryImages = project.galleryImages;
-  console.log(galleryImages);
+  
+  
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[0]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[0], galleryImages[5]]} columns={2} />
       </section>
 
-      <section className='container mx-auto px-4 mt-16'>
+      <section className='container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
             text={project.data[1]}
@@ -28,25 +29,26 @@ export default async function HomeClient() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[3]]} horizontal={true} width={1080} height={1350}/>
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[1], galleryImages[2]]} columns={2} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[3], galleryImages[4]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[4]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[5], galleryImages[6]]} columns={2} />
-      </section>
+      
       {/* 
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[7], galleryImages[8]]} columns={2} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[9]]} columns={2} />
       </section> */}
 
 
-      <section className='container mx-auto px-4 mt-16'>
+      {/* <section className='container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
             text={project.data[2]}
@@ -54,7 +56,7 @@ export default async function HomeClient() {
             linkUrl='/saber-mas'
           />
         </div>
-      </section>
+      </section> */}
 
 
     </main>

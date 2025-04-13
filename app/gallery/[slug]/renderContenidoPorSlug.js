@@ -12,7 +12,8 @@ export const renderContenidoPorSlug = (slug) => {
     "haz-group": dynamic(() => import("../../project/haz-group/page.js")),
     "bita-atelier": dynamic(() => import("../../project/bita-atelier/page.js")),
     "plena": dynamic(() => import("../../project/plena/page.js")),
-    "empapa-t": dynamic(() => import("../../project/empapa-t/page.js"))
+    "empapa-t": dynamic(() => import("../../project/empapa-t/page.js")),
+    "santa-cruz": dynamic(() => import("../../project/santa-cruz/page.js")),
   };
 
   return paginas[slug] || null;

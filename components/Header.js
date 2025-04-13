@@ -145,7 +145,7 @@ export default function Header () {
             <Link
               href={
                 pathname === '/brochure'
-                  ? 'https://www.instagram.com/andreytiana.design/'
+                  ? 'https://www.instagram.com/andrea.loarte.s/'
                   : '/'
               }
               target={pathname === '/brochure' ? '_blank' : undefined}

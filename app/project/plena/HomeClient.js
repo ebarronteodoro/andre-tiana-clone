@@ -15,12 +15,12 @@ export default async function HomeClient() {
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[1]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
       
       
-      <section className='container mx-auto px-4 mt-16'>
+      <section className='container mx-auto px-4 mt-4 md:mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
             text={project.data[1]}
@@ -29,16 +29,16 @@ export default async function HomeClient() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[4]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[4]]} horizontal={true} />
       </section>
 
       
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[2]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[2]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[3]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[3]]} horizontal={true} />
       </section>
       
       

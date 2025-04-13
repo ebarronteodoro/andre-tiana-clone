@@ -21,8 +21,8 @@ export default async function Home () {
           <AnimateOnScroll>
             <h2 className="text-2xl font-semibold mb-4">1. Definiciones</h2>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Andre & Tiana: Estudio de diseño especializado en branding, rebranding, socialmedia, webs, ilustración, packaging, fotografía y consultoría.</li>
-              <li>Cliente: Persona física o jurídica que contrata los servicios de Andre & Tiana.</li>
+              <li>Andre Studio: Estudio de diseño especializado en branding, rebranding, socialmedia, webs, ilustración, packaging, fotografía y consultoría.</li>
+              <li>Cliente: Persona física o jurídica que contrata los servicios de Andre Studio.</li>
               <li>Servicios: Incluyen, pero no se limitan a, diseño de logotipos, identidad corporativa, material publicitario y consultoría en branding.</li>
             </ul>
           </AnimateOnScroll>
@@ -32,7 +32,7 @@ export default async function Home () {
         <section className="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
           <AnimateOnScroll>
             <h2 className="text-2xl font-semibold mb-4">2. Objeto</h2>
-            <p>Los presentes Términos y Condiciones regulan la prestación de servicios de diseño y branding por parte de Andre & Tiana al Cliente, estableciendo las obligaciones y derechos de ambas partes.</p>
+            <p>Los presentes Términos y Condiciones regulan la prestación de servicios de diseño y branding por parte de Andre Studio al Cliente, estableciendo las obligaciones y derechos de ambas partes.</p>
           </AnimateOnScroll>
         </section>
 
@@ -49,10 +49,10 @@ export default async function Home () {
           </AnimateOnScroll>
         </section>
 
-        {/* Obligaciones de Andre & Tiana */}
+        {/* Obligaciones de Andre Studio */}
         <section className="bg-white/5 p-6 rounded-lg backdrop-blur-sm">
           <AnimateOnScroll>
-            <h2 className="text-2xl font-semibold mb-4">4. Obligaciones de Andre & Tiana</h2>
+            <h2 className="text-2xl font-semibold mb-4">4. Obligaciones de Andre Studio</h2>
             <ul className="list-disc pl-6 space-y-2">
               <li><span className="font-medium">Calidad del Servicio:</span> Prestar los servicios con profesionalismo y conforme a los estándares de calidad del sector.</li>
               <li><span className="font-medium">Cumplimiento de Plazos:</span> Respetar los tiempos de entrega acordados, siempre que el Cliente haya cumplido con sus obligaciones.</li>
@@ -68,7 +68,7 @@ export default async function Home () {
             <ul className="list-disc pl-6 space-y-2">
               <li><span className="font-medium">Derechos de Autor:</span> Los derechos de autor serán transferidos al Cliente una vez realizado el pago completo.</li>
               <li><span className="font-medium">Uso de Diseños:</span> El Cliente tiene derecho a utilizar los diseños para los fines acordados.</li>
-              <li><span className="font-medium">Portafolio:</span> Andre & Tiana se reserva el derecho de incluir los trabajos en su portafolio.</li>
+              <li><span className="font-medium">Portafolio:</span> Andre Studio se reserva el derecho de incluir los trabajos en su portafolio.</li>
             </ul>
           </AnimateOnScroll>
         </section>
@@ -81,7 +81,7 @@ export default async function Home () {
               <li><span className="font-medium">Anticipo:</span> Se requiere un pago inicial del 50% del monto total presupuestado.</li>
               <li><span className="font-medium">Pago Final:</span> El 50% restante deberá ser abonado al finalizar el proyecto.</li>
               <li><span className="font-medium">Métodos de Pago:</span> Transferencia bancaria, tarjeta de crédito u otros acordados.</li>
-              <li><span className="font-medium">Retrasos:</span> Andre & Tiana puede suspender el trabajo hasta regularizar pagos pendientes.</li>
+              <li><span className="font-medium">Retrasos:</span> Andre Studio puede suspender el trabajo hasta regularizar pagos pendientes.</li>
             </ul>
           </AnimateOnScroll>
         </section>
@@ -143,7 +143,7 @@ export default async function Home () {
         <section className="bg-white/5 p-6 rounded-lg backdrop-blur-sm mt-8">
           <AnimateOnScroll>
             <p className="text-center text-sm italic">
-              Al contratar los servicios de Andre & Tiana, el Cliente reconoce haber leído, entendido y aceptado estos Términos y Condiciones en su totalidad.
+              Al contratar los servicios de Andre Studio, el Cliente reconoce haber leído, entendido y aceptado estos Términos y Condiciones en su totalidad.
             </p>
           </AnimateOnScroll>
         </section>

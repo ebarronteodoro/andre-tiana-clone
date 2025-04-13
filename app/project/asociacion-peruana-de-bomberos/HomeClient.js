@@ -11,25 +11,25 @@ export default async function HomeClient() {
 
   // Usamos directamente el array galleryImages del proyecto
   const galleryImages = project.galleryImages;
-  console.log(galleryImages);
+  // console.log(galleryImages);
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[3], galleryImages[4]]} columns={2} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[2]]} columns={1} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[2]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[6], galleryImages[13]]} columns={2} />
       </section>
-      {/* <section className="container mx-auto px-4 mt-16">
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[12]]} columns={1} />
       </section> */}
 
       
-      <section className='container mx-auto px-4 mt-16'>
+      <section className='container mx-auto px-4 mt-4 md:mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
             text={project.data[1]}
@@ -38,13 +38,13 @@ export default async function HomeClient() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-16">
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[7]]} columns={1} />
       </section>
-      {/* <section className="container mx-auto px-4 mt-16 max-h-[800px]">
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[5], galleryImages[14]]} columns={2} />
-      </section> */}
-      <section className='container mx-auto px-4 mt-16'>
+      </section>
+      <section className='container mx-auto px-4 mt-4 md:mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
             text={project.data[2]}
@@ -53,13 +53,13 @@ export default async function HomeClient() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[1]]} columns={1} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-16">
-        <ImageGallery images={[galleryImages[15]]} columns={1} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[15]]} horizontal={true} width={826} height={487} />
       </section>
-      {/* <section className="container mx-auto px-4 mt-16">
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[16]]} columns={1} />
       </section> */}
       
