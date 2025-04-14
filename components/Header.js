@@ -16,7 +16,10 @@ export default function Header () {
 
   const styleConfig = useMemo(() => {
     const isSpecial =
-      pathname === '/' || pathname === '/brochure' || pathname === '/about'
+      pathname === '/' ||
+      pathname === '/brochure' ||
+      pathname === '/about' ||
+      pathname === '/services'
     return {
       headerBg: isSpecial ? 'bg-[#1a47c4]' : 'bg-white',
       navActive: isSpecial ? 'md:text-white' : 'md:text-[#1a1a1a]',
@@ -85,6 +88,7 @@ export default function Header () {
       <>
         <NavLink href='/gallery'>PROYECTOS</NavLink>
         <NavLink href='/about'>CONOCER</NavLink>
+        <NavLink href='/services'>SERVICIOS</NavLink>
         <NavLink href='/contact'>CONTACTO</NavLink>
       </>
     )
@@ -103,11 +107,14 @@ export default function Header () {
           rel={pathname === '/brochure' ? 'noopener noreferrer' : undefined}
           className='relative z-50'
         >
-          <img
+          <Image
+            width={500}
+            height={100}
+            priority
             src={styleConfig.logoSrc}
             alt='Logo Andrea Loarte Design Studio'
             className='h-auto object-contain w-44 md:w-56 aspect-[8/1]'
-            loading='eager'
+            unoptimized={true}
           />
         </Link>
         <nav className='hidden md:flex items-center space-x-8'>
