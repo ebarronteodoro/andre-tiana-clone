@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import InstagramButton from '@/components/InstagramButton'
 import '@/styles/globals.css'
 import localFont from 'next/font/local'
 
@@ -188,6 +189,7 @@ export default function RootLayout ({ children }) {
         <Header />
         {children}
         <Footer />
+        <InstagramButton />
       </body>
     </html>
   )
