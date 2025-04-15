@@ -39,9 +39,9 @@ export default async function Home () {
               width={24}
               height={200}
               alt='Imagen de contacto'
-              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-7 x5c:w-[32px] md:left-10 lg:left-16 lg:w-[48px] '
+              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-7 md:left-10 lg:left-16 lg:w-[48px] '
             />
-            <h1 className='absolute -translate-y-1/2 top-[50%] left-7 text-white font-cardo w-[200px] text-[80%] x5c:text-[1rem] x5c:w-[262px] sm:text-[1.5rem] md:left-10 lg:left-16'>
+            <h1 className='absolute -translate-y-1/2 top-[50%] left-7 text-white font-cardo w-2/5 max-w-[400px] text-pretty md:text-3xl md:leading-[1.2] md:left-10 lg:left-16'>
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h1>
             <Link
@@ -59,8 +59,8 @@ export default async function Home () {
           animationClass='animate-fade-up relative z-10 max-w-[1200px] mx-auto w-[75%]'
           delayClass='animate-delay-200'
         >
-          <h2 className='text-white w-full md:w-[30rem] text-left text-pretty py-10 text-xl md:text-4xl font-cardo -mb-10 2xl:-mb-20'>
-            Recuerda que podemos apoyarte con proyectos de:
+          <h2 className='text-white w-full md:w-[20rem] text-left py-10 text-xl md:leading-[1.1] md:text-3xl font-cardo -mb-10 2xl:-mb-20 text-pretty'>
+            Recuerda que aquí te apoyamos con proyectos de:
           </h2>
         </AnimateOnScroll>
         <AnimateOnScroll
@@ -70,7 +70,7 @@ export default async function Home () {
           <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-52 2xl:-mt-[32rem] w-full max-h-[70dvh] object-contain' />
         </AnimateOnScroll>
       </section>
-      <section className='pt-4 md:pt-0'>
+      {/* <section className='pt-4 md:pt-0'>
         <div className='bg-[#3c251d] px-4 py-6 md:flex md:h-[380px]'>
           <div className='md:w-full md:relative'>
             <div className='right-0 md:absolute w-[200px] md:top-[20%] mx-auto'>
@@ -269,7 +269,7 @@ export default async function Home () {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
