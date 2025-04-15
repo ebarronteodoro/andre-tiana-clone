@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Testimonial from '@/components/Testimonial'
 import ImageGallery from '@/components/ImageGallery'
 import { renderContenidoPorSlug } from './renderContenidoPorSlug'
+import Link from 'next/link'
 
 export async function generateMetadata ({ params }) {
   const { slug } = await params
@@ -39,6 +40,16 @@ export default async function GalleryPage ({ params }) {
 
   if (!project) {
     return <p>Proyecto no encontrado.</p>
+  }
+
+  const currentIndex = projects.findIndex(p => p.slug === slug)
+  let nextProject = null
+  if (currentIndex !== -1) {
+    if (projects[currentIndex + 1]) {
+      nextProject = projects[currentIndex + 1]
+    } else {
+      nextProject = projects[0]
+    }
   }
 
   return (
@@ -98,6 +109,44 @@ export default async function GalleryPage ({ params }) {
       )} */}
 
       {Componente && <Componente />}
+
+      {nextProject && (
+        <section className='container mx-auto px-4 mt-16 animate-fade-up border-t border-gray-200 pt-4 max-h-[100dvh] overflow-hidden group'>
+          <Link href={`/gallery/${nextProject.slug}`}>
+            <h2 className='font-medium mb-8 text-lg text-[#1a47c4]'>
+              Siguiente Proyecto
+            </h2>
+            <div className='flex flex-col md:flex-row md:justify-between relative cursor-pointer'>
+              <div className='w-full'>
+                <h1 className='text-4xl md:text-[55px] font-medium -mt-12 md:mt-0 mb-8 md:mb-0'>
+                  {nextProject.name}
+                </h1>
+                <span className='md:text-lg 2xl:text-2xl flex md:w-80 text-balance text-gray-400'>
+                  {nextProject.phrase}
+                </span>
+              </div>
+              <div className='w-full max-w-[740px] mt-8 md:mt-0'>
+                <p className='mb-4 2xl:text-2xl font-medium text-pretty md:text-[27px]'>
+                  {nextProject.introductionText}
+                </p>
+              </div>
+            </div>
+            {nextProject.firstImage && (
+              <div className='max-h-[847.91px] overflow-hidden relative flex items-center justify-center mt-16'>
+                <Image
+                  src={nextProject.firstImage}
+                  alt={`Animación de ${nextProject.name}`}
+                  className='w-full h-auto relative animate-fade-up animate-delay-200 group-hover:scale-105 transition-transform duration-300'
+                  width={1920}
+                  height={1080}
+                  unoptimized
+                  loading='lazy'
+                />
+              </div>
+            )}
+          </Link>
+        </section>
+      )}
     </>
   )
 }
