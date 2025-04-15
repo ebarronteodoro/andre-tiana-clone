@@ -88,7 +88,7 @@ export default function ServicesPage () {
           {servicesData.map((service, index) => (
             <article
               key={index}
-              className='relative w-full overflow-hidden h-full group'
+              className='relative w-full overflow-hidden h-full md:group'
             >
               <div className='relative h-full w-full transition-transform duration-500 group-hover:rotate-y-180'>
                 <div>
