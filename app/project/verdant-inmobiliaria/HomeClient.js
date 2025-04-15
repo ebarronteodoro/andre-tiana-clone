@@ -29,13 +29,13 @@ export default async function HomeClient() {
         </div>
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[1], galleryImages[2]]} columns={2} />
+        <ImageGallery images={[galleryImages[3], galleryImages[7]]} columns={2} />
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[3], galleryImages[4]]} columns={2} />
+        <ImageGallery images={[galleryImages[1], galleryImages[4]]} columns={2} />
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[5], galleryImages[6]]} columns={2} />
+        <ImageGallery images={[galleryImages[9], galleryImages[8]]} columns={2} />
       </section>
       {/* 
       <section className="container mx-auto px-4 mt-4 md:mt-16">
