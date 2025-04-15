@@ -54,7 +54,7 @@ export default function Header () {
         rel={target === '_blank' ? 'noopener noreferrer' : undefined}
         className={`${
           isActive ? styleConfig.navActive : styleConfig.navInactive
-        } md:text-[17px] md:tracking-[1px] md:font-helvetica-neue md:mobile-menu:text-white`}
+        } md:text-[17px] tracking-[1px] font-helvetica-neue md:mobile-menu:text-white`}
         {...props}
       >
         {children}
