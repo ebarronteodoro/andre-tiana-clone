@@ -39,7 +39,7 @@ export default async function HomeClient() {
         <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[12], galleryImages[15]]} columns={2} />
+        <ImageGallery images={[galleryImages[12], galleryImages[15]]} columns={2} width={1080} height={1080}/>
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[8]]} horizontal={true} />
