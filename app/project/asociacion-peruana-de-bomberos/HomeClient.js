@@ -56,8 +56,8 @@ export default async function HomeClient() {
       <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[15]]} horizontal={true} width={862} height={487} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[15]]} horizontal={true} width={3503} height={2232} />
       </section>
       {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[16]]} columns={1} />
