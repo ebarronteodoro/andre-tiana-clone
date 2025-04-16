@@ -16,38 +16,29 @@ export default async function Home () {
           animationClass='animate-fade-up'
           delayClass='animate-delay-1s'
         >
-          <div className='relative top-10 max-w-[1200px] md:w-[80%] md:mx-auto '>
-            <picture>
-              <Image
-                src='/contacto/ticket.png'
-                width={1500}
-                height={800}
-                alt='Imagen de contacto'
-                className='hidden md:block w-full h-auto object-contain'
-              />
-              <Image
-                src='/contacto/ticket_movil.png'
-                width={1500}
-                height={800}
-                alt='Imagen de contacto'
-                className='md:hidden w-full h-auto object-contain'
-              />
-            </picture>
+          <div className='relative flex justify-center flex-col max-w-[1200px] md:w-[80%] md:mx-auto space-y-14 py-10'>
+            <Image
+              src='/contacto/meet-bubble.png'
+              width={200}
+              height={100}
+              alt='Contacto Meet'
+              className='h-auto object-contain absolute top-0 right-0 w-36'
+            />
 
             <Image
-              src='/contacto/camara.png'
-              width={24}
-              height={200}
+              src='/contacto/logo-mini.png'
+              width={100}
+              height={100}
               alt='Imagen de contacto'
-              className='h-auto object-contain absolute -translate-y-1/2 top-[20%] left-7 md:left-10 lg:left-16 lg:w-[48px] '
+              className='h-auto object-contain w-14 mx-auto'
             />
-            <h1 className='absolute -translate-y-1/2 top-[50%] left-7 text-white font-cardo w-2/5 max-w-[400px] text-pretty md:text-3xl md:leading-[1.2] md:left-10 lg:left-16'>
+            <h1 className='text-[#1a47c4] font-cardo w-3/5 mx-auto text-center max-w-[500px] text-pretty md:text-3xl md:leading-[1.2]'>
               Agenda una videollamada gratuita para platicar de tu proyecto
             </h1>
             <Link
               href='https://docs.google.com/forms/d/e/1FAIpQLScJ5p8uYDnV24f9Ivg-PVMUNG70N1XbUvGZCRw0lXMoATVxuA/viewform?usp=sharing'
               target='_blank'
-              className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] block w-fit  text-white py-1 px-2 rounded-[10px] text-xs absolute -translate-y-1/2 bottom-[8%] left-7 x4c:bottom-[15%] sm:text-[.8rem] md:left-10 lg:text-[16px] lg:left-16 lg:px-4 lg:py-2 lg:bottom-[10%] xl:bottom-[15%]'
+              className='bg-[#1a47c4] shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-white py-1 px-2 rounded-[10px] text-xs sm:text-[.8rem] lg:text-[16px] lg:px-4 lg:py-2 mx-auto'
             >
               Agenda aquí
             </Link>
