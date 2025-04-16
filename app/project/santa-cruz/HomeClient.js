@@ -16,9 +16,13 @@ export default async function HomeClient() {
 
   return (
     <main className="min-h-screen">
-      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[0], galleryImages[5]]} columns={2} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[6]]} horizontal={true} />
       </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[2], galleryImages[3]]} columns={2} />
+      </section>
+     
 
       <section className='container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center'>
         <div className='w-full md:w-1/2 md:ml-auto'>
@@ -29,14 +33,11 @@ export default async function HomeClient() {
           />
         </div>
       </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[3]]} horizontal={true} width={1080} height={1350}/>
+      <section className="container mx-auto px-4 mt-4 md:mt-16 Overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[1], galleryImages[2]]} columns={2} />
-      </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
-        <ImageGallery images={[galleryImages[4]]} horizontal={true} />
+      <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex  justify-center">
+        <ImageGallery images={[galleryImages[5]]} horizontal={true} />
       </section>
       
       {/* 

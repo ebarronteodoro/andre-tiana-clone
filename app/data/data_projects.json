@@ -306,8 +306,8 @@
       "id": "ndk-arquitectos",
       "name": "NDK Arquitectos",
       "slug": "ndk-arquitectos",
-      "phrase": "Geometría, precisión y herencia familiar",
-      "introductionText": "example test of an introduction for the project",
+      "phrase": "Branding",
+      "introductionText": "Geometría, precisión y herencia familiar",
       "data": [
         "NDK Arquitectos surge como una colaboración intergeneracional entre el arquitecto Narciso Soto Moscoso y sus hijas, Daniela y Karla Soto. Con raíces en Suiza y Perú, el estudio busca combinar experiencia técnica con una mirada joven, flexible y creativa hacia el diseño arquitectónico.",
         "El proyecto de identidad visual se desarrolló con una lógica basada en precisión, geometría y sobriedad. La marca debía transmitir la solidez de más de tres décadas de trayectoria, sin dejar de proyectar innovación. Se trabajó una paleta acromática y un sistema gráfico modular basado en retículas, que otorgan orden y flexibilidad al lenguaje visual.",
@@ -628,14 +628,14 @@
       "id": "santa-cruz",
       "name": "Santa Cruz",
       "slug": "santa-cruz",
-      "phrase": "Branding, Illustration and Packaging",
+      "phrase": "Illustration",
       "introductionText": "Nicomedes de Santa Cruz: Ilustración con alma de calle.",
       "data": [
         "Lo que comenzó como un pedido simple se convirtió en una declaración visual. Esta ilustración rinde homenaje al legado afroperuano desde una mirada contemporánea, fusionando el espíritu del streetwear de los años 70 con la fuerza gráfica del graffiti y la elegancia de los patrones.",
         "Inspirada por artistas como Basquiat y Wales Bonner, esta pieza fue creada durante un vuelo trasatlántico, donde el tiempo y el cielo abierto me permitieron diseñar sin distracciones. Más que un diseño para indumentaria urbana, es un retrato de identidad, memoria y resistencia gráfica."
       ],
       "galleryImage": "/projects/santa-cruz/CONCRETO.jpg",
-      "firstImage": "/projects/santa-cruz/CONCRETO.jpg",
+      "firstImage": "/projects/santa-cruz/video_principal.mov",
       "galleryImages": [
         {
           "index": 0,
@@ -666,6 +666,16 @@
           "index": 5,
           "src": "/projects/santa-cruz/TSHIRT.jpg",
           "alt": "T-Shirt Santa Cruz"
+        },
+        {
+          "index": 6,
+          "src": "/projects/santa-cruz/mural.jpg",
+          "alt": "Mural Santa Cruz"
+        },
+        {
+          "index": 7,
+          "src": "/projects/santa-cruz/video_principal.MOV",
+          "alt": "Video Principal Santa Cruz"
         }
       ]
     }

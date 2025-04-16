@@ -74,17 +74,37 @@ export default async function GalleryPage ({ params }) {
 
       {project.firstImage && (
         <section className='container mx-auto px-4 mt-16'>
-          {/* <div className='relative'> */}
           <div className='max-h-[847.91px] overflow-hidden relative flex items-center justify-center'>
-            <Image
-              src={project.firstImage}
-              alt={`Animación de ${project.name}`}
-              className='w-full h-auto relative animate-fade-up animate-delay-200'
-              // className='w-full h-auto relative -translate-y-[15%]'
-              width={1920}
-              height={1080}
-              unoptimized
-            />
+            {['.mp4', '.webm', '.mov'].some(ext => project.firstImage.toLowerCase().endsWith(ext)) ? (
+              <video
+                autoPlay
+                loop
+                controls
+                playsInline
+                preload="auto"
+                className='w-full h-full object-cover relative animate-fade-up animate-delay-200'
+                style={{ maxHeight: '847.91px' }}
+              >
+                <source 
+                  src={project.firstImage} 
+                  type={`video/${project.firstImage.split('.').pop()}`}
+                />
+                <source 
+                  src={project.firstImage} 
+                  type="video/mp4"
+                />
+                Tu navegador no soporta el elemento de video.
+              </video>
+            ) : (
+              <Image
+                src={project.firstImage}
+                alt={`Animación de ${project.name}`}
+                className='w-full h-auto relative animate-fade-up animate-delay-200'
+                width={1920}
+                height={1080}
+                unoptimized
+              />
+            )}
           </div>
         </section>
       )}
