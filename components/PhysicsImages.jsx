@@ -23,7 +23,7 @@ export default function PhysicsImages ({
     // Crear engine y mundo
     const engine = Matter.Engine.create()
     const world = engine.world
-    engine.world.gravity.y = 1
+    engine.world.gravity.y = 1.1
 
     // Crear renderizador sin wireframes y fondo transparente
     const render = Matter.Render.create({
@@ -87,7 +87,7 @@ export default function PhysicsImages ({
 
     // Configurar y agregar las imágenes
     const imagePaths = images
-    const scaleFactor = 0.6
+    const scaleFactor = 0.9
     const numSides = 12
     const totalImages = imagePaths.length
 
