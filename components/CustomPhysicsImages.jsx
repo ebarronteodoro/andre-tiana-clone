@@ -94,7 +94,7 @@ export default function CustomPhysicsImages ({
 
     // Configuración para cajas
     const totalImages = 8
-    const scaleFactor = 0.35
+    const scaleFactor = 0.6
     const numSides = 12
     const safeMargin = width * 0.05
     const offsetX = safeMargin * 1.2

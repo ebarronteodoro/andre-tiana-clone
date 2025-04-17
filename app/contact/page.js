@@ -55,10 +55,10 @@ export default async function Home () {
           </h2>
         </AnimateOnScroll>
         <AnimateOnScroll
-          animationClass='animate-fade-up max-w-[1200px] mx-auto w-[75%]'
+          animationClass='animate-fade-up max-w-[1200px] ml-auto w-[75%]'
           delayClass='animate-delay-200'
         >
-          <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-52 [@media(min-width:90rem)]:-mt-[35rem] w-full max-h-[70dvh] object-contain' />
+          <CustomPhysicsImages className='overflow-hidden -mt-20 md:-mt-52 [@media(min-width:90rem)]:-mt-[40vh] w-full max-h-[70dvh] object-contain' />
         </AnimateOnScroll>
       </section>
       {/* <section className='pt-4 md:pt-0'>
