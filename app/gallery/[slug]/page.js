@@ -153,15 +153,37 @@ export default async function GalleryPage ({ params }) {
             </div>
             {nextProject.firstImage && (
               <div className='max-h-[847.91px] overflow-hidden relative flex items-center justify-center mt-16'>
-                <Image
-                  src={nextProject.firstImage}
-                  alt={`Animación de ${nextProject.name}`}
-                  className='w-full h-auto relative animate-fade-up animate-delay-200 group-hover:scale-105 transition-transform duration-300'
-                  width={1920}
-                  height={1080}
-                  unoptimized
-                  loading='lazy'
-                />
+                {['.mp4', '.webm', '.mov'].some(ext => nextProject.firstImage.toLowerCase().endsWith(ext)) ? (
+                  <video
+                    autoPlay
+                    loop
+                    controls
+                    playsInline
+                    preload="auto"
+                    className='w-full h-full object-cover relative animate-fade-up animate-delay-200 group-hover:scale-105 transition-transform duration-300'
+                    style={{ maxHeight: '847.91px' }}
+                  >
+                    <source 
+                      src={nextProject.firstImage} 
+                      type={`video/${nextProject.firstImage.split('.').pop()}`}
+                    />
+                    <source 
+                      src={nextProject.firstImage} 
+                      type="video/mp4"
+                    />
+                    Tu navegador no soporta el elemento de video.
+                  </video>
+                ) : (
+                  <Image
+                    src={nextProject.firstImage}
+                    alt={`Animación de ${nextProject.name}`}
+                    className='w-full h-auto relative animate-fade-up animate-delay-200 group-hover:scale-105 transition-transform duration-300'
+                    width={1920}
+                    height={1080}
+                    unoptimized
+                    loading='lazy'
+                  />
+                )}
               </div>
             )}
           </Link>
