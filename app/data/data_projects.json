@@ -224,6 +224,11 @@
           "index": 16,
           "src": "/projects/asociacion_peruana_de_bomberos/FINAL.png",
           "alt": "FINAL APB"
+        },
+        {
+          "index": 17,
+          "src": "/projects/asociacion_peruana_de_bomberos/ILUSTRACION.png",
+          "alt": "Illustracion APB"
         }
       ]
     },

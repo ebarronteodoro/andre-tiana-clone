@@ -57,6 +57,9 @@ export default async function HomeClient() {
       <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[744px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[5], galleryImages[14]]} columns={2} width={1920} height={1920}/>
       </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[12]]} horizontal={true} width={7500} height={5000} />
+      </section>
       <section className='container mx-auto px-4 mt-4 md:mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
           <Testimonial
@@ -67,7 +70,9 @@ export default async function HomeClient() {
         </div>
       </section>
       
-      
+      <section className="container mx-auto px-4 mt-4 md:mt-16 overflow-hidden relative flex items-center justify-center">
+        <ImageGallery images={[galleryImages[17]]} horizontal={true} width={6912} height={4450} />
+      </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16 max-h-[847.91px] overflow-hidden relative flex items-center justify-center">
         <ImageGallery images={[galleryImages[1]]} horizontal={true} />
       </section>
