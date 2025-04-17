@@ -105,7 +105,7 @@ export default function ServicesPage () {
         <h1 className='text-white text-4xl md:text-5xl mb-8 font-cardo capitalize'>
           Te ayudamos en:
         </h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[1300px] mx-auto w-6/7 py-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[1350px] mx-auto w-7/8 py-4'>
           {servicesData.map((service, index) => (
             <article
               key={index}
@@ -140,13 +140,13 @@ export default function ServicesPage () {
                       <div className='flex gap-4 flex-col md:flex-row justify-between'>
                         <p
                           style={{ color: service.color }}
-                          className='font-cardo leading-[1.1] md:leading-[1.2] md:w-[45%] md:text-[15px] [@media(min-width:90rem)]:text-lg text-pretty md:text-balance'
+                          className='font-cardo leading-[1.1] md:leading-[1.2] md:w-[50%] md:text-[14px] [@media(min-width:90rem)]:text-lg text-pretty md:text-balance'
                         >
                           {service.serviceChats[0]}
                         </p>
                         <p
                           style={{ color: service.color }}
-                          className='font-cardo leading-[1.1] md:leading-[1.2] w-[70%] ml-auto md:ml-0 md:w-[45%] [@media(min-width:90rem)]:text-lg text-pretty md:text-balance pb-6 md:pb-0'
+                          className='font-cardo leading-[1.1] md:leading-[1.2] w-[50%] ml-auto md:ml-0 md:w-[45%] [@media(min-width:90rem)]:text-base text-pretty md:text-balance pb-6 md:pb-0'
                         >
                           {service.serviceChats[1]}
                         </p>
@@ -156,9 +156,9 @@ export default function ServicesPage () {
                         <p
                           key={chatIndex}
                           style={{ color: service.color }}
-                          className={`font-cardo leading-[1.1] md:leading-[1.2] [@media(min-width:90rem)]:leading-[1.15] md:text-[14.5px] xl:text-[20px] w-[90%] md:w-full mx-auto md:mx-0 md:px-0 pb-6 md:pb-0 [@media(min-width:90rem)]:text-[22px] md:text-pretty ${
+                          className={`font-cardo leading-[1.1] md:leading-[1.2] [@media(min-width:90rem)]:leading-[1.15] md:text-[13.5px] xl:text-[17px] w-[90%] md:w-full mx-auto md:mx-0 md:px-0 pb-6 md:pb-0 [@media(min-width:90rem)]:text-[20px] md:text-pretty ${
                             service.bubbles.length < 1 &&
-                            '[@media(min-width:90rem)]:pt-3 [@media(min-width:90rem)]:text-[26px] md:my-auto md:pb-10'
+                            '[@media(min-width:90rem)]:pt-3 md:text-2xl [@media(min-width:90rem)]:text-[26px] md:my-auto md:pb-10'
                           }`}
                         >
                           {chat}
