@@ -132,7 +132,7 @@ export default function ServicesPage () {
                         color: service.color,
                         borderColor: service.color
                       }}
-                      className='font-cardo text-[31px] md:text-4xl w-full text-left leading-none border-b mt-6 pb-4 md:pb-2'
+                      className='font-cardo text-[31px] md:text-2xl xl:text-4xl w-full text-left leading-none border-b mt-6 pb-4 md:pb-2'
                     >
                       {service.title}
                     </span>
@@ -156,11 +156,42 @@ export default function ServicesPage () {
                         <p
                           key={chatIndex}
                           style={{ color: service.color }}
-                          className={`font-cardo leading-[1.1] md:leading-[1.2] text-[22px] w-[90%] md:w-full mx-auto md:mx-0 md:px-0 pb-6 md:pb-0 [@media(min-width:90rem)]:text-2xl md:text-pretty ${service.bubbles.length < 1 && '[@media(min-width:90rem)]:pt-3 [@media(min-width:90rem)]:text-[26px]'}`}
+                          className={`font-cardo leading-[1.1] md:leading-[1.2] [@media(min-width:90rem)]:leading-[1.15] md:text-[14.5px] xl:text-[20px] w-[90%] md:w-full mx-auto md:mx-0 md:px-0 pb-6 md:pb-0 [@media(min-width:90rem)]:text-[22px] md:text-pretty ${
+                            service.bubbles.length < 1 &&
+                            '[@media(min-width:90rem)]:pt-3 [@media(min-width:90rem)]:text-[26px]'
+                          }`}
                         >
                           {chat}
                         </p>
                       ))
+                    )}
+                    {service.bubbles.length > 0 && (
+                      <div className='hidden md:flex gap-x-3 gap-y-1 w-full flex-wrap mt-auto pb-6 md:justify-end'>
+                        {service.bubbles.map((bubble, bubbleIndex) => (
+                          <div
+                            key={bubbleIndex}
+                            className={`flex ${
+                              bubbleIndex === 0 && service.bubbles.length > 2
+                                ? 'w-full'
+                                : ''
+                            }`}
+                          >
+                            <span
+                              style={{
+                                color: service.color,
+                                borderColor: service.color
+                              }}
+                              className={`text-white font-cardo text-xs md:text-[15px] px-4 border py-1 rounded-full ${
+                                bubbleIndex === 0 && service.bubbles.length > 2
+                                  ? 'ml-auto'
+                                  : ''
+                              }`}
+                            >
+                              {bubble}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     )}
                   </div>
 
