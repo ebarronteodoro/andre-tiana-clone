@@ -16,8 +16,15 @@ export default async function HomeClient() {
   return (
     <main className="min-h-screen">
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[2], galleryImages[3]]} columns={2} />
+        <ImageGallery images={[galleryImages[5]]} horizontal={true} width={1920} height={1057}/>
       </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[4]]} horizontal={true} width={1920} height={1054}/>
+      </section>
+{/* 
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[2], galleryImages[3]]} columns={2} />
+      </section> */}
       
       
       <section className='container mx-auto px-4 mt-4 md:mt-16'>
@@ -30,8 +37,14 @@ export default async function HomeClient() {
         </div>
       </section>
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[0]]} horizontal={true} />
+        <ImageGallery images={[galleryImages[8]]} horizontal={true} width={1920} height={1054}/>
       </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[6]]} horizontal={true} width={1920} height={1054}/>
+      </section>
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[0]]} horizontal={true} />
+      </section> */}
 
       <section className='container mx-auto px-4 mt-4 md:mt-16'>
         <div className='w-full md:w-1/2 md:ml-auto'>
@@ -41,6 +54,33 @@ export default async function HomeClient() {
             linkUrl='/saber-mas'
           />
         </div>
+      </section>
+
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[0]]} horizontal={true} width={1920} height={1062}/>
+      </section>
+
+      <section className='container mx-auto px-4 mt-4 md:mt-16'>
+        <div className='w-full md:w-1/2 md:ml-auto'>
+          <Testimonial
+            text={project.data[3]}
+            linkText='Saber más'
+            linkUrl='/saber-mas'
+          />
+        </div>
+      </section>
+
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[9]]} horizontal={true} width={1920} height={1062}/>
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[11]]} horizontal={true} width={1920} height={1062}/>
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[10]]} horizontal={true} width={1920} height={1062}/>
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[2]]} horizontal={true} width={1920} height={1062}/>
       </section>
       
       

@@ -310,7 +310,8 @@
       "phrase": "Branding",
       "introductionText": "Geometría, precisión y herencia familiar. NDK Arquitectos surge como una colaboración intergeneracional entre el arquitecto Narciso Soto Moscoso y sus hijas, Daniela y Karla Soto.",
       "data": [
-        "NDK Arquitectos surge como una colaboración intergeneracional entre el arquitecto Narciso Soto Moscoso y sus hijas, Daniela y Karla Soto. Con raíces en Suiza y Perú, el estudio busca combinar experiencia técnica con una mirada joven, flexible y creativa hacia el diseño arquitectónico.",
+        "NDK Arquitectos surge como una colaboración intergeneracional entre el arquitecto Narciso Soto Moscoso y sus hijas, Daniela y Karla Soto.",
+        "Con raíces en Suiza y Perú, el estudio busca combinar experiencia técnica con una mirada joven, flexible y creativa hacia el diseño arquitectónico.",
         "El proyecto de identidad visual se desarrolló con una lógica basada en precisión, geometría y sobriedad. La marca debía transmitir la solidez de más de tres décadas de trayectoria, sin dejar de proyectar innovación. Se trabajó una paleta acromática y un sistema gráfico modular basado en retículas, que otorgan orden y flexibilidad al lenguaje visual.",
         "El resultado es una identidad elegante, funcional y adaptable a diferentes superficies, desde papelería institucional hasta soportes digitales y animados. Una marca que respira arquitectura desde la forma hasta el fondo."
       ],
@@ -336,6 +337,46 @@
           "index": 3,
           "src": "/projects/ndk_arquitectos/portada.png",
           "alt": "Portada NDK"
+        },
+        {
+          "index": 4,
+          "src": "/projects/ndk_arquitectos/composicion.jpg",
+          "alt": "Composición NDK"
+        },
+        {
+          "index": 5,
+          "src": "/projects/ndk_arquitectos/explicacion.jpg", 
+          "alt": "Explicación NDK"
+        },
+        {
+          "index": 6,
+          "src": "/projects/ndk_arquitectos/LOGO NUEVO.jpg",
+          "alt": "Logo Nuevo NDK"
+        },
+        {
+          "index": 7,
+          "src": "/projects/ndk_arquitectos/logo.jpg",
+          "alt": "Logo NDK"
+        },
+        {
+          "index": 8, 
+          "src": "/projects/ndk_arquitectos/paleta de colores.jpg",
+          "alt": "Paleta de Colores NDK"
+        },
+        {
+          "index": 9,
+          "src": "/projects/ndk_arquitectos/POST DE NDK.jpg", 
+          "alt": "Post NDK"
+        },
+        {
+          "index": 10,
+          "src": "/projects/ndk_arquitectos/proyecto complemento .jpg",
+          "alt": "Proyecto Complemento NDK"
+        },
+        {
+          "index": 11,
+          "src": "/projects/ndk_arquitectos/PROYECTO EN STORIES.jpg",
+          "alt": "Proyecto en Stories NDK"
         }
       ]
     },
@@ -622,6 +663,11 @@
           "index": 10,
           "src": "/projects/empapa_t/mural.jpg",
           "alt": "Mural Empapa-T"
+        },
+        {
+          "index": 11,
+          "src": "/projects/empapa_t/Restaurant-Poster-Mockup-01.jpg",
+          "alt": "Poster"
         }
       ]
     },

@@ -159,6 +159,7 @@ export default async function GalleryPage ({ params }) {
                     loop
                     controls
                     playsInline
+                    muted
                     preload="auto"
                     className='w-full h-full object-cover relative animate-fade-up animate-delay-200 group-hover:scale-105 transition-transform duration-300'
                     style={{ maxHeight: '847.91px' }}
