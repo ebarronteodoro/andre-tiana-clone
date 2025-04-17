@@ -16,7 +16,10 @@ export default async function HomeClient() {
   return (
     <main className="min-h-screen">
       <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[0]]} horizontal={true} />
+        <ImageGallery images={[galleryImages[7]]} horizontal={true} width={3000} height={2000} />
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[6]]} horizontal={true} width={3020} height={1456} />
       </section>
 
       <section className='container mx-auto px-4 mt-4 md:mt-16'>
@@ -28,15 +31,27 @@ export default async function HomeClient() {
           />
         </div>
       </section>
+      
       <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[11]]} horizontal={true} width={3000} height={2000} />
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[1]]} horizontal={true} width={3014} height={1440} />
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[4],galleryImages[5]]} columns={2}/>
+      </section>
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[5]]} horizontal={true} width={3014} height={1440} />
+      </section> */}
+      
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[3], galleryImages[7]]} columns={2} />
-      </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16">
+      </section> */}
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[1], galleryImages[4]]} columns={2} />
-      </section>
-      <section className="container mx-auto px-4 mt-4 md:mt-16">
-        <ImageGallery images={[galleryImages[9], galleryImages[8]]} columns={2} />
-      </section>
+      </section> */}
+      
       {/* 
       <section className="container mx-auto px-4 mt-4 md:mt-16">
         <ImageGallery images={[galleryImages[7], galleryImages[8]]} columns={2} />
@@ -56,6 +71,15 @@ export default async function HomeClient() {
         </div>
       </section>
 
+      {/* <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[9], galleryImages[8]]} columns={2} />
+      </section> */}
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[9]]} horizontal={true} width={3000} height={2000} />
+      </section>
+      <section className="container mx-auto px-4 mt-4 md:mt-16">
+        <ImageGallery images={[galleryImages[8]]} horizontal={true} width={3000} height={2000} />
+      </section>
 
     </main>
   );
