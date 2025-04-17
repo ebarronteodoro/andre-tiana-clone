@@ -24,7 +24,7 @@ export default function ServicesPage () {
     {
       src: '/services/bg-2.png',
       title: 'Rebranding',
-      serviceChats: ['“Quiero mejorar la imagen de mi marca. ¡Ayudaa!”'],
+      serviceChats: ['“Quiero mejorar la imagen de mi marca, ya no se alinea con nuestros valores. !Ayuda!”'],
       description: 'Transformemos tu historia para que impacte como nunca.',
       price: '$400',
       color: '#321d18',
@@ -105,7 +105,7 @@ export default function ServicesPage () {
         <h1 className='text-white text-4xl md:text-5xl mb-8 font-cardo capitalize'>
           Te ayudamos en:
         </h1>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-[1300px] mx-auto w-6/7 py-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-[1300px] mx-auto w-6/7 py-4'>
           {servicesData.map((service, index) => (
             <article
               key={index}
@@ -158,7 +158,7 @@ export default function ServicesPage () {
                           style={{ color: service.color }}
                           className={`font-cardo leading-[1.1] md:leading-[1.2] [@media(min-width:90rem)]:leading-[1.15] md:text-[14.5px] xl:text-[20px] w-[90%] md:w-full mx-auto md:mx-0 md:px-0 pb-6 md:pb-0 [@media(min-width:90rem)]:text-[22px] md:text-pretty ${
                             service.bubbles.length < 1 &&
-                            '[@media(min-width:90rem)]:pt-3 [@media(min-width:90rem)]:text-[26px]'
+                            '[@media(min-width:90rem)]:pt-3 [@media(min-width:90rem)]:text-[26px] md:my-auto md:pb-10'
                           }`}
                         >
                           {chat}
