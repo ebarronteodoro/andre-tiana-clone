@@ -98,12 +98,12 @@ export default async function HomePage () {
           </span>
           <img
             src='/index/blue-bird-l.png'
-            className='hidden md:flex absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 w-28'
+            className='hidden md:flex absolute left-4 md:left-20 [@media(min-width:90rem)]:left-40 2xl:!left-60 top-1/2 transform -translate-y-1/2 w-28'
             alt='pajaro azul andrea loarte design studio'
           />
           <img
             src='/index/blue-bird-r.png'
-            className='hidden md:flex absolute right-4 md:right-20 top-1/2 transform -translate-y-1/2 w-28'
+            className='hidden md:flex absolute right-4 md:right-20 [@media(min-width:90rem)]:right-40 2xl:!right-60 top-1/2 transform -translate-y-1/2 w-28'
             alt='pajaro azul andrea loarte design studio'
           />
         </AnimateOnScroll>
