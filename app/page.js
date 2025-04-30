@@ -96,6 +96,12 @@ export default async function HomePage () {
           <span className='mx-auto text-center mt-8 font-bold text-[#1a47c4]'>
             |
           </span>
+          <h3 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
+              Cada Proyecto Es Una Obra Única
+            </h3>
+            <p className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>
+              Obras Recientes En Exposición
+            </p>
           <img
             src='/index/blue-bird-l.png'
             className='hidden md:flex absolute left-4 md:left-20 [@media(min-width:90rem)]:left-40 2xl:!left-60 top-1/2 transform -translate-y-1/2 w-28'
