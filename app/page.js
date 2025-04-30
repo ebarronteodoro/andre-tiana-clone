@@ -67,17 +67,45 @@ export default async function HomePage () {
       </section>
       <section className='!relative w-full h-auto bg-white p-8'>
         <AnimateOnScroll
-          animationClass='animate-fade-up'
+          animationClass='animate-fade-up relative flex flex-col items-center'
           delayClass='animate-delay-100'
         >
-          <div>
-            <h2 className='text-center text-4xl font-cardo  text-[#1a47c4] mt-8'>
-              Cada Proyecto Es Una Obra Única
-            </h2>
-            <span className='text-center block mt-2  font-cardo text-xl text-[#1a47c4]'>
-              Obras Recientes En Exposición
-            </span>
-          </div>
+          <img
+            src='/index/header-img.png'
+            className='mx-auto w-2/5 md:w-1/9'
+            alt='corona andrea loarte studio'
+          />
+          <h2 className='text-center text-5xl tracking-wide font-cardo capitalize text-[#1a47c4] mt-12'>
+            ¿Tu marca necesita un
+            <br />
+            impulso real?
+          </h2>
+          <img src='/index/diagnostico-bubble.png' className='mx-auto w-48' />
+          <p className='text-center mt-14 text-sm/[1.2] uppercase font-helvetica-neue md:w-[27rem] text-balance md:text-pretty text-[#1a47c4]'>
+            Recibe una mirada estratégica sobre cómo potenciar tu identidad,
+            conectar con tu audencia y diferenciarte en tu mercado.
+          </p>
+          <Link
+            target='_blank'
+            rel='noopener noreferrer'
+            className='bg-[#1a47c4] mt-8 shadow-[0px_14px_36px_rgba(0,0,0,0.5)] text-white py-2 md:py-1 px-4 md:px-2 rounded-[10px] text-xs sm:text-[.8rem] lg:text-[16px] lg:px-4 lg:py-2'
+            href='https://docs.google.com/forms/d/e/1FAIpQLScJ5p8uYDnV24f9Ivg-PVMUNG70N1XbUvGZCRw0lXMoATVxuA/viewform?usp=sharing'
+          >
+            Agenda aquí
+          </Link>
+          <span className='mx-auto text-center mt-8 font-bold text-[#1a47c4]'>
+            |
+          </span>
+          <img
+            src='/index/blue-bird-l.png'
+            className='hidden md:flex absolute left-4 md:left-20 top-1/2 transform -translate-y-1/2 w-28'
+            alt='pajaro azul andrea loarte design studio'
+          />
+          <img
+            src='/index/blue-bird-r.png'
+            className='hidden md:flex absolute right-4 md:right-20 top-1/2 transform -translate-y-1/2 w-28'
+            alt='pajaro azul andrea loarte design studio'
+          />
         </AnimateOnScroll>
 
         <AnimateOnScroll
