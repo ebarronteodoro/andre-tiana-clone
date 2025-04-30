@@ -75,7 +75,7 @@ export default async function HomePage () {
             className='mx-auto w-2/5 md:w-1/9'
             alt='corona andrea loarte studio'
           />
-          <h2 className='text-center text-5xl tracking-wide font-cardo capitalize text-[#1a47c4] mt-12'>
+          <h2 className='text-center text-4xl text-balance tracking-wide font-cardo capitalize text-[#1a47c4] mt-12'>
             ¿Tu marca necesita un
             <br />
             impulso real?
