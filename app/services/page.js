@@ -70,7 +70,7 @@ export default function ServicesPage () {
       serviceChats: [
         '“Estoy por inaugurar mi cafetería pero necesito las fotos para mi contenido”'
       ],
-      description: 'Te guiamos para potenciar tu imagen y comunicación.',
+      description: 'Imagenes que resaltan la esencia de tu marca.',
       price: '$100',
       color: '#877f30',
       bubbles: ['Producto', 'Life Style']
@@ -81,7 +81,7 @@ export default function ServicesPage () {
       serviceChats: [
         '“Soy #matchalover y quiero un empaque que refleje la esencia artesanal de mis postres con matcha”'
       ],
-      description: 'Imágenes que resaltan la esencia de tu marca.',
+      description: 'Empaques que comunican valores y conectan clientes.',
       price: '$100',
       color: '#4d134c',
       bubbles: []
@@ -92,7 +92,7 @@ export default function ServicesPage () {
       serviceChats: [
         '“Quiero que mi marca de velas se vea profesional y transmita mi esencia, pero no sé por dónde empezar..”'
       ],
-      description: 'Empaques que comunican valores y conectan con el cliente.',
+      description: 'Te guiamos para potenciar tu imagen y comunicación.',
       price: '$30',
       color: '#a97448',
       bubbles: []
