@@ -8,11 +8,28 @@ import Image from 'next/image'
 import { getSlugProjects } from '@/lib/data'
 
 export const metadata = {
-  title: 'Andrea Design Studio - Portfolio of projects and design works.',
+  title: 'Andrea Loarte Studio | Diseño Gráfico y Branding',
+  // openGraph: {
+  //   title: 'Andrea Loarte Studio | Diseño Gráfico y Branding',
+  //   description:
+  //     'Andrea Loarte es una diseñadora gráfica y directora creativa con experiencia en el desarrollo de marcas, packaging, fotografía, etc.',
+  //   url: 'https://andrealoartestudio.com',
+  //   siteName: 'Andrea Loarte Studio',
+  //   images: [
+  //     {
+  //       url: '/andrealoarte.webp',
+  //       width: 800,
+  //       height: 600,
+  //       alt: 'Andrea Loarte Studio'
+  //     }
+  //   ],
+  //   type: 'website'
+  // },
   keywords:
-    'Andrea Design Studio, Portfolio, Projects, Design, Web Design, Graphic Design',
+    'Andrea Loarte, diseño, branding, packaging, fotografía, diseño web, diseño gráfico',
+  authors: [{ name: 'Andrea Loarte', url: 'https://andrealoartestudio.com' }],
   description:
-    'Andrea Design Studio is a portfolio showcasing a variety of projects and design works.'
+    'Andrea Loarte es una diseñadora gráfica y directora creativa con más de 6 años de experiencia en el desarrollo de marcas, packaging, fotografía, etc.',
 }
 
 export default async function HomePage () {

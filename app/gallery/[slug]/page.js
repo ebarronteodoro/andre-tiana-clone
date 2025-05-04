@@ -21,7 +21,7 @@ export async function generateMetadata ({ params }) {
   }
 
   const additionalTag = project.tagline ? ` - ${project.tagline}` : ''
-  const improvedTitle = `${project.name}${additionalTag} | Andrea Design Studio`
+  const improvedTitle = `${project.name}${additionalTag} | Andrea Loarte Studio`
   const firstParagraph =
     project.data && project.data[0] ? ` - ${project.data[0]}` : ''
   const improvedDescription = `${project.phrase}${firstParagraph}`

@@ -4,8 +4,9 @@ import AnimateOnScroll from '../../components/AnimateOnScroll'
 import '../../styles/index.css'
 
 export const metadata = {
-  title: 'About — Get in touch',
-  description: `About page of Andrea's design studio`
+  title: 'Sobre mí | Andrea Loarte Studio',
+  description:
+    'Soy diseñadora y directora de arte con más de seis años de experiencia en la creación de identidades visuales.'
 }
 
 export default async function Home () {

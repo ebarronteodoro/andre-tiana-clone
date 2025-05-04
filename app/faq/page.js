@@ -5,7 +5,7 @@ import CustomPhysicsImages from '@/components/CustomPhysicsImages'
 
 export const metadata = {
   title: 'Preguntas Frecuentes',
-  description: 'Preguntas frecuentes sobre los servicios de Andre & Tania design studio'
+  description: 'Preguntas Frecuentes sobre nuestros servicios de branding y diseño.',
 }
 
 export default async function Home () {
