@@ -169,7 +169,7 @@ const cardo = localFont({
 
 export const metadata = {
   icons: {
-    icon: '/favicon-192x192.ico'
+    icon: '/favicon.ico'
   }
 }
 
