@@ -145,6 +145,7 @@ const timesNewRoman = localFont({
   display: 'swap'
 })
 
+// Agregamos Cardo de forma similar
 const cardo = localFont({
   src: [
     {
@@ -167,12 +168,6 @@ const cardo = localFont({
   display: 'swap'
 })
 
-export const metadata = {
-  icons: {
-    icon: '/favicon.ico'
-  }
-}
-
 export default function RootLayout ({ children }) {
   return (
     <html
@@ -187,6 +182,9 @@ export default function RootLayout ({ children }) {
         cardo.variable
       }
     >
+      <head>
+        <link rel='icon' href='/favicon/favicon.ico' sizes='any' />
+      </head>
       <body className='!relative'>
         <Header />
         {children}
