@@ -97,7 +97,7 @@ export default async function HomePage () {
             <br />
             impulso real?
           </h2>
-          <img src='/index/diagnostico-bubble.png' className='mx-auto w-48' />
+          <img src='/index/diagnostico-bubble.png' className='mx-auto w-48' alt='diagnostico gratis andrea loarte studio' />
           <p className='text-center mt-14 text-sm/[1.2] uppercase font-helvetica-neue md:w-[27rem] text-balance md:text-pretty text-[#1a47c4]'>
             Recibe una mirada estratégica sobre cómo potenciar tu identidad,
             conectar con tu audencia y diferenciarte en tu mercado.
